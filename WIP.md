@@ -8,7 +8,14 @@ GitHub Pages via .github/workflows/deploy.yml — push to main auto-deploys). Li
 from-files weapon/melee/throwable/zombie stats (47 cards, "from files" badge + expandable full
 attribute lists) AND wiki-sourced skill effects (44/66 skills: Effect + Expert effect + Expert
 unlock level, "from wiki" badge, Fandom CC-BY-SA credited in footer). 22 unreleased skills stay
-name-only. Verified rendering in browser. **The site is feature-complete for current game content.**
+name-only. Verified rendering in browser.
+
+**IMAGES (2026-08-29):** game-file icons on 117 cards (firearms, melee 18/18, skills 53/66,
+throwables, attachments 17/19) + firearm CALIBER rows w/ ammo icons + a random map loading-screen
+as the spooky header hero. Textures decode via foreign usmap; native detex isn't shipped so the
+extractor dumps raw mips (`texraw`) and Python (texture2ddecoder+Pillow) decompresses BC7/DXT.
+Pipeline: extractor texraw -> decode_images.py/decode_flavor.py -> match_images.py -> build_site_data.py.
+**The site is feature-complete for current game content.**
 
 ## TL;DR of where we are
 - Full **from-files catalog** is DONE and is the backbone (names/paths/structure).

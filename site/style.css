@@ -44,9 +44,9 @@ nav{display:flex;flex-wrap:wrap;gap:6px;padding-top:16px;padding-bottom:2px}
   padding:14px 15px;transition:border-color .15s,transform .15s}
 .card:hover{border-color:var(--accent2);transform:translateY(-2px)}
 .thumb{margin:-4px -5px 8px;height:104px;display:flex;align-items:center;justify-content:center;
-  background:radial-gradient(ellipse at center,#20262e 0%,#12151a 80%);border-radius:8px;overflow:hidden}
+  background:radial-gradient(ellipse at center,#3a434e 0%,#161a20 82%);border-radius:8px;overflow:hidden}
 .thumb img{max-width:96%;max-height:96px;object-fit:contain;
-  filter:drop-shadow(0 3px 6px rgba(0,0,0,.6))}
+  filter:drop-shadow(0 2px 5px rgba(0,0,0,.75))}
 .card h3{margin:0 0 8px;font-size:15.5px}
 .ammo{display:flex;align-items:center;gap:7px;margin:0 0 8px;padding:5px 8px;border-radius:7px;
   background:#241a14;border:1px solid #47331f}
