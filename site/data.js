@@ -752,6 +752,7 @@ window.NMRIH2 = {
     "id": "AES_Winchester_1873",
     "name": "Winchester 1873",
     "raw": "AES_Winchester_1873",
+    "category": "Rifle",
     "caliber": ".357 Magnum",
     "statsExpected": true,
     "stats": {
@@ -863,6 +864,7 @@ window.NMRIH2 = {
     "id": "AES_1911",
     "name": "1911",
     "raw": "AES_1911",
+    "category": "Handgun",
     "caliber": ".45 ACP",
     "statsExpected": true,
     "stats": {
@@ -971,6 +973,7 @@ window.NMRIH2 = {
     "id": "AES_590A1",
     "name": "590A1",
     "raw": "AES_590A1",
+    "category": "Shotgun",
     "caliber": "12 Gauge",
     "statsExpected": true,
     "stats": {
@@ -1053,18 +1056,21 @@ window.NMRIH2 = {
     "id": "AES_870",
     "name": "870",
     "raw": "AES_870",
+    "category": "Shotgun",
     "statsExpected": true
    },
    {
     "id": "AES_AP85",
     "name": "AP85",
     "raw": "AES_AP85",
+    "category": "Handgun",
     "statsExpected": true
    },
    {
     "id": "AES_BauerPrecision",
     "name": "Bauer Precision",
     "raw": "AES_BauerPrecision",
+    "category": "Sniper",
     "statsExpected": true,
     "stats": {
      "Damage": "50",
@@ -1140,12 +1146,14 @@ window.NMRIH2 = {
     "id": "AES_Bull",
     "name": "Bull",
     "raw": "AES_Bull",
+    "category": "Handgun",
     "statsExpected": true
    },
    {
     "id": "AES_CoachGun",
     "name": "Coach Gun",
     "raw": "AES_CoachGun",
+    "category": "Shotgun",
     "caliber": "12 Gauge",
     "statsExpected": true,
     "ammoIcon": "img/ammo_12gaShells.png"
@@ -1154,12 +1162,14 @@ window.NMRIH2 = {
     "id": "AES_CX8",
     "name": "CX8",
     "raw": "AES_CX8",
+    "category": "Rifle",
     "statsExpected": true
    },
    {
     "id": "AES_DT11",
     "name": "DT11",
     "raw": "AES_DT11",
+    "category": "Shotgun",
     "statsExpected": true,
     "stats": {
      "Damage": "17",
@@ -1244,18 +1254,21 @@ window.NMRIH2 = {
     "id": "AES_Eder17",
     "name": "Eder17",
     "raw": "AES_Eder17",
+    "category": "Handgun",
     "statsExpected": true
    },
    {
     "id": "AES_FAL",
     "name": "FAL",
     "raw": "AES_FAL",
+    "category": "Rifle",
     "statsExpected": true
    },
    {
     "id": "AES_Gruber922",
     "name": "Gruber922",
     "raw": "AES_Gruber922",
+    "category": "Rifle",
     "statsExpected": true,
     "stats": {
      "Damage": "12",
@@ -1362,6 +1375,7 @@ window.NMRIH2 = {
     "id": "AES_GruberMkVII",
     "name": "Gruber Mk VII",
     "raw": "AES_GruberMkVII",
+    "category": "Handgun",
     "statsExpected": true,
     "stats": {
      "Damage": "12",
@@ -1466,6 +1480,7 @@ window.NMRIH2 = {
     "id": "AES_GruberRanch",
     "name": "Gruber Ranch",
     "raw": "AES_GruberRanch",
+    "category": "Rifle",
     "statsExpected": true,
     "stats": {
      "Damage": "20",
@@ -1576,6 +1591,7 @@ window.NMRIH2 = {
     "id": "AES_Hunter85",
     "name": "Hunter85",
     "raw": "AES_Hunter85",
+    "category": "Sniper",
     "caliber": ".308 Win",
     "statsExpected": true,
     "stats": {
@@ -1677,18 +1693,21 @@ window.NMRIH2 = {
     "id": "AES_LeeEnfield",
     "name": "Lee Enfield",
     "raw": "AES_LeeEnfield",
+    "category": "Sniper",
     "statsExpected": true
    },
    {
     "id": "AES_M1014",
     "name": "M1014",
     "raw": "AES_M1014",
+    "category": "Shotgun",
     "statsExpected": true
    },
    {
     "id": "AES_M14",
     "name": "M14",
     "raw": "AES_M14",
+    "category": "Rifle",
     "caliber": ".308 Win",
     "statsExpected": true,
     "stats": {
@@ -1791,6 +1810,7 @@ window.NMRIH2 = {
     "id": "AES_M16A4",
     "name": "M16A4",
     "raw": "AES_M16A4",
+    "category": "Rifle",
     "statsExpected": true,
     "img": "img/AES_M16A4.png"
    },
@@ -1798,6 +1818,7 @@ window.NMRIH2 = {
     "id": "AES_M1Garand",
     "name": "M1Garand",
     "raw": "AES_M1Garand",
+    "category": "Rifle",
     "statsExpected": true,
     "img": "img/AES_M1Garand.png"
    },
@@ -1805,6 +1826,7 @@ window.NMRIH2 = {
     "id": "AES_M7",
     "name": "M7",
     "raw": "AES_M7",
+    "category": "Rifle",
     "caliber": "6.8x51mm",
     "statsExpected": true,
     "stats": {
@@ -1909,6 +1931,7 @@ window.NMRIH2 = {
     "id": "AES_M9A1",
     "name": "M9A1",
     "raw": "AES_M9A1",
+    "category": "Handgun",
     "caliber": "9mm",
     "statsExpected": true,
     "stats": {
@@ -2015,12 +2038,14 @@ window.NMRIH2 = {
     "id": "AES_Martial",
     "name": "Martial",
     "raw": "AES_Martial",
+    "category": "Handgun",
     "statsExpected": true
    },
    {
     "id": "AES_MC15",
     "name": "MC15",
     "raw": "AES_MC15",
+    "category": "Rifle",
     "caliber": "5.56mm",
     "statsExpected": true,
     "stats": {
@@ -2131,6 +2156,7 @@ window.NMRIH2 = {
     "id": "AES_Mk18",
     "name": "Mk18",
     "raw": "AES_Mk18",
+    "category": "Rifle",
     "statsExpected": true,
     "img": "img/AES_Mk18.png"
    },
@@ -2138,6 +2164,7 @@ window.NMRIH2 = {
     "id": "AES_Model13",
     "name": "Model13",
     "raw": "AES_Model13",
+    "category": "Handgun",
     "caliber": ".357 Magnum",
     "statsExpected": true,
     "stats": {
@@ -2247,6 +2274,7 @@ window.NMRIH2 = {
     "id": "AES_MP5",
     "name": "MP5",
     "raw": "AES_MP5",
+    "category": "SMG",
     "caliber": "9mm",
     "statsExpected": true,
     "stats": {
@@ -2353,18 +2381,21 @@ window.NMRIH2 = {
     "id": "AES_MP5A4_Old",
     "name": "MP5A4 Old",
     "raw": "AES_MP5A4_Old",
+    "category": "SMG",
     "statsExpected": true
    },
    {
     "id": "AES_P350",
     "name": "P350",
     "raw": "AES_P350",
+    "category": "Handgun",
     "statsExpected": true
    },
    {
     "id": "AES_RX12",
     "name": "RX12",
     "raw": "AES_RX12",
+    "category": "Shotgun",
     "statsExpected": true,
     "stats": {
      "Damage": "17",
@@ -2448,12 +2479,14 @@ window.NMRIH2 = {
     "id": "AES_686",
     "name": "686",
     "raw": "AES_686",
+    "category": "Handgun",
     "statsExpected": true
    },
    {
     "id": "AES_SKS",
     "name": "SKS",
     "raw": "AES_SKS",
+    "category": "Rifle",
     "statsExpected": true
    }
   ],

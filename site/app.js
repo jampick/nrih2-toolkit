@@ -16,7 +16,7 @@
   ];
 
   let active = "skills";
-  let filter = null;
+  let filters = {};   // facet field -> selected value
   let query = "";
 
   const $ = (id) => document.getElementById(id);
@@ -55,7 +55,7 @@
     const b = document.createElement("button");
     b.className = "tab" + (key === active ? " active" : "");
     b.innerHTML = label + '<span class="n">' + arr.length + "</span>";
-    b.onclick = () => { active = key; filter = null; query = ""; $("search").value = ""; render(); };
+    b.onclick = () => { active = key; filters = {}; query = ""; $("search").value = ""; render(); };
     b.dataset.key = key;
     tabsEl.appendChild(b);
   });
@@ -72,42 +72,66 @@
       : "Show all " + panel.querySelectorAll("div").length + " attributes";
   });
 
-  function categoriesFor(key) {
+  // Facets per tab: each is a [field, label] pair; a chip group renders for any
+  // facet with 2+ distinct values in the current tab's rows.
+  const FACETS = {
+    firearms: [["category", "Type"], ["caliber", "Ammo"]],
+    melee: [["rarity", "Rarity"]],
+  };
+  const GUNTYPE_ORDER = ["Handgun", "SMG", "Shotgun", "Rifle", "Sniper"];
+
+  function facetsFor(key) {
     const arr = S[key] || [];
-    const field = key === "melee" ? "rarity" : "category";
-    const set = new Set();
-    arr.forEach((x) => { if (x[field]) set.add(x[field]); });
-    return { field, values: [...set].sort() };
+    const out = [];
+    (FACETS[key] || [["category", "Category"]]).forEach(([field, label]) => {
+      const set = new Set();
+      arr.forEach((x) => { if (x[field]) set.add(x[field]); });
+      let values = [...set].sort();
+      if (field === "category" && key === "firearms")
+        values = GUNTYPE_ORDER.filter((v) => set.has(v));
+      if (values.length > 1) out.push({ field, label, values });
+    });
+    return out;
   }
 
   function render() {
     document.querySelectorAll(".tab").forEach((t) =>
       t.classList.toggle("active", t.dataset.key === active));
-    // filter chips
+    // filter chip groups
     filtersEl.innerHTML = "";
-    const { field, values } = categoriesFor(active);
-    if (values.length > 1) {
-      const mk = (label, val) => {
+    facetsFor(active).forEach(({ field, label, values }) => {
+      const group = document.createElement("div");
+      group.className = "fgroup";
+      const lab = document.createElement("span");
+      lab.className = "flabel";
+      lab.textContent = label;
+      group.appendChild(lab);
+      const mk = (text, val) => {
         const c = document.createElement("button");
-        c.className = "chip" + ((filter === val) ? " active" : "");
-        c.textContent = label;
-        c.onclick = () => { filter = (filter === val ? null : val); paint(); };
-        filtersEl.appendChild(c);
+        c.className = "chip" + ((filters[field] ?? null) === val ? " active" : "");
+        c.textContent = text;
+        c.onclick = () => {
+          filters[field] = (filters[field] === val ? null : val);
+          render();
+        };
+        group.appendChild(c);
       };
       mk("All", null);
       values.forEach((v) => mk(v, v));
-    }
-    filtersEl.dataset.field = field;
+      filtersEl.appendChild(group);
+    });
     paint();
   }
 
   function paint() {
     const arr = S[active] || [];
-    const field = filtersEl.dataset.field;
     let rows = arr.filter((x) => {
-      if (filter && x[field] !== filter) return false;
+      for (const [field, val] of Object.entries(filters))
+        if (val && x[field] !== val) return false;
       if (query && !((x.name || "").toLowerCase().includes(query) ||
-                     (x.raw || "").toLowerCase().includes(query))) return false;
+                     (x.raw || "").toLowerCase().includes(query) ||
+                     (x.caliber || "").toLowerCase().includes(query) ||
+                     (x.category || "").toLowerCase().includes(query))) return false;
       return true;
     });
     rows.sort((a, b) => a.name.localeCompare(b.name));

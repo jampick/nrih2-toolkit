@@ -59,6 +59,20 @@ def classify(name):
     if name in THROWABLE: return "Throwable"
     return "Other"
 
+# Gun types are hand-assigned (real-world archetype of each gun; mirrors the game's
+# Handgun/SMG/Shotgun/Rifle/Sniper skill trees). Not decodable from the curve tables.
+GUNTYPE = {}
+for t, names in {
+    "Handgun": {"1911","686","AP85","Bull","Eder17","GruberMkVII","M9A1","Martial","Model13","P350"},
+    "SMG":     {"MP5","MP5A4_Old"},
+    "Shotgun": {"590A1","870","CoachGun","DT11","M1014","RX12"},
+    "Rifle":   {"CX8","FAL","Gruber922","GruberRanch","M14","M16A4","M1Garand","M7","MC15",
+                "Mk18","SKS","Winchester_1873"},
+    "Sniper":  {"BauerPrecision","Hunter85","LeeEnfield"},
+}.items():
+    for n in names:
+        GUNTYPE[n] = t
+
 # Curated primary stats (raw keys), shown first on each card.
 PRIMARY = {
     "Firearm": ["Damage","HeadshotDamage","BulletsPerShot","LimbDamage","StabilityDamage",
@@ -235,6 +249,8 @@ def main():
         if key.startswith("Zombie"):      # AES_Zombie* are enemy ability sets, not player weapons
             continue
         row = {"id": e["name"], "name": words(key), "raw": e["name"]}
+        if cat == "Firearm" and key in GUNTYPE:
+            row["category"] = GUNTYPE[key]
         if e["name"] in ammo:
             row["caliber"] = ammo[e["name"]]["caliber"]
             row["ammoIconKey"] = "AMMO_" + ammo[e["name"]]["icon"]

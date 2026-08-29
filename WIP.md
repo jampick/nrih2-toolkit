@@ -18,6 +18,9 @@ own files, enriched with community-wiki numbers.
   damage (× pellets for shotguns; melee uses best of quick/strong/heavy). Rows with equal counts
   merge into HP ranges ("Child → Walker Prime"); green highlight + "one-tap" line for head-kills.
   Deliberately NOT DPS: files' RateOfFire is junk-authored (0 for Winchester, 0.02 for a pistol).
+- **Firearm filters** — chip groups for **Type** (Handgun/SMG/Shotgun/Rifle/Sniper; hand-assigned
+  `GUNTYPE` map in `build_site_data.py`, mirrors the skill trees) and **Ammo** (caliber, 11 guns).
+  Search also matches caliber/category. Filter UI is multi-facet (`FACETS` in app.js).
 - **Melee** (18/18) / **Throwables** — real stats + icons + rarity.
 - **Zombies** (10 profiles incl. **Prime** elites) — real stats from `CT_ATT_Zomb_*`, Adult/Child/Prime filters.
 - **Skills** (66) — wiki-sourced Effect / Expert effect / Expert unlock level for 44; icons for 53.
@@ -69,6 +72,12 @@ build_site_data.py       -> site/data.js             (merges catalog + all overl
   `texture2ddecoder` (pip) + Pillow decompresses. Formats seen: PF_BC7, PF_DXT1, PF_DXT5.
 - **Version pin:** extractor pinned to **CUE4Parse 1.2.2.202607** to match CUE4Parse-Conversion
   .202607 (was .202608 → PixelFormatUtils field-not-found). Don't bump one without the other.
+- **Consumables/gear/attachments have NO decodable stats** (verified 2026-08-29): `ID_Consumable_*`
+  export fine but come out as EMPTY `KConsumableItemAsset` shells — game-native K-classes, same
+  foreign-usmap wall as `GE_` skills. Only 42 `CT_ItemAttributes_*` tables exist (weapons+Battery+
+  Medical). Way forward = wiki overlay: Fandom Equipment page tabs (Passive/Medical/Throwable/
+  Melee/Firearms Gear) hold per-item price + account level; see RE-VISIT note in
+  `data/wiki-raw/fandom-enemies-equipment.md`.
 - **Icon matching:** exact + explicit alias ONLY. A fuzzy-substring fallback caused false hits
   (MP5 rail grabbing the MP5 gun; Large/Small attachment collisions). If coverage looks low, add an
   alias in `match_images.py` — never re-enable substring matching.
