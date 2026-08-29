@@ -10,7 +10,7 @@ Stats provenance:
   * Skills -> magnitudes live in Blueprint GameplayEffects that a foreign usmap
     cannot decode, so they remain name-only here (source = wiki, pending overlay).
 """
-import json, re, os, glob
+import json, re, os, glob, math
 
 ROOT = r"C:\Users\OddJob\projects\NRIH2"
 CATALOG = os.path.join(ROOT, "data", "catalog", "catalog.json")
@@ -61,8 +61,8 @@ def classify(name):
 
 # Curated primary stats (raw keys), shown first on each card.
 PRIMARY = {
-    "Firearm": ["Damage","HeadshotDamage","LimbDamage","StabilityDamage","AmmoCapacity",
-                "RateOfFire","MaxPenetrations","Range","MaxSpreadDegrees"],
+    "Firearm": ["Damage","HeadshotDamage","BulletsPerShot","LimbDamage","StabilityDamage",
+                "AmmoCapacity","RateOfFire","MaxPenetrations","Range","MaxSpreadDegrees"],
     "Melee":   ["Damage","HeadshotDamage","LimbDamage","StrongAttackDamage","HeavyAttackDamage",
                 "ThrowDamage","StabilityDamage","Range","QuickAttackStaminaCost"],
     "Throwable":["Damage","ThrowDamage","HeadShotDamage","StabilityDamage","LimbDamage",
@@ -71,6 +71,79 @@ PRIMARY = {
                 "Zombie.MeleeDamage_Heavy","Zombie.CombatRange","Zombie.InfectionChance",
                 "Zombie.GrabBiteDamage","Zombie.AttackCooldown_Basic"],
 }
+
+# ---------------------------------------------------------------- zombie math
+# "Shots to drop" per zombie type, computed from the REAL decoded numbers:
+# zombie Health.MaxHealth vs weapon Damage/HeadshotDamage (x pellets for shotguns).
+# Deliberately NOT a DPS stat: the files' RateOfFire is inconsistently authored
+# (0 for Winchester, 0.02 for a semi-auto pistol), so time-based math would lie.
+ZROSTER = [  # ascending HP; Child variants all share one HP profile
+    ("Child",          "Zomb_Child_WLK"),
+    ("Shambler",       "Zomb_Adult_SHA"),
+    ("Walker",         "Zomb_Adult_WLK"),
+    ("Runner",         "Zomb_Adult_RNR"),
+    ("Runner Prime",   "Zomb_Adult_RNR_Prime"),
+    ("Walker Prime",   "Zomb_Adult_WLK_Prime"),
+    ("Shambler Prime", "Zomb_Adult_SHA_Prime"),
+    ("Mutated",        "Zomb_Adult_MUT"),
+]
+
+def zombie_hp_roster(stats):
+    out = []
+    for label, inst in ZROSTER:
+        z = stats.get("zombies", {}).get(inst)
+        hp = z and z["stats"].get("Health.MaxHealth")
+        if hp:
+            out.append((label, hp))
+    return out
+
+def kill_math(raw, category, zhp):
+    """Attachable zmath block: shots (firearms) / heavy swings (melee) to drop
+    each zombie type. Rows with identical counts are merged into HP ranges."""
+    if not zhp:
+        return None
+    if category == "Firearm":
+        body, head = raw.get("Damage"), raw.get("HeadshotDamage")
+        pellets = int(raw.get("BulletsPerShot") or 1)
+        title, unit = "Shots to drop", "shot"
+    elif category == "Melee":
+        body = max((raw.get(k) or 0) for k in ("Damage", "StrongAttackDamage", "HeavyAttackDamage"))
+        head = max((raw.get(k) or 0) for k in
+                   ("HeadshotDamage", "StrongAttackHeadshotDamage", "HeavyAttackHeadShotDamage"))
+        pellets, title, unit = 1, "Heavy swings to drop", "swing"
+    else:
+        return None
+    if not body:
+        return None
+    body_full = body * pellets
+    head_full = (head or 0) * pellets
+    rows = []
+    for label, hp in zhp:
+        rows.append({"labels": [label], "lo": hp, "hi": hp,
+                     "head": math.ceil(hp / head_full) if head_full else None,
+                     "body": math.ceil(hp / body_full)})
+    merged = []
+    for r in rows:
+        if merged and merged[-1]["head"] == r["head"] and merged[-1]["body"] == r["body"]:
+            merged[-1]["labels"] += r["labels"]
+            merged[-1]["hi"] = r["hi"]
+        else:
+            merged.append(r)
+    out_rows = []
+    for r in merged:
+        L = r["labels"]
+        label = L[0] if len(L) == 1 else (L[0] + " / " + L[1] if len(L) == 2
+                                          else L[0] + " → " + L[-1])
+        hp = fmt(r["lo"]) if r["lo"] == r["hi"] else fmt(r["lo"]) + "–" + fmt(r["hi"])
+        out_rows.append({"label": label, "hp": hp, "head": r["head"], "body": r["body"]})
+    z = {"title": title, "rows": out_rows}
+    if pellets > 1:
+        z["note"] = ("Full blast: " + str(pellets) + " pellets × " + fmt(body) + " = " +
+                     fmt(body_full) + " dmg (" + fmt(head_full) + " head), all pellets on target")
+    onetap = [r for r in rows if r["head"] == 1]
+    if onetap and len(onetap) < len(rows):
+        z["onetap"] = "One " + unit + " to the head drops anything up to a " + onetap[-1]["labels"][-1]
+    return z
 
 # --------------------------------------------------------------- stat matching
 def norm(s):
@@ -138,15 +211,20 @@ def main():
     c = load(CATALOG)
     stats = load(STATS) if os.path.exists(STATS) else {"items": {}, "zombies": {}}
     idx = build_item_index(stats)
+    zhp = zombie_hp_roster(stats)
 
     def attach(row, roster_name, category):
         row["statsExpected"] = True
         key = lookup_item(idx, stats, roster_name)
         if key:
-            primary, alld = stat_blocks(stats["items"][key]["stats"], category)
+            raw = stats["items"][key]["stats"]
+            primary, alld = stat_blocks(raw, category)
             row["stats"] = primary
             row["allStats"] = alld
             row["statSource"] = "files"
+            z = kill_math(raw, category, zhp)
+            if z:
+                row["zmath"] = z
         return row
 
     ammo = load(AMMO)["firearms"] if os.path.exists(AMMO) else {}

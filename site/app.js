@@ -126,6 +126,22 @@
     return h;
   }
 
+  // "Zombie math" — shots/swings to drop each zombie type, from real decoded HP.
+  function zmathBlock(z) {
+    let h = '<div class="zmath">';
+    h += '<div class="zhead">☠ ' + esc(z.title) +
+         '<span class="zlegend">💀 head · 🎯 body</span></div>';
+    if (z.note) h += '<div class="znote">' + esc(z.note) + "</div>";
+    z.rows.forEach((r) => {
+      h += '<div class="zrow' + (r.head === 1 ? " onetap" : "") + '">' +
+           '<span class="zname">' + esc(r.label) + ' <em>' + esc(r.hp) + ' HP</em></span>' +
+           '<span class="zn zh">💀 ' + (r.head == null ? "—" : r.head) + "</span>" +
+           '<span class="zn">🎯 ' + r.body + "</span></div>";
+    });
+    if (z.onetap) h += '<div class="ztap">💀 ' + esc(z.onetap) + "</div>";
+    return h + "</div>";
+  }
+
   function card(x) {
     const el = document.createElement("article");
     el.className = "card";
@@ -150,6 +166,7 @@
     const all = x.allStats || {};
     if (Object.keys(primary).length) {
       h += '<div class="stats">' + statRows(primary) + "</div>";
+      if (x.zmath) h += zmathBlock(x.zmath);
       const extra = Object.keys(all).length - Object.keys(primary).length;
       if (extra > 0) {
         h += '<button class="showall" type="button">Show all ' + Object.keys(all).length + " attributes</button>";

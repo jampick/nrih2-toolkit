@@ -12,6 +12,12 @@ own files, enriched with community-wiki numbers.
 ## What the live site shows
 - **Firearms** — real from-files stats (16 with full sheets; unreleased guns show "no stat table"),
   game-file icon, and a clear **AMMO row** (caliber + ammo icon) for the 11 released guns.
+  **Bullets Per Shot** is promoted next to damage so shotguns read correctly (17 dmg × 10 pellets).
+- **Zombie Math panel** (firearms + melee) — "Shots to drop" / "Heavy swings to drop" per zombie
+  type, computed in `build_site_data.py::kill_math` from real zombie `Health.MaxHealth` vs weapon
+  damage (× pellets for shotguns; melee uses best of quick/strong/heavy). Rows with equal counts
+  merge into HP ranges ("Child → Walker Prime"); green highlight + "one-tap" line for head-kills.
+  Deliberately NOT DPS: files' RateOfFire is junk-authored (0 for Winchester, 0.02 for a pistol).
 - **Melee** (18/18) / **Throwables** — real stats + icons + rarity.
 - **Zombies** (10 profiles incl. **Prime** elites) — real stats from `CT_ATT_Zomb_*`, Adult/Child/Prime filters.
 - **Skills** (66) — wiki-sourced Effect / Expert effect / Expert unlock level for 44; icons for 53.

@@ -808,6 +808,54 @@ window.NMRIH2 = {
      "Targeting Spread Multiplier": "0.1"
     },
     "statSource": "files",
+    "zmath": {
+     "title": "Shots to drop",
+     "rows": [
+      {
+       "label": "Child",
+       "hp": "30",
+       "head": 1,
+       "body": 2
+      },
+      {
+       "label": "Shambler",
+       "hp": "70",
+       "head": 1,
+       "body": 3
+      },
+      {
+       "label": "Walker / Runner",
+       "hp": "100",
+       "head": 1,
+       "body": 5
+      },
+      {
+       "label": "Runner Prime",
+       "hp": "120",
+       "head": 2,
+       "body": 5
+      },
+      {
+       "label": "Walker Prime",
+       "hp": "130",
+       "head": 2,
+       "body": 6
+      },
+      {
+       "label": "Shambler Prime",
+       "hp": "300",
+       "head": 3,
+       "body": 13
+      },
+      {
+       "label": "Mutated",
+       "hp": "600",
+       "head": 6,
+       "body": 25
+      }
+     ],
+     "onetap": "One shot to the head drops anything up to a Runner"
+    },
     "img": "img/AES_Winchester_1873.png",
     "ammoIcon": "img/ammo_357Mag.png"
    },
@@ -868,6 +916,54 @@ window.NMRIH2 = {
      "Targeting Spread Multiplier": "0.1"
     },
     "statSource": "files",
+    "zmath": {
+     "title": "Shots to drop",
+     "rows": [
+      {
+       "label": "Child",
+       "hp": "30",
+       "head": 1,
+       "body": 2
+      },
+      {
+       "label": "Shambler",
+       "hp": "70",
+       "head": 1,
+       "body": 4
+      },
+      {
+       "label": "Walker / Runner",
+       "hp": "100",
+       "head": 1,
+       "body": 5
+      },
+      {
+       "label": "Runner Prime",
+       "hp": "120",
+       "head": 2,
+       "body": 6
+      },
+      {
+       "label": "Walker Prime",
+       "hp": "130",
+       "head": 2,
+       "body": 7
+      },
+      {
+       "label": "Shambler Prime",
+       "hp": "300",
+       "head": 3,
+       "body": 15
+      },
+      {
+       "label": "Mutated",
+       "hp": "600",
+       "head": 6,
+       "body": 30
+      }
+     ],
+     "onetap": "One shot to the head drops anything up to a Runner"
+    },
     "img": "img/AES_1911.png",
     "ammoIcon": "img/ammo_45ACP.png"
    },
@@ -880,6 +976,7 @@ window.NMRIH2 = {
     "stats": {
      "Damage": "17",
      "Headshot Damage": "20",
+     "Bullets Per Shot": "10",
      "Limb Damage": "15",
      "Stability Damage": "10",
      "Max Penetrations": "1",
@@ -924,6 +1021,31 @@ window.NMRIH2 = {
      "Targeting Spread Multiplier": "0.3"
     },
     "statSource": "files",
+    "zmath": {
+     "title": "Shots to drop",
+     "rows": [
+      {
+       "label": "Child → Walker Prime",
+       "hp": "30–130",
+       "head": 1,
+       "body": 1
+      },
+      {
+       "label": "Shambler Prime",
+       "hp": "300",
+       "head": 2,
+       "body": 2
+      },
+      {
+       "label": "Mutated",
+       "hp": "600",
+       "head": 3,
+       "body": 4
+      }
+     ],
+     "note": "Full blast: 10 pellets × 17 = 170 dmg (200 head), all pellets on target",
+     "onetap": "One shot to the head drops anything up to a Walker Prime"
+    },
     "img": "img/AES_590A1.png",
     "ammoIcon": "img/ammo_12gaShells.png"
    },
@@ -976,7 +1098,43 @@ window.NMRIH2 = {
      "Spread Degrees": "2",
      "Stability Damage": "40"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "zmath": {
+     "title": "Shots to drop",
+     "rows": [
+      {
+       "label": "Child",
+       "hp": "30",
+       "head": 1,
+       "body": 1
+      },
+      {
+       "label": "Shambler → Runner",
+       "hp": "70–100",
+       "head": 1,
+       "body": 2
+      },
+      {
+       "label": "Runner Prime / Walker Prime",
+       "hp": "120–130",
+       "head": 2,
+       "body": 3
+      },
+      {
+       "label": "Shambler Prime",
+       "hp": "300",
+       "head": 3,
+       "body": 6
+      },
+      {
+       "label": "Mutated",
+       "hp": "600",
+       "head": 6,
+       "body": 12
+      }
+     ],
+     "onetap": "One shot to the head drops anything up to a Runner"
+    }
    },
    {
     "id": "AES_Bull",
@@ -1006,6 +1164,7 @@ window.NMRIH2 = {
     "stats": {
      "Damage": "17",
      "Headshot Damage": "20",
+     "Bullets Per Shot": "10",
      "Limb Damage": "15",
      "Stability Damage": "15",
      "Ammo Capacity": "2",
@@ -1054,6 +1213,31 @@ window.NMRIH2 = {
      "Targeting Spread Multiplier": "0.4"
     },
     "statSource": "files",
+    "zmath": {
+     "title": "Shots to drop",
+     "rows": [
+      {
+       "label": "Child → Walker Prime",
+       "hp": "30–130",
+       "head": 1,
+       "body": 1
+      },
+      {
+       "label": "Shambler Prime",
+       "hp": "300",
+       "head": 2,
+       "body": 2
+      },
+      {
+       "label": "Mutated",
+       "hp": "600",
+       "head": 3,
+       "body": 4
+      }
+     ],
+     "note": "Full blast: 10 pellets × 17 = 170 dmg (200 head), all pellets on target",
+     "onetap": "One shot to the head drops anything up to a Walker Prime"
+    },
     "img": "img/AES_DT11.png"
    },
    {
@@ -1124,6 +1308,54 @@ window.NMRIH2 = {
      "Targeting Spread Multiplier": "0.15"
     },
     "statSource": "files",
+    "zmath": {
+     "title": "Shots to drop",
+     "rows": [
+      {
+       "label": "Child",
+       "hp": "30",
+       "head": 1,
+       "body": 3
+      },
+      {
+       "label": "Shambler",
+       "hp": "70",
+       "head": 2,
+       "body": 6
+      },
+      {
+       "label": "Walker / Runner",
+       "hp": "100",
+       "head": 3,
+       "body": 9
+      },
+      {
+       "label": "Runner Prime",
+       "hp": "120",
+       "head": 4,
+       "body": 10
+      },
+      {
+       "label": "Walker Prime",
+       "hp": "130",
+       "head": 4,
+       "body": 11
+      },
+      {
+       "label": "Shambler Prime",
+       "hp": "300",
+       "head": 9,
+       "body": 25
+      },
+      {
+       "label": "Mutated",
+       "hp": "600",
+       "head": 18,
+       "body": 50
+      }
+     ],
+     "onetap": "One shot to the head drops anything up to a Child"
+    },
     "img": "img/AES_Gruber922.png"
    },
    {
@@ -1180,6 +1412,54 @@ window.NMRIH2 = {
      "Targeting Spread Multiplier": "0.15"
     },
     "statSource": "files",
+    "zmath": {
+     "title": "Shots to drop",
+     "rows": [
+      {
+       "label": "Child",
+       "hp": "30",
+       "head": 1,
+       "body": 3
+      },
+      {
+       "label": "Shambler",
+       "hp": "70",
+       "head": 2,
+       "body": 6
+      },
+      {
+       "label": "Walker / Runner",
+       "hp": "100",
+       "head": 3,
+       "body": 9
+      },
+      {
+       "label": "Runner Prime",
+       "hp": "120",
+       "head": 4,
+       "body": 10
+      },
+      {
+       "label": "Walker Prime",
+       "hp": "130",
+       "head": 4,
+       "body": 11
+      },
+      {
+       "label": "Shambler Prime",
+       "hp": "300",
+       "head": 9,
+       "body": 25
+      },
+      {
+       "label": "Mutated",
+       "hp": "600",
+       "head": 18,
+       "body": 50
+      }
+     ],
+     "onetap": "One shot to the head drops anything up to a Child"
+    },
     "img": "img/AES_GruberMkVII.png"
    },
    {
@@ -1242,6 +1522,54 @@ window.NMRIH2 = {
      "Targeting Spread Multiplier": "0.15"
     },
     "statSource": "files",
+    "zmath": {
+     "title": "Shots to drop",
+     "rows": [
+      {
+       "label": "Child",
+       "hp": "30",
+       "head": 1,
+       "body": 2
+      },
+      {
+       "label": "Shambler",
+       "hp": "70",
+       "head": 1,
+       "body": 4
+      },
+      {
+       "label": "Walker / Runner",
+       "hp": "100",
+       "head": 1,
+       "body": 5
+      },
+      {
+       "label": "Runner Prime",
+       "hp": "120",
+       "head": 1,
+       "body": 6
+      },
+      {
+       "label": "Walker Prime",
+       "hp": "130",
+       "head": 1,
+       "body": 7
+      },
+      {
+       "label": "Shambler Prime",
+       "hp": "300",
+       "head": 3,
+       "body": 15
+      },
+      {
+       "label": "Mutated",
+       "hp": "600",
+       "head": 5,
+       "body": 30
+      }
+     ],
+     "onetap": "One shot to the head drops anything up to a Walker Prime"
+    },
     "img": "img/AES_GruberRanch.png"
    },
    {
@@ -1300,6 +1628,48 @@ window.NMRIH2 = {
      "Targeting Spread Multiplier": "0.1"
     },
     "statSource": "files",
+    "zmath": {
+     "title": "Shots to drop",
+     "rows": [
+      {
+       "label": "Child",
+       "hp": "30",
+       "head": 1,
+       "body": 1
+      },
+      {
+       "label": "Shambler",
+       "hp": "70",
+       "head": 1,
+       "body": 2
+      },
+      {
+       "label": "Walker / Runner",
+       "hp": "100",
+       "head": 1,
+       "body": 3
+      },
+      {
+       "label": "Runner Prime / Walker Prime",
+       "hp": "120–130",
+       "head": 1,
+       "body": 4
+      },
+      {
+       "label": "Shambler Prime",
+       "hp": "300",
+       "head": 2,
+       "body": 9
+      },
+      {
+       "label": "Mutated",
+       "hp": "600",
+       "head": 4,
+       "body": 18
+      }
+     ],
+     "onetap": "One shot to the head drops anything up to a Walker Prime"
+    },
     "img": "img/AES_Hunter85.png",
     "ammoIcon": "img/ammo_308Win.png"
    },
@@ -1372,6 +1742,48 @@ window.NMRIH2 = {
      "Targeting Spread Multiplier": "0.15"
     },
     "statSource": "files",
+    "zmath": {
+     "title": "Shots to drop",
+     "rows": [
+      {
+       "label": "Child",
+       "hp": "30",
+       "head": 1,
+       "body": 1
+      },
+      {
+       "label": "Shambler",
+       "hp": "70",
+       "head": 1,
+       "body": 2
+      },
+      {
+       "label": "Walker / Runner",
+       "hp": "100",
+       "head": 1,
+       "body": 3
+      },
+      {
+       "label": "Runner Prime / Walker Prime",
+       "hp": "120–130",
+       "head": 1,
+       "body": 4
+      },
+      {
+       "label": "Shambler Prime",
+       "hp": "300",
+       "head": 2,
+       "body": 9
+      },
+      {
+       "label": "Mutated",
+       "hp": "600",
+       "head": 4,
+       "body": 18
+      }
+     ],
+     "onetap": "One shot to the head drops anything up to a Walker Prime"
+    },
     "img": "img/AES_M14.png",
     "ammoIcon": "img/ammo_308Win.png"
    },
@@ -1448,6 +1860,48 @@ window.NMRIH2 = {
      "Targeting Spread Multiplier": "0.2"
     },
     "statSource": "files",
+    "zmath": {
+     "title": "Shots to drop",
+     "rows": [
+      {
+       "label": "Child",
+       "hp": "30",
+       "head": 1,
+       "body": 1
+      },
+      {
+       "label": "Shambler",
+       "hp": "70",
+       "head": 1,
+       "body": 2
+      },
+      {
+       "label": "Walker → Runner Prime",
+       "hp": "100–120",
+       "head": 1,
+       "body": 3
+      },
+      {
+       "label": "Walker Prime",
+       "hp": "130",
+       "head": 1,
+       "body": 4
+      },
+      {
+       "label": "Shambler Prime",
+       "hp": "300",
+       "head": 2,
+       "body": 8
+      },
+      {
+       "label": "Mutated",
+       "hp": "600",
+       "head": 4,
+       "body": 15
+      }
+     ],
+     "onetap": "One shot to the head drops anything up to a Walker Prime"
+    },
     "img": "img/AES_M7.png",
     "ammoIcon": "img/ammo_68x51mm.png"
    },
@@ -1506,6 +1960,54 @@ window.NMRIH2 = {
      "Targeting Spread Multiplier": "0.15"
     },
     "statSource": "files",
+    "zmath": {
+     "title": "Shots to drop",
+     "rows": [
+      {
+       "label": "Child",
+       "hp": "30",
+       "head": 1,
+       "body": 2
+      },
+      {
+       "label": "Shambler",
+       "hp": "70",
+       "head": 2,
+       "body": 5
+      },
+      {
+       "label": "Walker / Runner",
+       "hp": "100",
+       "head": 2,
+       "body": 7
+      },
+      {
+       "label": "Runner Prime",
+       "hp": "120",
+       "head": 3,
+       "body": 8
+      },
+      {
+       "label": "Walker Prime",
+       "hp": "130",
+       "head": 3,
+       "body": 9
+      },
+      {
+       "label": "Shambler Prime",
+       "hp": "300",
+       "head": 6,
+       "body": 20
+      },
+      {
+       "label": "Mutated",
+       "hp": "600",
+       "head": 12,
+       "body": 40
+      }
+     ],
+     "onetap": "One shot to the head drops anything up to a Child"
+    },
     "img": "img/AES_M9A1.png",
     "ammoIcon": "img/ammo_9mm.png"
    },
@@ -1574,6 +2076,54 @@ window.NMRIH2 = {
      "Targeting Spread Multiplier": "0.1"
     },
     "statSource": "files",
+    "zmath": {
+     "title": "Shots to drop",
+     "rows": [
+      {
+       "label": "Child",
+       "hp": "30",
+       "head": 1,
+       "body": 2
+      },
+      {
+       "label": "Shambler",
+       "hp": "70",
+       "head": 1,
+       "body": 4
+      },
+      {
+       "label": "Walker / Runner",
+       "hp": "100",
+       "head": 1,
+       "body": 5
+      },
+      {
+       "label": "Runner Prime",
+       "hp": "120",
+       "head": 1,
+       "body": 6
+      },
+      {
+       "label": "Walker Prime",
+       "hp": "130",
+       "head": 1,
+       "body": 7
+      },
+      {
+       "label": "Shambler Prime",
+       "hp": "300",
+       "head": 3,
+       "body": 15
+      },
+      {
+       "label": "Mutated",
+       "hp": "600",
+       "head": 5,
+       "body": 30
+      }
+     ],
+     "onetap": "One shot to the head drops anything up to a Walker Prime"
+    },
     "img": "img/AES_MC15.png",
     "ammoIcon": "img/ammo_556NATO.png"
    },
@@ -1642,6 +2192,54 @@ window.NMRIH2 = {
      "Targeting Spread Multiplier": "0.15"
     },
     "statSource": "files",
+    "zmath": {
+     "title": "Shots to drop",
+     "rows": [
+      {
+       "label": "Child",
+       "hp": "30",
+       "head": 1,
+       "body": 2
+      },
+      {
+       "label": "Shambler",
+       "hp": "70",
+       "head": 1,
+       "body": 3
+      },
+      {
+       "label": "Walker / Runner",
+       "hp": "100",
+       "head": 1,
+       "body": 5
+      },
+      {
+       "label": "Runner Prime",
+       "hp": "120",
+       "head": 2,
+       "body": 5
+      },
+      {
+       "label": "Walker Prime",
+       "hp": "130",
+       "head": 2,
+       "body": 6
+      },
+      {
+       "label": "Shambler Prime",
+       "hp": "300",
+       "head": 3,
+       "body": 13
+      },
+      {
+       "label": "Mutated",
+       "hp": "600",
+       "head": 6,
+       "body": 25
+      }
+     ],
+     "onetap": "One shot to the head drops anything up to a Runner"
+    },
     "img": "img/AES_Model13.png",
     "ammoIcon": "img/ammo_357Mag.png"
    },
@@ -1700,6 +2298,54 @@ window.NMRIH2 = {
      "Stability Falloff Per Penetration": "10"
     },
     "statSource": "files",
+    "zmath": {
+     "title": "Shots to drop",
+     "rows": [
+      {
+       "label": "Child",
+       "hp": "30",
+       "head": 1,
+       "body": 2
+      },
+      {
+       "label": "Shambler",
+       "hp": "70",
+       "head": 1,
+       "body": 5
+      },
+      {
+       "label": "Walker / Runner",
+       "hp": "100",
+       "head": 2,
+       "body": 7
+      },
+      {
+       "label": "Runner Prime",
+       "hp": "120",
+       "head": 2,
+       "body": 8
+      },
+      {
+       "label": "Walker Prime",
+       "hp": "130",
+       "head": 2,
+       "body": 9
+      },
+      {
+       "label": "Shambler Prime",
+       "hp": "300",
+       "head": 5,
+       "body": 20
+      },
+      {
+       "label": "Mutated",
+       "hp": "600",
+       "head": 9,
+       "body": 40
+      }
+     ],
+     "onetap": "One shot to the head drops anything up to a Shambler"
+    },
     "img": "img/AES_MP5.png",
     "ammoIcon": "img/ammo_9mm.png"
    },
@@ -1723,6 +2369,7 @@ window.NMRIH2 = {
     "stats": {
      "Damage": "17",
      "Headshot Damage": "20",
+     "Bullets Per Shot": "10",
      "Limb Damage": "15",
      "Stability Damage": "10",
      "Ammo Capacity": "6",
@@ -1770,6 +2417,31 @@ window.NMRIH2 = {
      "Targeting Spread Multiplier": "0.5"
     },
     "statSource": "files",
+    "zmath": {
+     "title": "Shots to drop",
+     "rows": [
+      {
+       "label": "Child → Walker Prime",
+       "hp": "30–130",
+       "head": 1,
+       "body": 1
+      },
+      {
+       "label": "Shambler Prime",
+       "hp": "300",
+       "head": 2,
+       "body": 2
+      },
+      {
+       "label": "Mutated",
+       "hp": "600",
+       "head": 3,
+       "body": 4
+      }
+     ],
+     "note": "Full blast: 10 pellets × 17 = 170 dmg (200 head), all pellets on target",
+     "onetap": "One shot to the head drops anything up to a Walker Prime"
+    },
     "img": "img/AES_RX12.png"
    },
    {
@@ -1842,6 +2514,54 @@ window.NMRIH2 = {
      "Throw Stamina Cost": "20"
     },
     "statSource": "files",
+    "zmath": {
+     "title": "Heavy swings to drop",
+     "rows": [
+      {
+       "label": "Child",
+       "hp": "30",
+       "head": 1,
+       "body": 1
+      },
+      {
+       "label": "Shambler",
+       "hp": "70",
+       "head": 2,
+       "body": 3
+      },
+      {
+       "label": "Walker / Runner",
+       "hp": "100",
+       "head": 3,
+       "body": 4
+      },
+      {
+       "label": "Runner Prime",
+       "hp": "120",
+       "head": 4,
+       "body": 4
+      },
+      {
+       "label": "Walker Prime",
+       "hp": "130",
+       "head": 4,
+       "body": 5
+      },
+      {
+       "label": "Shambler Prime",
+       "hp": "300",
+       "head": 9,
+       "body": 10
+      },
+      {
+       "label": "Mutated",
+       "hp": "600",
+       "head": 18,
+       "body": 20
+      }
+     ],
+     "onetap": "One swing to the head drops anything up to a Child"
+    },
     "img": "img/BP_HockeyStick.png"
    },
    {
@@ -1900,6 +2620,54 @@ window.NMRIH2 = {
      "Throw Stamina Cost": "10"
     },
     "statSource": "files",
+    "zmath": {
+     "title": "Heavy swings to drop",
+     "rows": [
+      {
+       "label": "Child",
+       "hp": "30",
+       "head": 1,
+       "body": 2
+      },
+      {
+       "label": "Shambler",
+       "hp": "70",
+       "head": 2,
+       "body": 3
+      },
+      {
+       "label": "Walker / Runner",
+       "hp": "100",
+       "head": 3,
+       "body": 4
+      },
+      {
+       "label": "Runner Prime",
+       "hp": "120",
+       "head": 3,
+       "body": 5
+      },
+      {
+       "label": "Walker Prime",
+       "hp": "130",
+       "head": 4,
+       "body": 6
+      },
+      {
+       "label": "Shambler Prime",
+       "hp": "300",
+       "head": 8,
+       "body": 12
+      },
+      {
+       "label": "Mutated",
+       "hp": "600",
+       "head": 15,
+       "body": 24
+      }
+     ],
+     "onetap": "One swing to the head drops anything up to a Child"
+    },
     "img": "img/BP_KnifeSmall.png"
    },
    {
@@ -1958,6 +2726,54 @@ window.NMRIH2 = {
      "Throw Stamina Cost": "10"
     },
     "statSource": "files",
+    "zmath": {
+     "title": "Heavy swings to drop",
+     "rows": [
+      {
+       "label": "Child",
+       "hp": "30",
+       "head": 1,
+       "body": 2
+      },
+      {
+       "label": "Shambler",
+       "hp": "70",
+       "head": 3,
+       "body": 5
+      },
+      {
+       "label": "Walker / Runner",
+       "hp": "100",
+       "head": 4,
+       "body": 7
+      },
+      {
+       "label": "Runner Prime",
+       "hp": "120",
+       "head": 4,
+       "body": 8
+      },
+      {
+       "label": "Walker Prime",
+       "hp": "130",
+       "head": 5,
+       "body": 9
+      },
+      {
+       "label": "Shambler Prime",
+       "hp": "300",
+       "head": 10,
+       "body": 20
+      },
+      {
+       "label": "Mutated",
+       "hp": "600",
+       "head": 20,
+       "body": 40
+      }
+     ],
+     "onetap": "One swing to the head drops anything up to a Child"
+    },
     "img": "img/BP_Mallet.png"
    },
    {
@@ -2016,6 +2832,48 @@ window.NMRIH2 = {
      "Throw Stamina Cost": "20"
     },
     "statSource": "files",
+    "zmath": {
+     "title": "Heavy swings to drop",
+     "rows": [
+      {
+       "label": "Child",
+       "hp": "30",
+       "head": 1,
+       "body": 1
+      },
+      {
+       "label": "Shambler",
+       "hp": "70",
+       "head": 2,
+       "body": 3
+      },
+      {
+       "label": "Walker → Runner Prime",
+       "hp": "100–120",
+       "head": 3,
+       "body": 4
+      },
+      {
+       "label": "Walker Prime",
+       "hp": "130",
+       "head": 4,
+       "body": 4
+      },
+      {
+       "label": "Shambler Prime",
+       "hp": "300",
+       "head": 8,
+       "body": 10
+      },
+      {
+       "label": "Mutated",
+       "hp": "600",
+       "head": 15,
+       "body": 19
+      }
+     ],
+     "onetap": "One swing to the head drops anything up to a Child"
+    },
     "img": "img/BP_Pipe.png"
    },
    {
@@ -2074,6 +2932,54 @@ window.NMRIH2 = {
      "Throw Stamina Cost": "10"
     },
     "statSource": "files",
+    "zmath": {
+     "title": "Heavy swings to drop",
+     "rows": [
+      {
+       "label": "Child",
+       "hp": "30",
+       "head": 1,
+       "body": 2
+      },
+      {
+       "label": "Shambler",
+       "hp": "70",
+       "head": 2,
+       "body": 4
+      },
+      {
+       "label": "Walker / Runner",
+       "hp": "100",
+       "head": 3,
+       "body": 5
+      },
+      {
+       "label": "Runner Prime",
+       "hp": "120",
+       "head": 4,
+       "body": 6
+      },
+      {
+       "label": "Walker Prime",
+       "hp": "130",
+       "head": 4,
+       "body": 7
+      },
+      {
+       "label": "Shambler Prime",
+       "hp": "300",
+       "head": 9,
+       "body": 15
+      },
+      {
+       "label": "Mutated",
+       "hp": "600",
+       "head": 18,
+       "body": 30
+      }
+     ],
+     "onetap": "One swing to the head drops anything up to a Child"
+    },
     "img": "img/BP_PipeSmall.png"
    },
    {
@@ -2132,6 +3038,48 @@ window.NMRIH2 = {
      "Throw Stamina Cost": "20"
     },
     "statSource": "files",
+    "zmath": {
+     "title": "Heavy swings to drop",
+     "rows": [
+      {
+       "label": "Child",
+       "hp": "30",
+       "head": 1,
+       "body": 1
+      },
+      {
+       "label": "Shambler",
+       "hp": "70",
+       "head": 2,
+       "body": 3
+      },
+      {
+       "label": "Walker → Runner Prime",
+       "hp": "100–120",
+       "head": 3,
+       "body": 4
+      },
+      {
+       "label": "Walker Prime",
+       "hp": "130",
+       "head": 4,
+       "body": 5
+      },
+      {
+       "label": "Shambler Prime",
+       "hp": "300",
+       "head": 8,
+       "body": 10
+      },
+      {
+       "label": "Mutated",
+       "hp": "600",
+       "head": 15,
+       "body": 20
+      }
+     ],
+     "onetap": "One swing to the head drops anything up to a Child"
+    },
     "img": "img/BP_Rebar.png"
    },
    {
@@ -2190,6 +3138,54 @@ window.NMRIH2 = {
      "Throw Stamina Cost": "10"
     },
     "statSource": "files",
+    "zmath": {
+     "title": "Heavy swings to drop",
+     "rows": [
+      {
+       "label": "Child",
+       "hp": "30",
+       "head": 1,
+       "body": 2
+      },
+      {
+       "label": "Shambler",
+       "hp": "70",
+       "head": 2,
+       "body": 4
+      },
+      {
+       "label": "Walker / Runner",
+       "hp": "100",
+       "head": 3,
+       "body": 5
+      },
+      {
+       "label": "Runner Prime",
+       "hp": "120",
+       "head": 4,
+       "body": 6
+      },
+      {
+       "label": "Walker Prime",
+       "hp": "130",
+       "head": 4,
+       "body": 7
+      },
+      {
+       "label": "Shambler Prime",
+       "hp": "300",
+       "head": 9,
+       "body": 15
+      },
+      {
+       "label": "Mutated",
+       "hp": "600",
+       "head": 18,
+       "body": 30
+      }
+     ],
+     "onetap": "One swing to the head drops anything up to a Child"
+    },
     "img": "img/BP_TireIron.png"
    },
    {
@@ -2248,6 +3244,48 @@ window.NMRIH2 = {
      "Throw Stamina Cost": "20"
     },
     "statSource": "files",
+    "zmath": {
+     "title": "Heavy swings to drop",
+     "rows": [
+      {
+       "label": "Child",
+       "hp": "30",
+       "head": 1,
+       "body": 1
+      },
+      {
+       "label": "Shambler",
+       "hp": "70",
+       "head": 2,
+       "body": 2
+      },
+      {
+       "label": "Walker → Runner Prime",
+       "hp": "100–120",
+       "head": 2,
+       "body": 3
+      },
+      {
+       "label": "Walker Prime",
+       "hp": "130",
+       "head": 3,
+       "body": 4
+      },
+      {
+       "label": "Shambler Prime",
+       "hp": "300",
+       "head": 5,
+       "body": 8
+      },
+      {
+       "label": "Mutated",
+       "hp": "600",
+       "head": 10,
+       "body": 15
+      }
+     ],
+     "onetap": "One swing to the head drops anything up to a Child"
+    },
     "img": "img/BP_WrenchLarge.png"
    },
    {
@@ -2304,6 +3342,54 @@ window.NMRIH2 = {
      "Throw Stamina Cost": "10"
     },
     "statSource": "files",
+    "zmath": {
+     "title": "Heavy swings to drop",
+     "rows": [
+      {
+       "label": "Child",
+       "hp": "30",
+       "head": 1,
+       "body": 2
+      },
+      {
+       "label": "Shambler",
+       "hp": "70",
+       "head": 3,
+       "body": 5
+      },
+      {
+       "label": "Walker / Runner",
+       "hp": "100",
+       "head": 4,
+       "body": 7
+      },
+      {
+       "label": "Runner Prime",
+       "hp": "120",
+       "head": 4,
+       "body": 8
+      },
+      {
+       "label": "Walker Prime",
+       "hp": "130",
+       "head": 5,
+       "body": 9
+      },
+      {
+       "label": "Shambler Prime",
+       "hp": "300",
+       "head": 10,
+       "body": 20
+      },
+      {
+       "label": "Mutated",
+       "hp": "600",
+       "head": 20,
+       "body": 40
+      }
+     ],
+     "onetap": "One swing to the head drops anything up to a Child"
+    },
     "img": "img/BP_WrenchSmall.png"
    },
    {
@@ -2363,6 +3449,48 @@ window.NMRIH2 = {
      "World Shove Damage": "30"
     },
     "statSource": "files",
+    "zmath": {
+     "title": "Heavy swings to drop",
+     "rows": [
+      {
+       "label": "Child",
+       "hp": "30",
+       "head": 1,
+       "body": 1
+      },
+      {
+       "label": "Shambler",
+       "hp": "70",
+       "head": 2,
+       "body": 3
+      },
+      {
+       "label": "Walker / Runner",
+       "hp": "100",
+       "head": 2,
+       "body": 4
+      },
+      {
+       "label": "Runner Prime / Walker Prime",
+       "hp": "120–130",
+       "head": 3,
+       "body": 4
+      },
+      {
+       "label": "Shambler Prime",
+       "hp": "300",
+       "head": 6,
+       "body": 10
+      },
+      {
+       "label": "Mutated",
+       "hp": "600",
+       "head": 12,
+       "body": 19
+      }
+     ],
+     "onetap": "One swing to the head drops anything up to a Child"
+    },
     "img": "img/BP_BaseballBat.png"
    },
    {
@@ -2421,6 +3549,54 @@ window.NMRIH2 = {
      "Throw Stamina Cost": "10"
     },
     "statSource": "files",
+    "zmath": {
+     "title": "Heavy swings to drop",
+     "rows": [
+      {
+       "label": "Child",
+       "hp": "30",
+       "head": 1,
+       "body": 2
+      },
+      {
+       "label": "Shambler",
+       "hp": "70",
+       "head": 2,
+       "body": 3
+      },
+      {
+       "label": "Walker / Runner",
+       "hp": "100",
+       "head": 3,
+       "body": 4
+      },
+      {
+       "label": "Runner Prime",
+       "hp": "120",
+       "head": 3,
+       "body": 5
+      },
+      {
+       "label": "Walker Prime",
+       "hp": "130",
+       "head": 3,
+       "body": 6
+      },
+      {
+       "label": "Shambler Prime",
+       "hp": "300",
+       "head": 7,
+       "body": 12
+      },
+      {
+       "label": "Mutated",
+       "hp": "600",
+       "head": 14,
+       "body": 24
+      }
+     ],
+     "onetap": "One swing to the head drops anything up to a Child"
+    },
     "img": "img/BP_ClawHammer.png"
    },
    {
@@ -2479,6 +3655,54 @@ window.NMRIH2 = {
      "Throw Stamina Cost": "10"
     },
     "statSource": "files",
+    "zmath": {
+     "title": "Heavy swings to drop",
+     "rows": [
+      {
+       "label": "Child",
+       "hp": "30",
+       "head": 1,
+       "body": 2
+      },
+      {
+       "label": "Shambler",
+       "hp": "70",
+       "head": 2,
+       "body": 3
+      },
+      {
+       "label": "Walker / Runner",
+       "hp": "100",
+       "head": 2,
+       "body": 4
+      },
+      {
+       "label": "Runner Prime",
+       "hp": "120",
+       "head": 3,
+       "body": 5
+      },
+      {
+       "label": "Walker Prime",
+       "hp": "130",
+       "head": 3,
+       "body": 6
+      },
+      {
+       "label": "Shambler Prime",
+       "hp": "300",
+       "head": 6,
+       "body": 12
+      },
+      {
+       "label": "Mutated",
+       "hp": "600",
+       "head": 12,
+       "body": 24
+      }
+     ],
+     "onetap": "One swing to the head drops anything up to a Child"
+    },
     "img": "img/BP_Cleaver.png"
    },
    {
@@ -2537,6 +3761,54 @@ window.NMRIH2 = {
      "Throw Stamina Cost": "10"
     },
     "statSource": "files",
+    "zmath": {
+     "title": "Heavy swings to drop",
+     "rows": [
+      {
+       "label": "Child",
+       "hp": "30",
+       "head": 1,
+       "body": 2
+      },
+      {
+       "label": "Shambler",
+       "hp": "70",
+       "head": 2,
+       "body": 3
+      },
+      {
+       "label": "Walker / Runner",
+       "hp": "100",
+       "head": 3,
+       "body": 4
+      },
+      {
+       "label": "Runner Prime",
+       "hp": "120",
+       "head": 3,
+       "body": 5
+      },
+      {
+       "label": "Walker Prime",
+       "hp": "130",
+       "head": 3,
+       "body": 6
+      },
+      {
+       "label": "Shambler Prime",
+       "hp": "300",
+       "head": 7,
+       "body": 12
+      },
+      {
+       "label": "Mutated",
+       "hp": "600",
+       "head": 14,
+       "body": 24
+      }
+     ],
+     "onetap": "One swing to the head drops anything up to a Child"
+    },
     "img": "img/BP_Crowbar.png"
    },
    {
@@ -2595,6 +3867,42 @@ window.NMRIH2 = {
      "Throw Stamina Cost": "20"
     },
     "statSource": "files",
+    "zmath": {
+     "title": "Heavy swings to drop",
+     "rows": [
+      {
+       "label": "Child",
+       "hp": "30",
+       "head": 1,
+       "body": 1
+      },
+      {
+       "label": "Shambler → Runner",
+       "hp": "70–100",
+       "head": 1,
+       "body": 2
+      },
+      {
+       "label": "Runner Prime / Walker Prime",
+       "hp": "120–130",
+       "head": 2,
+       "body": 2
+      },
+      {
+       "label": "Shambler Prime",
+       "hp": "300",
+       "head": 3,
+       "body": 5
+      },
+      {
+       "label": "Mutated",
+       "hp": "600",
+       "head": 6,
+       "body": 10
+      }
+     ],
+     "onetap": "One swing to the head drops anything up to a Runner"
+    },
     "img": "img/BP_FireAxe.png"
    },
    {
@@ -2655,6 +3963,42 @@ window.NMRIH2 = {
      "Throw Stamina Cost": "10"
     },
     "statSource": "files",
+    "zmath": {
+     "title": "Heavy swings to drop",
+     "rows": [
+      {
+       "label": "Child",
+       "hp": "30",
+       "head": 1,
+       "body": 1
+      },
+      {
+       "label": "Shambler → Runner",
+       "hp": "70–100",
+       "head": 2,
+       "body": 3
+      },
+      {
+       "label": "Runner Prime / Walker Prime",
+       "hp": "120–130",
+       "head": 3,
+       "body": 4
+      },
+      {
+       "label": "Shambler Prime",
+       "hp": "300",
+       "head": 6,
+       "body": 9
+      },
+      {
+       "label": "Mutated",
+       "hp": "600",
+       "head": 11,
+       "body": 18
+      }
+     ],
+     "onetap": "One swing to the head drops anything up to a Child"
+    },
     "img": "img/BP_HatchetWoodsman.png"
    },
    {
@@ -2713,6 +4057,42 @@ window.NMRIH2 = {
      "Throw Stamina Cost": "10"
     },
     "statSource": "files",
+    "zmath": {
+     "title": "Heavy swings to drop",
+     "rows": [
+      {
+       "label": "Child",
+       "hp": "30",
+       "head": 1,
+       "body": 1
+      },
+      {
+       "label": "Shambler → Runner",
+       "hp": "70–100",
+       "head": 2,
+       "body": 3
+      },
+      {
+       "label": "Runner Prime / Walker Prime",
+       "hp": "120–130",
+       "head": 3,
+       "body": 4
+      },
+      {
+       "label": "Shambler Prime",
+       "hp": "300",
+       "head": 6,
+       "body": 9
+      },
+      {
+       "label": "Mutated",
+       "hp": "600",
+       "head": 11,
+       "body": 18
+      }
+     ],
+     "onetap": "One swing to the head drops anything up to a Child"
+    },
     "img": "img/BP_Machete.png"
    },
    {
@@ -2771,6 +4151,42 @@ window.NMRIH2 = {
      "Throw Stamina Cost": "20"
     },
     "statSource": "files",
+    "zmath": {
+     "title": "Heavy swings to drop",
+     "rows": [
+      {
+       "label": "Child",
+       "hp": "30",
+       "head": 1,
+       "body": 1
+      },
+      {
+       "label": "Shambler → Runner",
+       "hp": "70–100",
+       "head": 1,
+       "body": 2
+      },
+      {
+       "label": "Runner Prime / Walker Prime",
+       "hp": "120–130",
+       "head": 2,
+       "body": 3
+      },
+      {
+       "label": "Shambler Prime",
+       "hp": "300",
+       "head": 3,
+       "body": 6
+      },
+      {
+       "label": "Mutated",
+       "hp": "600",
+       "head": 6,
+       "body": 12
+      }
+     ],
+     "onetap": "One swing to the head drops anything up to a Runner"
+    },
     "img": "img/BP_Sledge.png"
    },
    {
@@ -2829,6 +4245,48 @@ window.NMRIH2 = {
      "Throw Stamina Cost": "20"
     },
     "statSource": "files",
+    "zmath": {
+     "title": "Heavy swings to drop",
+     "rows": [
+      {
+       "label": "Child",
+       "hp": "30",
+       "head": 1,
+       "body": 1
+      },
+      {
+       "label": "Shambler",
+       "hp": "70",
+       "head": 2,
+       "body": 2
+      },
+      {
+       "label": "Walker / Runner",
+       "hp": "100",
+       "head": 2,
+       "body": 3
+      },
+      {
+       "label": "Runner Prime / Walker Prime",
+       "hp": "120–130",
+       "head": 2,
+       "body": 4
+      },
+      {
+       "label": "Shambler Prime",
+       "hp": "300",
+       "head": 5,
+       "body": 9
+      },
+      {
+       "label": "Mutated",
+       "hp": "600",
+       "head": 10,
+       "body": 18
+      }
+     ],
+     "onetap": "One swing to the head drops anything up to a Child"
+    },
     "img": "img/BP_TreeTrimmer.png"
    }
   ],

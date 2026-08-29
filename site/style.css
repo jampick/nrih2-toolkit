@@ -64,6 +64,19 @@ nav{display:flex;flex-wrap:wrap;gap:6px;padding-top:16px;padding-bottom:2px}
 .stats div{display:flex;justify-content:space-between;gap:10px;padding:2px 0}
 .stats .k{color:var(--dim)}
 .stats.allstats{margin-top:0;border-top:none}
+.zmath{margin-top:9px;padding:8px 9px;border-radius:8px;background:#1a1416;
+  border:1px solid #3c2226;font-size:12px}
+.zhead{display:flex;justify-content:space-between;align-items:baseline;gap:8px;
+  color:#e0968f;font-weight:600;font-size:11.5px;text-transform:uppercase;letter-spacing:.05em}
+.zhead .zlegend{color:#8a6b66;font-weight:400;text-transform:none;letter-spacing:0;font-size:11px}
+.znote{color:#c99a6a;font-size:11.5px;margin-top:4px;font-style:italic}
+.zrow{display:flex;align-items:baseline;gap:8px;padding:2.5px 0;border-top:1px solid #2b1d20;margin-top:2.5px}
+.zrow:first-of-type{border-top:none;margin-top:5px}
+.zrow .zname{flex:1;color:var(--ink)}
+.zrow .zname em{color:#8a6b66;font-style:normal;font-size:10.5px}
+.zrow .zn{min-width:44px;text-align:right;font-variant-numeric:tabular-nums;color:var(--dim)}
+.zrow.onetap .zh{color:#a7e0b4;font-weight:600}
+.ztap{margin-top:6px;padding-top:5px;border-top:1px solid #2b1d20;color:#a7e0b4;font-size:11.5px}
 .showall{margin-top:8px;background:none;border:none;color:var(--accent2);cursor:pointer;
   font-size:12px;padding:2px 0;font-family:inherit}
 .showall:hover{text-decoration:underline}
