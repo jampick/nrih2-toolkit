@@ -1,0 +1,315 @@
+{
+ "source": "fandom",
+ "attribution": "No More Room in Hell 2 Wiki on Fandom (CC-BY-SA). https://no-more-room-in-hell-two.fandom.com/wiki/Skills",
+ "note": "Skill effects/unlock levels are community-sourced (wiki), not decoded from files — magnitudes live in Blueprint GameplayEffects.",
+ "skills": {
+  "SD_Antibodies": {
+   "wikiName": "Acquired Immunity",
+   "effect": "Less likely to be infected by zombies",
+   "expert": "Much less likely",
+   "unlockLevel": 74,
+   "source": "fandom"
+  },
+  "SD_AdrenalineRush": {
+   "wikiName": "Adrenaline Rush",
+   "effect": "At critical health, consume less stamina",
+   "expert": "...much less stamina",
+   "unlockLevel": 4,
+   "source": "fandom"
+  },
+  "SD_Athlete": {
+   "wikiName": "Athlete",
+   "effect": "Increased stamina",
+   "expert": "Greatly increased stamina",
+   "unlockLevel": 72,
+   "source": "fandom"
+  },
+  "SD_Averaging": {
+   "wikiName": "Averaging",
+   "effect": "Headshots deal less, body shots more",
+   "expert": "body shots greatly more",
+   "unlockLevel": 62,
+   "source": "fandom"
+  },
+  "SD_Builder": {
+   "wikiName": "Builder",
+   "effect": "Utility items reduced weight",
+   "expert": "greatly reduced",
+   "unlockLevel": 71,
+   "source": "fandom"
+  },
+  "SD_Butcher": {
+   "wikiName": "Butcher",
+   "effect": "Easier to dismember zombies",
+   "expert": "dismember with great ease",
+   "unlockLevel": 56,
+   "source": "fandom"
+  },
+  "SD_Caravan": {
+   "wikiName": "Caravan",
+   "effect": "Carry more weight, but reduced stamina & health",
+   "expert": "carry much more",
+   "unlockLevel": 54,
+   "source": "fandom"
+  },
+  "SD_Deprived": {
+   "wikiName": "Deprived",
+   "effect": "Max weight reduced but more health & stamina",
+   "expert": "greatly reduced weight",
+   "unlockLevel": 58,
+   "source": "fandom"
+  },
+  "SD_Doorbreaker": {
+   "wikiName": "Doorbreaker",
+   "effect": "Kicks deal more damage to doors/barricades",
+   "expert": "much more",
+   "unlockLevel": 46,
+   "source": "fandom"
+  },
+  "SD_Foreman": {
+   "wikiName": "Foreman",
+   "effect": "Kicks deal damage to zombies",
+   "expert": "significant damage",
+   "unlockLevel": 50,
+   "source": "fandom"
+  },
+  "SD_Grenadier": {
+   "wikiName": "Grenadier",
+   "effect": "Throwables reduced weight",
+   "expert": "greatly reduced",
+   "unlockLevel": 10,
+   "source": "fandom"
+  },
+  "SD_Guts": {
+   "wikiName": "Guts",
+   "effect": "Recover faster from out-of-stamina",
+   "expert": "much faster",
+   "unlockLevel": 34,
+   "source": "fandom"
+  },
+  "SD_2hMelee_HardBlow": {
+   "wikiName": "Hard Blow",
+   "effect": "More stagger from 2H melee",
+   "expert": "significant stagger",
+   "unlockLevel": 40,
+   "source": "fandom"
+  },
+  "SD_Handgun_Headblown": {
+   "wikiName": "Headblown",
+   "effect": "Handguns increased headshot damage",
+   "expert": "greatly increased",
+   "unlockLevel": 12,
+   "source": "fandom"
+  },
+  "SD_Headhunter": {
+   "wikiName": "Headhunter",
+   "effect": "Increased melee headshot damage",
+   "expert": "greatly increased",
+   "unlockLevel": 80,
+   "source": "fandom"
+  },
+  "SD_LighterHealing": {
+   "wikiName": "Healing Item Stack",
+   "effect": "Medical items reduced weight",
+   "expert": "greatly reduced",
+   "unlockLevel": 52,
+   "source": "fandom"
+  },
+  "SD_HeavyShoves": {
+   "wikiName": "Heavy Shoves",
+   "effect": "Shoving deals damage",
+   "expert": "heavy damage",
+   "unlockLevel": 64,
+   "source": "fandom"
+  },
+  "SD_Rifle_Hellfire": {
+   "wikiName": "Hellfire",
+   "effect": "Increased hip-fire accuracy w/ rifles",
+   "expert": "greatly increased",
+   "unlockLevel": 84,
+   "source": "fandom"
+  },
+  "SD_1hMelee_Hitman": {
+   "wikiName": "Hitman",
+   "effect": "1H melee more stamina but more damage",
+   "expert": "greatly increased 1H dmg",
+   "unlockLevel": 24,
+   "source": "fandom"
+  },
+  "SD_Shotgun_Icarus": {
+   "wikiName": "Icarus",
+   "effect": "Increased shotgun range",
+   "expert": "greatly increased",
+   "unlockLevel": 14,
+   "source": "fandom"
+  },
+  "SD_Limbo": {
+   "wikiName": "Limbo",
+   "effect": "Survive longer when down",
+   "expert": "greater endurance when down",
+   "unlockLevel": 16,
+   "source": "fandom"
+  },
+  "SD_SMG_ReducedRecoil": {
+   "wikiName": "Locked On",
+   "effect": "SMGs reduced recoil",
+   "expert": "greatly reduced",
+   "unlockLevel": 31,
+   "source": "fandom"
+  },
+  "SD_LongerBattery": {
+   "wikiName": "Longer Battery",
+   "effect": "Greater flashlight battery lifespan",
+   "expert": "maximized",
+   "unlockLevel": 20,
+   "source": "fandom"
+  },
+  "SD_LuckyPathogen": {
+   "wikiName": "Lucky Pathogen",
+   "effect": "Take less damage while infected",
+   "expert": "much less",
+   "unlockLevel": 42,
+   "source": "fandom"
+  },
+  "SD_MarathonRunner": {
+   "wikiName": "Marathon Runner",
+   "effect": "Running consumes less stamina",
+   "expert": "consumes no stamina",
+   "unlockLevel": 18,
+   "source": "fandom"
+  },
+  "SD_Rifle_Mohawk": {
+   "wikiName": "Mohawk",
+   "effect": "Rifles penetrate more targets",
+   "expert": "many more",
+   "unlockLevel": 22,
+   "source": "fandom"
+  },
+  "SD_Mule": {
+   "wikiName": "Mule",
+   "effect": "Increased backpack weight capacity",
+   "expert": "greatly increased",
+   "unlockLevel": 92,
+   "source": "fandom"
+  },
+  "SD_Shotgun_Overkill": {
+   "wikiName": "Overkill",
+   "effect": "Shotguns fire more pellets",
+   "expert": "a lot more",
+   "unlockLevel": 96,
+   "source": "fandom"
+  },
+  "SD_Sniper_PenetratingShot": {
+   "wikiName": "Penetrating Shot",
+   "effect": "Heavy rifles penetrate more",
+   "expert": "many more",
+   "unlockLevel": 60,
+   "source": "fandom"
+  },
+  "SD_QuietSteps": {
+   "wikiName": "Quiet Steps",
+   "effect": "Reduced movement noise",
+   "expert": "greatly reduced",
+   "unlockLevel": 36,
+   "source": "fandom"
+  },
+  "SD_ResidentGeneTherapy": {
+   "wikiName": "Resident Genes",
+   "effect": "Heal when using pills",
+   "expert": "heal w/ pills AND gene therapy",
+   "unlockLevel": 38,
+   "source": "fandom"
+  },
+  "SD_2hMelee_HeavyAttackRush": {
+   "wikiName": "Rush",
+   "effect": "2H heavy melee use less stamina",
+   "expert": "much less",
+   "unlockLevel": 2,
+   "source": "fandom"
+  },
+  "SD_Scavenger": {
+   "wikiName": "Scavenger",
+   "effect": "Increased ammo from pickups",
+   "expert": "greatly increased",
+   "unlockLevel": 8,
+   "source": "fandom"
+  },
+  "SD_SkilledMedic": {
+   "wikiName": "Skilled Medic",
+   "effect": "Heal self & others more",
+   "expert": "much more",
+   "unlockLevel": 88,
+   "source": "fandom"
+  },
+  "SD_FaterRevive": {
+   "wikiName": "Stayin' Alive",
+   "effect": "Revive others faster",
+   "expert": "much faster",
+   "unlockLevel": 6,
+   "source": "fandom"
+  },
+  "SD_Handgun_SteadyHand": {
+   "wikiName": "Steady Hand",
+   "effect": "Handgun spread reduced",
+   "expert": "greatly reduced",
+   "unlockLevel": 49,
+   "source": "fandom"
+  },
+  "SD_Rifle_ReducedRecoil_Crouch": {
+   "wikiName": "Steady Shot",
+   "effect": "Rifle recoil reduced",
+   "expert": "greatly reduced while crouching",
+   "unlockLevel": 76,
+   "source": "fandom"
+  },
+  "SD_Sniper_IronChamber": {
+   "wikiName": "Steel Chamber",
+   "effect": "Heavy rifles increased damage",
+   "expert": "vastly more",
+   "unlockLevel": 44,
+   "source": "fandom"
+  },
+  "SD_SturdyBody": {
+   "wikiName": "Sturdy Body",
+   "effect": "Reduced damage from attacks",
+   "expert": "greatly reduced",
+   "unlockLevel": 100,
+   "source": "fandom"
+  },
+  "SD_TeddyBear": {
+   "wikiName": "Tedy Bear",
+   "effect": "Blunt more stability dmg but less direct",
+   "expert": "significantly more stability",
+   "unlockLevel": 66,
+   "source": "fandom"
+  },
+  "SD_ThickSkin": {
+   "wikiName": "Thick Skin",
+   "effect": "Increased max health",
+   "expert": "significantly increased",
+   "unlockLevel": 48,
+   "source": "fandom"
+  },
+  "SD_Shotgun_TightShot": {
+   "wikiName": "Tight Shot",
+   "effect": "Shotgun pellets reduced spread",
+   "expert": "greatly reduced",
+   "unlockLevel": 68,
+   "source": "fandom"
+  },
+  "SD_Wicked": {
+   "wikiName": "Wicked",
+   "effect": "Handguns more limb damage",
+   "expert": "much more",
+   "unlockLevel": 49,
+   "source": "fandom"
+  },
+  "SD_SMG_Winged": {
+   "wikiName": "Winged",
+   "effect": "SMGs increased range",
+   "expert": "greatly increased",
+   "unlockLevel": 27,
+   "source": "fandom"
+  }
+ }
+}

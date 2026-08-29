@@ -15,6 +15,7 @@ import json, re, os
 ROOT = r"C:\Users\OddJob\projects\NRIH2"
 CATALOG = os.path.join(ROOT, "data", "catalog", "catalog.json")
 STATS = os.path.join(ROOT, "data", "stats", "stats.json")
+SKILLS = os.path.join(ROOT, "data", "stats", "skills.json")
 OUT = os.path.join(ROOT, "site", "data.js")
 
 # ---------------------------------------------------------------- name helpers
@@ -172,9 +173,19 @@ def main():
         row = {"id": e["name"], "name": words(e["name"]), "rarity": e.get("rarity", "")}
         melee_tiers.append(attach(row, key, "Melee"))
 
-    skills = [{"id": s["name"], "name": words(s["name"]),
+    skill_overlay = (load(SKILLS)["skills"] if os.path.exists(SKILLS) else {})
+    skills = []
+    for s in c["skills"]:
+        row = {"id": s["name"], "name": words(s["name"]),
                "category": skill_category(s["name"]), "hasUltimate": s["hasUltimate"]}
-              for s in c["skills"]]
+        w = skill_overlay.get(s["name"])
+        if w:
+            st = {"Effect": w["effect"], "Expert effect": w["expert"]}
+            if w.get("unlockLevel") is not None:
+                st["Expert unlock"] = "Level " + str(w["unlockLevel"])
+            row["stats"] = st
+            row["statSource"] = "fandom"
+        skills.append(row)
 
     def simple(key):
         return [{"id": e["name"], "name": words(e["name"]), "raw": e["name"]} for e in c[key]]
@@ -193,8 +204,9 @@ def main():
         zombies.append({"id": inst, "name": zombie_name(inst), "raw": inst, "category": cat,
                         "stats": primary, "allStats": alld, "statSource": "files"})
 
-    with_stats = sum(1 for grp in (firearms, melee_tiers, throwables, zombies)
-                     for r in grp if r.get("statSource"))
+    files_stats = sum(1 for grp in (firearms, melee_tiers, throwables, zombies)
+                      for r in grp if r.get("statSource") == "files")
+    wiki_skills = sum(1 for r in skills if r.get("statSource") == "fandom")
 
     out = {
         "meta": c["meta"],
@@ -203,9 +215,12 @@ def main():
             "filesDecoder": stats.get("decoder", ""),
             "filesNote": "Weapon, melee, throwable, item and zombie numbers are read directly "
                          "from the game's UCurveTable data assets.",
-            "skillsNote": "Skill magnitudes live in Blueprint GameplayEffects that a foreign "
-                          "usmap cannot decode, so skills are listed by name only for now.",
-            "withStats": with_stats,
+            "skillsNote": "Skill effects and Expert unlock levels are community-sourced from the "
+                          "Fandom wiki (CC-BY-SA) — their magnitudes live in Blueprint effects a "
+                          "foreign usmap cannot decode.",
+            "wikiAttribution": skill_overlay and (load(SKILLS).get("attribution")) or "",
+            "withStats": files_stats,
+            "wikiSkills": wiki_skills,
         },
         "sections": {
             "skills": skills,
@@ -228,7 +243,8 @@ def main():
     counts = {k: len(v) for k, v in out["sections"].items()}
     print("Wrote", OUT)
     print(json.dumps(counts, indent=2))
-    print("cards with real from-files stats:", with_stats)
+    print("cards with real from-files stats:", files_stats)
+    print("skills with wiki effects:", wiki_skills)
 
 if __name__ == "__main__":
     main()

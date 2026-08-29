@@ -25,8 +25,10 @@ window.NMRIH2 = {
  "statsInfo": {
   "filesDecoder": "CUE4Parse 1.2.2 + foreign UE5.6.1 usmap (NewMoon/Mixtape)",
   "filesNote": "Weapon, melee, throwable, item and zombie numbers are read directly from the game's UCurveTable data assets.",
-  "skillsNote": "Skill magnitudes live in Blueprint GameplayEffects that a foreign usmap cannot decode, so skills are listed by name only for now.",
-  "withStats": 47
+  "skillsNote": "Skill effects and Expert unlock levels are community-sourced from the Fandom wiki (CC-BY-SA) — their magnitudes live in Blueprint effects a foreign usmap cannot decode.",
+  "wikiAttribution": "No More Room in Hell 2 Wiki on Fandom (CC-BY-SA). https://no-more-room-in-hell-two.fandom.com/wiki/Skills",
+  "withStats": 47,
+  "wikiSkills": 44
  },
  "sections": {
   "skills": [
@@ -34,13 +36,25 @@ window.NMRIH2 = {
     "id": "SD_Athlete",
     "name": "Athlete",
     "category": "General",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Increased stamina",
+     "Expert effect": "Greatly increased stamina",
+     "Expert unlock": "Level 72"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_AdrenalineRush",
     "name": "Adrenaline Rush",
     "category": "General",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "At critical health, consume less stamina",
+     "Expert effect": "...much less stamina",
+     "Expert unlock": "Level 4"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_SpreadTheLove",
@@ -52,13 +66,25 @@ window.NMRIH2 = {
     "id": "SD_Caravan",
     "name": "Caravan",
     "category": "General",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Carry more weight, but reduced stamina & health",
+     "Expert effect": "carry much more",
+     "Expert unlock": "Level 54"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_Sniper_IronChamber",
     "name": "Sniper Iron Chamber",
     "category": "Sniper",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Heavy rifles increased damage",
+     "Expert effect": "vastly more",
+     "Expert unlock": "Level 44"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_Hitman",
@@ -76,13 +102,25 @@ window.NMRIH2 = {
     "id": "SD_Doorbreaker",
     "name": "Doorbreaker",
     "category": "General",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Kicks deal more damage to doors/barricades",
+     "Expert effect": "much more",
+     "Expert unlock": "Level 46"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_Shotgun_Overkill",
     "name": "Shotgun Overkill",
     "category": "Shotgun",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Shotguns fire more pellets",
+     "Expert effect": "a lot more",
+     "Expert unlock": "Level 96"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_Handgun_SteadyMovement",
@@ -94,7 +132,13 @@ window.NMRIH2 = {
     "id": "SD_Scavenger",
     "name": "Scavenger",
     "category": "Utility",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Increased ammo from pickups",
+     "Expert effect": "greatly increased",
+     "Expert unlock": "Level 8"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_QuickReload_RifleAndSMG",
@@ -106,7 +150,13 @@ window.NMRIH2 = {
     "id": "SD_MarathonRunner",
     "name": "Marathon Runner",
     "category": "General",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Running consumes less stamina",
+     "Expert effect": "consumes no stamina",
+     "Expert unlock": "Level 18"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_QuickReload_Shotgun",
@@ -118,25 +168,49 @@ window.NMRIH2 = {
     "id": "SD_Mule",
     "name": "Mule",
     "category": "General",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Increased backpack weight capacity",
+     "Expert effect": "greatly increased",
+     "Expert unlock": "Level 92"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_QuietSteps",
     "name": "Quiet Steps",
     "category": "General",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Reduced movement noise",
+     "Expert effect": "greatly reduced",
+     "Expert unlock": "Level 36"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_LongerBattery",
     "name": "Longer Battery",
     "category": "Utility",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Greater flashlight battery lifespan",
+     "Expert effect": "maximized",
+     "Expert unlock": "Level 20"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_Foreman",
     "name": "Foreman",
     "category": "General",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Kicks deal damage to zombies",
+     "Expert effect": "significant damage",
+     "Expert unlock": "Level 50"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_WildSlash",
@@ -148,7 +222,13 @@ window.NMRIH2 = {
     "id": "SD_Butcher",
     "name": "Butcher",
     "category": "General",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Easier to dismember zombies",
+     "Expert effect": "dismember with great ease",
+     "Expert unlock": "Level 56"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_Juggler",
@@ -160,19 +240,37 @@ window.NMRIH2 = {
     "id": "SD_SkilledMedic",
     "name": "Skilled Medic",
     "category": "Support/Medical",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Heal self & others more",
+     "Expert effect": "much more",
+     "Expert unlock": "Level 88"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_FaterRevive",
     "name": "Fater Revive",
     "category": "Support/Medical",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Revive others faster",
+     "Expert effect": "much faster",
+     "Expert unlock": "Level 6"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_1hMelee_Hitman",
     "name": "1h Melee Hitman",
     "category": "Melee",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "1H melee more stamina but more damage",
+     "Expert effect": "greatly increased 1H dmg",
+     "Expert unlock": "Level 24"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_OneForOne",
@@ -184,37 +282,73 @@ window.NMRIH2 = {
     "id": "SD_Rifle_Hellfire",
     "name": "Rifle Hellfire",
     "category": "Rifle",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Increased hip-fire accuracy w/ rifles",
+     "Expert effect": "greatly increased",
+     "Expert unlock": "Level 84"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_Grenadier",
     "name": "Grenadier",
     "category": "Throwable",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Throwables reduced weight",
+     "Expert effect": "greatly reduced",
+     "Expert unlock": "Level 10"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_LuckyPathogen",
     "name": "Lucky Pathogen",
     "category": "General",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Take less damage while infected",
+     "Expert effect": "much less",
+     "Expert unlock": "Level 42"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_HeavyShoves",
     "name": "Heavy Shoves",
     "category": "Melee",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Shoving deals damage",
+     "Expert effect": "heavy damage",
+     "Expert unlock": "Level 64"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_Antibodies",
     "name": "Antibodies",
     "category": "General",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Less likely to be infected by zombies",
+     "Expert effect": "Much less likely",
+     "Expert unlock": "Level 74"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_SMG_Winged",
     "name": "SMG Winged",
     "category": "SMG",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "SMGs increased range",
+     "Expert effect": "greatly increased",
+     "Expert unlock": "Level 27"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_DevilsPact",
@@ -238,7 +372,13 @@ window.NMRIH2 = {
     "id": "SD_2hMelee_HardBlow",
     "name": "2h Melee Hard Blow",
     "category": "Melee",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "More stagger from 2H melee",
+     "Expert effect": "significant stagger",
+     "Expert unlock": "Level 40"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_Frontliner",
@@ -250,13 +390,25 @@ window.NMRIH2 = {
     "id": "SD_TeddyBear",
     "name": "Teddy Bear",
     "category": "General",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Blunt more stability dmg but less direct",
+     "Expert effect": "significantly more stability",
+     "Expert unlock": "Level 66"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_Shotgun_Icarus",
     "name": "Shotgun Icarus",
     "category": "Shotgun",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Increased shotgun range",
+     "Expert effect": "greatly increased",
+     "Expert unlock": "Level 14"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_Grab_EfficientHoldout",
@@ -286,7 +438,13 @@ window.NMRIH2 = {
     "id": "SD_ResidentGeneTherapy",
     "name": "Resident Gene Therapy",
     "category": "General",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Heal when using pills",
+     "Expert effect": "heal w/ pills AND gene therapy",
+     "Expert unlock": "Level 38"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_SupplyStack",
@@ -298,25 +456,49 @@ window.NMRIH2 = {
     "id": "SD_Handgun_Headblown",
     "name": "Handgun Headblown",
     "category": "Handgun",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Handguns increased headshot damage",
+     "Expert effect": "greatly increased",
+     "Expert unlock": "Level 12"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_ThickSkin",
     "name": "Thick Skin",
     "category": "General",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Increased max health",
+     "Expert effect": "significantly increased",
+     "Expert unlock": "Level 48"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_Averaging",
     "name": "Averaging",
     "category": "General",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Headshots deal less, body shots more",
+     "Expert effect": "body shots greatly more",
+     "Expert unlock": "Level 62"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_Wicked",
     "name": "Wicked",
     "category": "General",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Handguns more limb damage",
+     "Expert effect": "much more",
+     "Expert unlock": "Level 49"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_MoreAmmo",
@@ -328,25 +510,49 @@ window.NMRIH2 = {
     "id": "SD_Shotgun_TightShot",
     "name": "Shotgun Tight Shot",
     "category": "Shotgun",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Shotgun pellets reduced spread",
+     "Expert effect": "greatly reduced",
+     "Expert unlock": "Level 68"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_Sniper_PenetratingShot",
     "name": "Sniper Penetrating Shot",
     "category": "Sniper",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Heavy rifles penetrate more",
+     "Expert effect": "many more",
+     "Expert unlock": "Level 60"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_2hMelee_HeavyAttackRush",
     "name": "2h Melee Heavy Attack Rush",
     "category": "Melee",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "2H heavy melee use less stamina",
+     "Expert effect": "much less",
+     "Expert unlock": "Level 2"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_Headhunter",
     "name": "Headhunter",
     "category": "General",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Increased melee headshot damage",
+     "Expert effect": "greatly increased",
+     "Expert unlock": "Level 80"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_ScalesofJustice",
@@ -358,13 +564,25 @@ window.NMRIH2 = {
     "id": "SD_Rifle_ReducedRecoil_Crouch",
     "name": "Rifle Reduced Recoil Crouch",
     "category": "Rifle",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Rifle recoil reduced",
+     "Expert effect": "greatly reduced while crouching",
+     "Expert unlock": "Level 76"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_Handgun_SteadyHand",
     "name": "Handgun Steady Hand",
     "category": "Handgun",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Handgun spread reduced",
+     "Expert effect": "greatly reduced",
+     "Expert unlock": "Level 49"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_Sniper_StableShot",
@@ -376,13 +594,25 @@ window.NMRIH2 = {
     "id": "SD_SMG_ReducedRecoil",
     "name": "SMG Reduced Recoil",
     "category": "SMG",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "SMGs reduced recoil",
+     "Expert effect": "greatly reduced",
+     "Expert unlock": "Level 31"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_Rifle_Mohawk",
     "name": "Rifle Mohawk",
     "category": "Rifle",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Rifles penetrate more targets",
+     "Expert effect": "many more",
+     "Expert unlock": "Level 22"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_LuckyLooter",
@@ -394,37 +624,73 @@ window.NMRIH2 = {
     "id": "SD_Guts",
     "name": "Guts",
     "category": "General",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Recover faster from out-of-stamina",
+     "Expert effect": "much faster",
+     "Expert unlock": "Level 34"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_LighterHealing",
     "name": "Lighter Healing",
     "category": "Support/Medical",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Medical items reduced weight",
+     "Expert effect": "greatly reduced",
+     "Expert unlock": "Level 52"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_Deprived",
     "name": "Deprived",
     "category": "General",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Max weight reduced but more health & stamina",
+     "Expert effect": "greatly reduced weight",
+     "Expert unlock": "Level 58"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_Limbo",
     "name": "Limbo",
     "category": "General",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Survive longer when down",
+     "Expert effect": "greater endurance when down",
+     "Expert unlock": "Level 16"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_Builder",
     "name": "Builder",
     "category": "Utility",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Utility items reduced weight",
+     "Expert effect": "greatly reduced",
+     "Expert unlock": "Level 71"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "SD_SturdyBody",
     "name": "Sturdy Body",
     "category": "General",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "stats": {
+     "Effect": "Reduced damage from attacks",
+     "Expert effect": "greatly reduced",
+     "Expert unlock": "Level 100"
+    },
+    "statSource": "fandom"
    }
   ],
   "firearms": [

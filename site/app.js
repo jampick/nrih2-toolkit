@@ -30,9 +30,11 @@
     banner.innerHTML =
       "<strong>Real in-game numbers.</strong> Weapon, melee, throwable, item and zombie stats" +
       (si.withStats ? " (" + si.withStats + " entries)" : "") +
-      " are read straight from the game's own data-table assets. " +
-      "Skills are listed by name &mdash; their magnitudes live in Blueprint effects that a foreign " +
-      "mappings file can't decode yet.";
+      " are read straight from the game's own data-table assets " +
+      '<span class="badge stat">from files</span>. Skill effects and Expert unlock levels' +
+      (si.wikiSkills ? " (" + si.wikiSkills + " skills)" : "") +
+      ' are community-sourced <span class="badge wiki">from wiki</span> &mdash; their magnitudes ' +
+      "live in Blueprint effects a foreign mappings file can't decode.";
   } else {
     banner.className = "banner";
     banner.innerHTML =
@@ -125,6 +127,7 @@
     if (x.rarity) badges.push('<span class="badge rare">' + esc(x.rarity) + "</span>");
     if (x.hasUltimate) badges.push('<span class="badge ult">Ultimate</span>');
     if (x.statSource === "files") badges.push('<span class="badge stat" title="Decoded from the game\'s data-table assets">from files</span>');
+    else if (x.statSource === "fandom") badges.push('<span class="badge wiki" title="Community-sourced from the Fandom wiki (CC-BY-SA)">from wiki</span>');
     if (badges.length) h += '<div class="badges">' + badges.join("") + "</div>";
 
     const primary = x.stats || {};
@@ -154,8 +157,11 @@
     Object.values(m.counts || {}).reduce((a, b) => a + b, 0) + " data assets catalogued.";
   const ss = $("statsSource");
   if (ss && si.filesDecoder)
-    ss.textContent = "Numbers decoded with " + si.filesDecoder +
-      ". Curve-table stats are the game's own values; skill magnitudes pending.";
+    ss.textContent = "Weapon/zombie numbers decoded with " + si.filesDecoder +
+      " (the game's own values).";
+  const wa = $("wikiAttribution");
+  if (wa && si.wikiAttribution)
+    wa.innerHTML = "Skill effects: " + esc(si.wikiAttribution);
 
   render();
 })();

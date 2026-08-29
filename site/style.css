@@ -47,6 +47,7 @@ nav{display:flex;flex-wrap:wrap;gap:6px;padding-top:16px;padding-bottom:2px}
 .badge.ult{background:#2b1d33;color:#c79ae0}
 .badge.rare{background:#231d13;color:#e0b478}
 .badge.stat{background:#13241a;color:#a7e0b4}
+.badge.wiki{background:#1d2733;color:#8fb7e0}
 .stats{margin-top:8px;border-top:1px solid var(--line);padding-top:8px;font-size:13px}
 .stats div{display:flex;justify-content:space-between;gap:10px;padding:2px 0}
 .stats .k{color:var(--dim)}
