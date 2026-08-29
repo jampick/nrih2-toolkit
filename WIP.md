@@ -5,8 +5,10 @@ No More Room in Hell 2, built from the game's own files, enriched with community
 
 **PUBLISHED:** https://jampick.github.io/nrih2-toolkit/ (repo: github.com/jampick/nrih2-toolkit,
 GitHub Pages via .github/workflows/deploy.yml — push to main auto-deploys). Live site shows real
-from-files weapon/melee/throwable/zombie stats (47 cards) with "from files" badges + expandable
-full-attribute lists; skills are name-only. Verified rendering in browser.
+from-files weapon/melee/throwable/zombie stats (47 cards, "from files" badge + expandable full
+attribute lists) AND wiki-sourced skill effects (44/66 skills: Effect + Expert effect + Expert
+unlock level, "from wiki" badge, Fandom CC-BY-SA credited in footer). 22 unreleased skills stay
+name-only. Verified rendering in browser. **The site is feature-complete for current game content.**
 
 ## TL;DR of where we are
 - Full **from-files catalog** is DONE and is the backbone (names/paths/structure).
