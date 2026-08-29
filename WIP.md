@@ -3,6 +3,11 @@
 **Last worked:** 2026-08-29. **Goal:** an Icarus-Toolkit-style player guide/tools site for
 No More Room in Hell 2, built from the game's own files, enriched with community-wiki numbers.
 
+**PUBLISHED:** https://jampick.github.io/nrih2-toolkit/ (repo: github.com/jampick/nrih2-toolkit,
+GitHub Pages via .github/workflows/deploy.yml — push to main auto-deploys). Live site shows real
+from-files weapon/melee/throwable/zombie stats (47 cards) with "from files" badges + expandable
+full-attribute lists; skills are name-only. Verified rendering in browser.
+
 ## TL;DR of where we are
 - Full **from-files catalog** is DONE and is the backbone (names/paths/structure).
 - **BREAKTHROUGH (2026-08-29): real from-files numbers are now UNLOCKED, ToS-safely,** via a
