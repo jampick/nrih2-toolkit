@@ -196,6 +196,17 @@ def stat_blocks(raw_stats, category):
         alld[prettify_stat(k)] = fmt(raw_stats[k])
     return primary, alld
 
+# No em dashes anywhere in site copy (user preference); wiki-sourced text
+# carries them, so every string is scrubbed here rather than at each source.
+def strip_mdash(v):
+    if isinstance(v, str):
+        return v.replace(" — ", " - ").replace("—", "-")
+    if isinstance(v, list):
+        return [strip_mdash(x) for x in v]
+    if isinstance(v, dict):
+        return {strip_mdash(k): strip_mdash(x) for k, x in v.items()}
+    return v
+
 # ------------------------------------------------------------------------- load
 def load(path):
     with open(path, encoding='utf-8') as f:
@@ -326,10 +337,19 @@ def main():
         "IA_SIGHT_Holo": "Holographic Sight", "IA_SIGHT_HoloSmall": "Micro Red Dot",
         "IA_SIGHT_Scope": "Long Gun Scope",
     }
+    # Slot and gun-type fit are encoded in the ids themselves:
+    # MZL/RAIL/SIGHT = slot; _L_ = long gun, _S_ = pistol (HoloSmall is the pistol optic).
+    ATTACH_SLOTS = {"MZL": "Muzzle", "RAIL": "Rail", "SIGHT": "Sight"}
     def attachment_rows():
         rows = [apply_equip(r) for r in simple("attachments")]
         for r in rows:
-            r["name"] = ATTACH_NAMES.get(r["id"], r["name"])
+            aid = r["id"]
+            r["name"] = ATTACH_NAMES.get(aid, r["name"])
+            slot = aid.split("_")[1] if "_" in aid else ""
+            if slot in ATTACH_SLOTS:
+                r["category"] = ATTACH_SLOTS[slot]
+            r["fitsType"] = "Pistols" if ("_S_" in aid or aid == "IA_SIGHT_HoloSmall") \
+                            else "Long Guns"
         return sorted(rows, key=lambda r: r["name"])
 
     def recipe_cat(path):
@@ -397,6 +417,8 @@ def main():
     if os.path.isdir(flavor_dir):
         out["flavor"] = sorted("img/flavor/" + os.path.basename(p)
                                 for p in glob.glob(os.path.join(flavor_dir, "*.jpg")))
+
+    out = strip_mdash(out)
 
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w", encoding="utf-8") as f:

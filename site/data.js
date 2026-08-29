@@ -25,7 +25,7 @@ window.NMRIH2 = {
  "statsInfo": {
   "filesDecoder": "CUE4Parse 1.2.2 + foreign UE5.6.1 usmap (NewMoon/Mixtape)",
   "filesNote": "Weapon, melee, throwable, item and zombie numbers are read directly from the game's UCurveTable data assets.",
-  "skillsNote": "Skill effects and Expert unlock levels are community-sourced from the Fandom wiki (CC-BY-SA) — their magnitudes live in Blueprint effects a foreign usmap cannot decode.",
+  "skillsNote": "Skill effects and Expert unlock levels are community-sourced from the Fandom wiki (CC-BY-SA) - their magnitudes live in Blueprint effects a foreign usmap cannot decode.",
   "wikiAttribution": "No More Room in Hell 2 Wiki on Fandom (CC-BY-SA). https://no-more-room-in-hell-two.fandom.com/wiki/Skills &middot; Equipment/shop data: No More Room in Hell 2 Wiki on Fandom (CC-BY-SA). https://no-more-room-in-hell-two.fandom.com/wiki/Equipment",
   "withStats": 47,
   "wikiSkills": 44,
@@ -4391,7 +4391,7 @@ window.NMRIH2 = {
     "raw": "AES_ProximityExplosive",
     "statsExpected": true,
     "stats": {
-     "Effect": "Improvised proximity bomb — plant on the ground, detonates on the first thing that moves"
+     "Effect": "Improvised proximity bomb - plant on the ground, detonates on the first thing that moves"
     },
     "shop": {
      "price": "1,500 cr",
@@ -4412,7 +4412,7 @@ window.NMRIH2 = {
     "raw": "AES_Grenade_M67",
     "statsExpected": true,
     "stats": {
-     "Effect": "Frag grenade — 3.6 s fuse, lethal within 5 m",
+     "Effect": "Frag grenade - 3.6 s fuse, lethal within 5 m",
      "Throw Damage": "10",
      "Ammo Capacity": "1",
      "Cooldown": "0.5"
@@ -4497,7 +4497,7 @@ window.NMRIH2 = {
     "name": "Adrenaline",
     "raw": "ID_Consumable_Adrenaline",
     "stats": {
-     "Effect": "Epinephrine injector — greatly increases maximum stamina"
+     "Effect": "Epinephrine injector - greatly increases maximum stamina"
     },
     "shop": {
      "price": "10,000 cr",
@@ -4640,7 +4640,7 @@ window.NMRIH2 = {
     "name": "Stim Pack",
     "raw": "ID_Consumable_StimPack",
     "stats": {
-     "Effect": "Revive syringe — when consumed, revives you at full health"
+     "Effect": "Revive syringe - when consumed, revives you at full health"
     },
     "shop": {
      "price": "15,000 cr",
@@ -4740,7 +4740,7 @@ window.NMRIH2 = {
     "name": "Suppressor Large",
     "raw": "ID_Permanent_Suppressor_Large",
     "stats": {
-     "Effect": "Rifle suppressor — quieter shots, not silent",
+     "Effect": "Rifle suppressor - quieter shots, not silent",
      "Fits": "MP5, Rochester 1873, Hunter 85, M14, M7A1, MC-15, Gruber Ranch"
     },
     "statSource": "fandom"
@@ -4750,7 +4750,7 @@ window.NMRIH2 = {
     "name": "Suppressor Small",
     "raw": "ID_Permanent_Suppressor_Small",
     "stats": {
-     "Effect": "Pistol suppressor — quieter shots, not silent",
+     "Effect": "Pistol suppressor - quieter shots, not silent",
      "Fits": "M9A3, M1911"
     },
     "statSource": "fandom"
@@ -4776,23 +4776,31 @@ window.NMRIH2 = {
      "Fits": "MP5, Rochester 1873, M7A1, MC-15, 590A1"
     },
     "statSource": "fandom",
+    "category": "Sight",
+    "fitsType": "Long Guns",
     "img": "img/IA_SIGHT_ACOG.png"
    },
    {
     "id": "IA_SIGHT_BUIS",
     "name": "Back-Up Iron Sights",
     "raw": "IA_SIGHT_BUIS",
+    "category": "Sight",
+    "fitsType": "Long Guns",
     "img": "img/IA_SIGHT_BUIS.png"
    },
    {
     "id": "IA_SIGHT_CarryHandle",
     "name": "Carry Handle Sight",
-    "raw": "IA_SIGHT_CarryHandle"
+    "raw": "IA_SIGHT_CarryHandle",
+    "category": "Sight",
+    "fitsType": "Long Guns"
    },
    {
     "id": "IA_SIGHT_GhostRing",
     "name": "Ghost Ring Sight",
     "raw": "IA_SIGHT_GhostRing",
+    "category": "Sight",
+    "fitsType": "Long Guns",
     "img": "img/IA_SIGHT_GhostRing.png"
    },
    {
@@ -4804,6 +4812,8 @@ window.NMRIH2 = {
      "Fits": "MP5, Rochester 1873, M7A1, MC-15, 590A1"
     },
     "statSource": "fandom",
+    "category": "Sight",
+    "fitsType": "Long Guns",
     "img": "img/IA_SIGHT_Holo.png"
    },
    {
@@ -4815,12 +4825,16 @@ window.NMRIH2 = {
      "Fits": "M7A1, MC-15, Gruber Ranch"
     },
     "statSource": "fandom",
+    "category": "Rail",
+    "fitsType": "Long Guns",
     "img": "img/IA_RAIL_L_Light.png"
    },
    {
     "id": "IA_RAIL_L_Laser",
     "name": "Long Gun Laser",
     "raw": "IA_RAIL_L_Laser",
+    "category": "Rail",
+    "fitsType": "Long Guns",
     "img": "img/IA_RAIL_L_Laser.png"
    },
    {
@@ -4832,6 +4846,8 @@ window.NMRIH2 = {
      "Fits": "MP5, Rochester 1873, M7A1, MC-15, 590A1"
     },
     "statSource": "fandom",
+    "category": "Sight",
+    "fitsType": "Long Guns",
     "img": "img/IA_SIGHT_Scope.png"
    },
    {
@@ -4842,7 +4858,9 @@ window.NMRIH2 = {
      "Effect": "Integrated weapon light",
      "Fits": "MP5 (built-in)"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "category": "Rail",
+    "fitsType": "Long Guns"
    },
    {
     "id": "IA_SIGHT_HoloSmall",
@@ -4853,30 +4871,40 @@ window.NMRIH2 = {
      "Fits": "M9A3, M1911"
     },
     "statSource": "fandom",
+    "category": "Sight",
+    "fitsType": "Pistols",
     "img": "img/IA_SIGHT_HoloSmall.png"
    },
    {
     "id": "IA_MZL_S_Compensator",
     "name": "Pistol Compensator",
     "raw": "IA_MZL_S_Compensator",
+    "category": "Muzzle",
+    "fitsType": "Pistols",
     "img": "img/IA_MZL_S_Compensator.png"
    },
    {
     "id": "IA_RAIL_S_Light",
     "name": "Pistol Gun-Light",
     "raw": "IA_RAIL_S_Light",
+    "category": "Rail",
+    "fitsType": "Pistols",
     "img": "img/IA_RAIL_S_Light.png"
    },
    {
     "id": "IA_RAIL_S_Laser",
     "name": "Pistol Laser",
     "raw": "IA_RAIL_S_Laser",
+    "category": "Rail",
+    "fitsType": "Pistols",
     "img": "img/IA_RAIL_S_Laser.png"
    },
    {
     "id": "IA_MZL_S_Brake_01A",
     "name": "Pistol Muzzle Brake",
     "raw": "IA_MZL_S_Brake_01A",
+    "category": "Muzzle",
+    "fitsType": "Pistols",
     "img": "img/IA_MZL_S_Brake_01A.png"
    },
    {
@@ -4884,22 +4912,28 @@ window.NMRIH2 = {
     "name": "Pistol Suppressor",
     "raw": "IA_MZL_S_Suppressor",
     "stats": {
-     "Effect": "Pistol suppressor — quieter shots, not silent",
+     "Effect": "Pistol suppressor - quieter shots, not silent",
      "Fits": "M9A3, M1911"
     },
     "statSource": "fandom",
+    "category": "Muzzle",
+    "fitsType": "Pistols",
     "img": "img/IA_MZL_S_Suppressor.png"
    },
    {
     "id": "IA_MZL_L_Compensator",
     "name": "Rifle Compensator",
     "raw": "IA_MZL_L_Compensator",
+    "category": "Muzzle",
+    "fitsType": "Long Guns",
     "img": "img/IA_MZL_L_Compensator.png"
    },
    {
     "id": "IA_MZL_L_Brake_01A",
     "name": "Rifle Muzzle Brake",
     "raw": "IA_MZL_L_Brake_01A",
+    "category": "Muzzle",
+    "fitsType": "Long Guns",
     "img": "img/IA_MZL_L_Brake_01A.png"
    },
    {
@@ -4907,16 +4941,20 @@ window.NMRIH2 = {
     "name": "Rifle Suppressor",
     "raw": "IA_MZL_L_Suppressor",
     "stats": {
-     "Effect": "Rifle suppressor — quieter shots, not silent",
+     "Effect": "Rifle suppressor - quieter shots, not silent",
      "Fits": "MP5, Rochester 1873, Hunter 85, M14, M7A1, MC-15, Gruber Ranch"
     },
     "statSource": "fandom",
+    "category": "Muzzle",
+    "fitsType": "Long Guns",
     "img": "img/IA_MZL_L_Suppressor.png"
    },
    {
     "id": "IA_MZL_L_ShotgunChoke_01A",
     "name": "Shotgun Choke",
     "raw": "IA_MZL_L_ShotgunChoke_01A",
+    "category": "Muzzle",
+    "fitsType": "Long Guns",
     "img": "img/IA_MZL_L_ShotgunChoke_01A.png"
    }
   ],

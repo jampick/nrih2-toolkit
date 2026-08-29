@@ -18,6 +18,7 @@
   let active = "skills";
   let filters = {};   // facet field -> selected value
   let query = "";
+  let hideMissing = false;  // hide cards that have no stats/shop info yet
 
   const $ = (id) => document.getElementById(id);
   const grid = $("grid"), tabsEl = $("tabs"), filtersEl = $("filters");
@@ -41,7 +42,7 @@
       " are read straight from the game's own data-table assets " +
       '<span class="badge stat">from files</span>. Skill effects and Expert unlock levels' +
       (si.wikiSkills ? " (" + si.wikiSkills + " skills)" : "") +
-      ' are community-sourced <span class="badge wiki">from wiki</span> &mdash; their magnitudes ' +
+      ' are community-sourced <span class="badge wiki">from wiki</span> - their magnitudes ' +
       "live in Blueprint effects a foreign mappings file can't decode.";
   } else {
     banner.className = "banner";
@@ -62,6 +63,17 @@
 
   $("search").addEventListener("input", (e) => { query = e.target.value.toLowerCase().trim(); paint(); });
 
+  // Global toggle: hide cards that have no real details yet (name-only entries).
+  const hideBtn = $("hideMissing");
+  hideBtn.onclick = () => {
+    hideMissing = !hideMissing;
+    hideBtn.classList.toggle("active", hideMissing);
+    paint();
+  };
+  function hasContent(x) {
+    return !!(x.stats || x.allStats || x.shop || x.zmath);
+  }
+
   // Expand/collapse the full attribute list on a card.
   grid.addEventListener("click", (e) => {
     const btn = e.target.closest(".showall");
@@ -77,6 +89,7 @@
   const FACETS = {
     firearms: [["category", "Type"], ["caliber", "Ammo"]],
     melee: [["rarity", "Rarity"]],
+    attachments: [["fitsType", "Fits"], ["category", "Slot"]],
   };
   const GUNTYPE_ORDER = ["Handgun", "SMG", "Shotgun", "Rifle", "Sniper"];
 
@@ -126,6 +139,7 @@
   function paint() {
     const arr = S[active] || [];
     let rows = arr.filter((x) => {
+      if (hideMissing && !hasContent(x)) return false;
       for (const [field, val] of Object.entries(filters))
         if (val && x[field] !== val) return false;
       if (query && !((x.name || "").toLowerCase().includes(query) ||
@@ -150,7 +164,7 @@
     return h;
   }
 
-  // "Zombie math" — shots/swings to drop each zombie type, from real decoded HP.
+  // "Zombie math": shots/swings to drop each zombie type, from real decoded HP.
   function zmathBlock(z) {
     let h = '<div class="zmath">';
     h += '<div class="zhead">☠ ' + esc(z.title) +
@@ -159,7 +173,7 @@
     z.rows.forEach((r) => {
       h += '<div class="zrow' + (r.head === 1 ? " onetap" : "") + '">' +
            '<span class="zname">' + esc(r.label) + ' <em>' + esc(r.hp) + ' HP</em></span>' +
-           '<span class="zn zh">💀 ' + (r.head == null ? "—" : r.head) + "</span>" +
+           '<span class="zn zh">💀 ' + (r.head == null ? "n/a" : r.head) + "</span>" +
            '<span class="zn">🎯 ' + r.body + "</span></div>";
     });
     if (z.onetap) h += '<div class="ztap">💀 ' + esc(z.onetap) + "</div>";
@@ -174,6 +188,7 @@
     h += "<h3>" + esc(x.name) + "</h3>";
     const badges = [];
     if (x.category) badges.push('<span class="badge cat">' + esc(x.category) + "</span>");
+    if (x.fitsType) badges.push('<span class="badge fit">Fits ' + esc(x.fitsType) + "</span>");
     if (x.rarity) badges.push('<span class="badge rare">' + esc(x.rarity) + "</span>");
     if (x.hasUltimate) badges.push('<span class="badge ult">Ultimate</span>');
     if (x.statSource === "files") badges.push('<span class="badge stat" title="Decoded from the game\'s data-table assets">from files</span>');
@@ -218,7 +233,7 @@
 
   const m = D.meta || {};
   $("metaline").textContent =
-    (m.game || "") + " — " + (m.engine || "") + " — " +
+    (m.game || "") + " - " + (m.engine || "") + " - " +
     Object.values(m.counts || {}).reduce((a, b) => a + b, 0) + " data assets catalogued.";
   const ss = $("statsSource");
   if (ss && si.filesDecoder)
