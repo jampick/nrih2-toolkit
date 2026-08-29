@@ -89,7 +89,7 @@
   const FACETS = {
     firearms: [["category", "Type"], ["caliber", "Ammo"]],
     melee: [["rarity", "Rarity"]],
-    attachments: [["fitsType", "Fits"], ["category", "Slot"]],
+    attachments: [["fitsTypes", "Fits"], ["category", "Slot"]],
   };
   const GUNTYPE_ORDER = ["Handgun", "SMG", "Shotgun", "Rifle", "Sniper"];
 
@@ -98,9 +98,13 @@
     const out = [];
     (FACETS[key] || [["category", "Category"]]).forEach(([field, label]) => {
       const set = new Set();
-      arr.forEach((x) => { if (x[field]) set.add(x[field]); });
+      arr.forEach((x) => {
+        const v = x[field];
+        if (Array.isArray(v)) v.forEach((s) => set.add(s));
+        else if (v) set.add(v);
+      });
       let values = [...set].sort();
-      if (field === "category" && key === "firearms")
+      if (field === "fitsTypes" || (field === "category" && key === "firearms"))
         values = GUNTYPE_ORDER.filter((v) => set.has(v));
       if (values.length > 1) out.push({ field, label, values });
     });
@@ -140,12 +144,16 @@
     const arr = S[active] || [];
     let rows = arr.filter((x) => {
       if (hideMissing && !hasContent(x)) return false;
-      for (const [field, val] of Object.entries(filters))
-        if (val && x[field] !== val) return false;
+      for (const [field, val] of Object.entries(filters)) {
+        if (!val) continue;
+        const cell = x[field];
+        if (Array.isArray(cell) ? !cell.includes(val) : cell !== val) return false;
+      }
       if (query && !((x.name || "").toLowerCase().includes(query) ||
                      (x.raw || "").toLowerCase().includes(query) ||
                      (x.caliber || "").toLowerCase().includes(query) ||
-                     (x.category || "").toLowerCase().includes(query))) return false;
+                     (x.category || "").toLowerCase().includes(query) ||
+                     (x.fitsTypes || []).join(" ").toLowerCase().includes(query))) return false;
       return true;
     });
     rows.sort((a, b) => a.name.localeCompare(b.name));
@@ -188,7 +196,7 @@
     h += "<h3>" + esc(x.name) + "</h3>";
     const badges = [];
     if (x.category) badges.push('<span class="badge cat">' + esc(x.category) + "</span>");
-    if (x.fitsType) badges.push('<span class="badge fit">Fits ' + esc(x.fitsType) + "</span>");
+    if (x.fitsTypes) badges.push('<span class="badge fit">Fits: ' + esc(x.fitsTypes.join(" / ")) + "</span>");
     if (x.rarity) badges.push('<span class="badge rare">' + esc(x.rarity) + "</span>");
     if (x.hasUltimate) badges.push('<span class="badge ult">Ultimate</span>');
     if (x.statSource === "files") badges.push('<span class="badge stat" title="Decoded from the game\'s data-table assets">from files</span>');

@@ -337,9 +337,45 @@ def main():
         "IA_SIGHT_Holo": "Holographic Sight", "IA_SIGHT_HoloSmall": "Micro Red Dot",
         "IA_SIGHT_Scope": "Long Gun Scope",
     }
-    # Slot and gun-type fit are encoded in the ids themselves:
-    # MZL/RAIL/SIGHT = slot; _L_ = long gun, _S_ = pistol (HoloSmall is the pistol optic).
+    # Slot is encoded in the ids themselves: MZL/RAIL/SIGHT = Muzzle/Rail/Sight.
     ATTACH_SLOTS = {"MZL": "Muzzle", "RAIL": "Rail", "SIGHT": "Sight"}
+
+    # Which guns each attachment mounts on. Three sources:
+    #  * wiki fits lists (equipment.json) for the released shop attachments;
+    #  * the game's own ID_ item definitions for the default sights - their
+    #    package name maps reference the IA_ asset (GhostRing on 590A1+RX12,
+    #    BUIS on M7/MC-15/Mk18, CarryHandle on M16A4), found with
+    #    tools/scan_name_refs.ps1;
+    #  * same-mount siblings for unreleased variants (brake/compensator use the
+    #    suppressor's muzzle mount, the L laser uses the L light's rail).
+    # ShotgunChoke has no gun list anywhere; type comes from the id itself.
+    S_GUNS = ["M9A3", "M1911"]
+    L_MZL = ["MP5", "Rochester 1873", "Hunter 85", "M14", "M7A1", "MC-15", "Gruber Ranch"]
+    L_RAIL = ["M7A1", "MC-15", "Gruber Ranch"]
+    L_SIGHT = ["MP5", "Rochester 1873", "M7A1", "MC-15", "590A1"]
+    ATTACH_GUNS = {
+        "IA_MZL_S_Suppressor": S_GUNS, "IA_MZL_S_Brake_01A": S_GUNS,
+        "IA_MZL_S_Compensator": S_GUNS, "IA_RAIL_S_Laser": S_GUNS,
+        "IA_RAIL_S_Light": S_GUNS, "IA_SIGHT_HoloSmall": S_GUNS,
+        "IA_MZL_L_Suppressor": L_MZL, "IA_MZL_L_Brake_01A": L_MZL,
+        "IA_MZL_L_Compensator": L_MZL,
+        "IA_RAIL_L_Light": L_RAIL, "IA_RAIL_L_Laser": L_RAIL,
+        "IA_SIGHT_Holo": L_SIGHT, "IA_SIGHT_ACOG": L_SIGHT, "IA_SIGHT_Scope": L_SIGHT,
+        "IA_RAIL_MP5_Light": ["MP5"],
+        "IA_SIGHT_GhostRing": ["590A1", "RX12"],
+        "IA_SIGHT_BUIS": ["M7A1", "MC-15", "Mk18"],
+        "IA_SIGHT_CarryHandle": ["M16A4"],
+    }
+    FROM_FILES_FITS = {"IA_SIGHT_GhostRing", "IA_SIGHT_BUIS", "IA_SIGHT_CarryHandle"}
+    ATTACH_TYPES_OVERRIDE = {"IA_MZL_L_ShotgunChoke_01A": ["Shotgun"]}
+    GUN_TYPE_BY_NAME = {
+        "M9A3": "Handgun", "M1911": "Handgun", "MP5": "SMG",
+        "Rochester 1873": "Rifle", "M14": "Rifle", "M7A1": "Rifle", "MC-15": "Rifle",
+        "Gruber Ranch": "Rifle", "M16A4": "Rifle", "Mk18": "Rifle",
+        "Hunter 85": "Sniper", "590A1": "Shotgun", "RX12": "Shotgun",
+    }
+    TYPE_ORDER = ["Handgun", "SMG", "Shotgun", "Rifle", "Sniper"]
+
     def attachment_rows():
         rows = [apply_equip(r) for r in simple("attachments")]
         for r in rows:
@@ -348,8 +384,17 @@ def main():
             slot = aid.split("_")[1] if "_" in aid else ""
             if slot in ATTACH_SLOTS:
                 r["category"] = ATTACH_SLOTS[slot]
-            r["fitsType"] = "Pistols" if ("_S_" in aid or aid == "IA_SIGHT_HoloSmall") \
-                            else "Long Guns"
+            guns = ATTACH_GUNS.get(aid, [])
+            types = ATTACH_TYPES_OVERRIDE.get(aid) or \
+                    sorted({GUN_TYPE_BY_NAME[g] for g in guns}, key=TYPE_ORDER.index)
+            if types:
+                r["fitsTypes"] = types
+            if guns:
+                st = r.get("stats") or {}
+                st.setdefault("Fits", ", ".join(guns))
+                r["stats"] = st
+                if aid in FROM_FILES_FITS:
+                    r.setdefault("statSource", "files")
         return sorted(rows, key=lambda r: r["name"])
 
     def recipe_cat(path):

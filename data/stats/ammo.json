@@ -1,6 +1,6 @@
 {
  "source": "fandom",
- "note": "Firearm calibers are community-sourced (Fandom wiki, CC-BY-SA); the game's data assets don't expose caliber in the decodable curve tables. `icon` is the ammo icon key under UI/Icons/Ammo.",
+ "note": "Firearm calibers are community-sourced (Fandom wiki, CC-BY-SA); the game's data assets don't expose caliber in the decodable curve tables. `icon` is the ammo icon key under UI/Icons/Ammo. DT11/RX12/870/M1014 postdate the wiki capture; their calibers come from the guns' real-world 12-gauge models.",
  "firearms": {
   "AES_M9A1":            {"caliber": "9mm",         "icon": "9mm"},
   "AES_MP5":             {"caliber": "9mm",         "icon": "9mm"},
@@ -12,6 +12,10 @@
   "AES_M7":              {"caliber": "6.8x51mm",    "icon": "68x51mm"},
   "AES_MC15":            {"caliber": "5.56mm",      "icon": "556NATO"},
   "AES_CoachGun":        {"caliber": "12 Gauge",    "icon": "12gaShells"},
-  "AES_590A1":           {"caliber": "12 Gauge",    "icon": "12gaShells"}
+  "AES_590A1":           {"caliber": "12 Gauge",    "icon": "12gaShells"},
+  "AES_DT11":            {"caliber": "12 Gauge",    "icon": "12gaShells"},
+  "AES_RX12":            {"caliber": "12 Gauge",    "icon": "12gaShells"},
+  "AES_870":             {"caliber": "12 Gauge",    "icon": "12gaShells"},
+  "AES_M1014":           {"caliber": "12 Gauge",    "icon": "12gaShells"}
  }
 }

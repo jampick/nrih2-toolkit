@@ -1060,7 +1060,10 @@ window.NMRIH2 = {
     "name": "870",
     "raw": "AES_870",
     "category": "Shotgun",
-    "statsExpected": true
+    "caliber": "12 Gauge",
+    "statsExpected": true,
+    "ammoShop": "3,000 cr / box of 10 (00 buckshot) @ Account Lv 38",
+    "ammoIcon": "img/ammo_12gaShells.png"
    },
    {
     "id": "AES_AP85",
@@ -1179,6 +1182,7 @@ window.NMRIH2 = {
     "name": "DT11",
     "raw": "AES_DT11",
     "category": "Shotgun",
+    "caliber": "12 Gauge",
     "statsExpected": true,
     "stats": {
      "Damage": "17",
@@ -1257,7 +1261,9 @@ window.NMRIH2 = {
      "note": "Full blast: 10 pellets × 17 = 170 dmg (200 head), all pellets on target",
      "onetap": "One shot to the head drops anything up to a Walker Prime"
     },
-    "img": "img/AES_DT11.png"
+    "ammoShop": "3,000 cr / box of 10 (00 buckshot) @ Account Lv 38",
+    "img": "img/AES_DT11.png",
+    "ammoIcon": "img/ammo_12gaShells.png"
    },
    {
     "id": "AES_Eder17",
@@ -1711,7 +1717,10 @@ window.NMRIH2 = {
     "name": "M1014",
     "raw": "AES_M1014",
     "category": "Shotgun",
-    "statsExpected": true
+    "caliber": "12 Gauge",
+    "statsExpected": true,
+    "ammoShop": "3,000 cr / box of 10 (00 buckshot) @ Account Lv 38",
+    "ammoIcon": "img/ammo_12gaShells.png"
    },
    {
     "id": "AES_M14",
@@ -2416,6 +2425,7 @@ window.NMRIH2 = {
     "name": "RX12",
     "raw": "AES_RX12",
     "category": "Shotgun",
+    "caliber": "12 Gauge",
     "statsExpected": true,
     "stats": {
      "Damage": "17",
@@ -2493,7 +2503,9 @@ window.NMRIH2 = {
      "note": "Full blast: 10 pellets × 17 = 170 dmg (200 head), all pellets on target",
      "onetap": "One shot to the head drops anything up to a Walker Prime"
     },
-    "img": "img/AES_RX12.png"
+    "ammoShop": "3,000 cr / box of 10 (00 buckshot) @ Account Lv 38",
+    "img": "img/AES_RX12.png",
+    "ammoIcon": "img/ammo_12gaShells.png"
    },
    {
     "id": "AES_686",
@@ -4777,7 +4789,11 @@ window.NMRIH2 = {
     },
     "statSource": "fandom",
     "category": "Sight",
-    "fitsType": "Long Guns",
+    "fitsTypes": [
+     "SMG",
+     "Shotgun",
+     "Rifle"
+    ],
     "img": "img/IA_SIGHT_ACOG.png"
    },
    {
@@ -4785,7 +4801,13 @@ window.NMRIH2 = {
     "name": "Back-Up Iron Sights",
     "raw": "IA_SIGHT_BUIS",
     "category": "Sight",
-    "fitsType": "Long Guns",
+    "fitsTypes": [
+     "Rifle"
+    ],
+    "stats": {
+     "Fits": "M7A1, MC-15, Mk18"
+    },
+    "statSource": "files",
     "img": "img/IA_SIGHT_BUIS.png"
    },
    {
@@ -4793,14 +4815,26 @@ window.NMRIH2 = {
     "name": "Carry Handle Sight",
     "raw": "IA_SIGHT_CarryHandle",
     "category": "Sight",
-    "fitsType": "Long Guns"
+    "fitsTypes": [
+     "Rifle"
+    ],
+    "stats": {
+     "Fits": "M16A4"
+    },
+    "statSource": "files"
    },
    {
     "id": "IA_SIGHT_GhostRing",
     "name": "Ghost Ring Sight",
     "raw": "IA_SIGHT_GhostRing",
     "category": "Sight",
-    "fitsType": "Long Guns",
+    "fitsTypes": [
+     "Shotgun"
+    ],
+    "stats": {
+     "Fits": "590A1, RX12"
+    },
+    "statSource": "files",
     "img": "img/IA_SIGHT_GhostRing.png"
    },
    {
@@ -4813,7 +4847,11 @@ window.NMRIH2 = {
     },
     "statSource": "fandom",
     "category": "Sight",
-    "fitsType": "Long Guns",
+    "fitsTypes": [
+     "SMG",
+     "Shotgun",
+     "Rifle"
+    ],
     "img": "img/IA_SIGHT_Holo.png"
    },
    {
@@ -4826,7 +4864,9 @@ window.NMRIH2 = {
     },
     "statSource": "fandom",
     "category": "Rail",
-    "fitsType": "Long Guns",
+    "fitsTypes": [
+     "Rifle"
+    ],
     "img": "img/IA_RAIL_L_Light.png"
    },
    {
@@ -4834,7 +4874,12 @@ window.NMRIH2 = {
     "name": "Long Gun Laser",
     "raw": "IA_RAIL_L_Laser",
     "category": "Rail",
-    "fitsType": "Long Guns",
+    "fitsTypes": [
+     "Rifle"
+    ],
+    "stats": {
+     "Fits": "M7A1, MC-15, Gruber Ranch"
+    },
     "img": "img/IA_RAIL_L_Laser.png"
    },
    {
@@ -4847,7 +4892,11 @@ window.NMRIH2 = {
     },
     "statSource": "fandom",
     "category": "Sight",
-    "fitsType": "Long Guns",
+    "fitsTypes": [
+     "SMG",
+     "Shotgun",
+     "Rifle"
+    ],
     "img": "img/IA_SIGHT_Scope.png"
    },
    {
@@ -4860,7 +4909,9 @@ window.NMRIH2 = {
     },
     "statSource": "fandom",
     "category": "Rail",
-    "fitsType": "Long Guns"
+    "fitsTypes": [
+     "SMG"
+    ]
    },
    {
     "id": "IA_SIGHT_HoloSmall",
@@ -4872,7 +4923,9 @@ window.NMRIH2 = {
     },
     "statSource": "fandom",
     "category": "Sight",
-    "fitsType": "Pistols",
+    "fitsTypes": [
+     "Handgun"
+    ],
     "img": "img/IA_SIGHT_HoloSmall.png"
    },
    {
@@ -4880,7 +4933,12 @@ window.NMRIH2 = {
     "name": "Pistol Compensator",
     "raw": "IA_MZL_S_Compensator",
     "category": "Muzzle",
-    "fitsType": "Pistols",
+    "fitsTypes": [
+     "Handgun"
+    ],
+    "stats": {
+     "Fits": "M9A3, M1911"
+    },
     "img": "img/IA_MZL_S_Compensator.png"
    },
    {
@@ -4888,7 +4946,12 @@ window.NMRIH2 = {
     "name": "Pistol Gun-Light",
     "raw": "IA_RAIL_S_Light",
     "category": "Rail",
-    "fitsType": "Pistols",
+    "fitsTypes": [
+     "Handgun"
+    ],
+    "stats": {
+     "Fits": "M9A3, M1911"
+    },
     "img": "img/IA_RAIL_S_Light.png"
    },
    {
@@ -4896,7 +4959,12 @@ window.NMRIH2 = {
     "name": "Pistol Laser",
     "raw": "IA_RAIL_S_Laser",
     "category": "Rail",
-    "fitsType": "Pistols",
+    "fitsTypes": [
+     "Handgun"
+    ],
+    "stats": {
+     "Fits": "M9A3, M1911"
+    },
     "img": "img/IA_RAIL_S_Laser.png"
    },
    {
@@ -4904,7 +4972,12 @@ window.NMRIH2 = {
     "name": "Pistol Muzzle Brake",
     "raw": "IA_MZL_S_Brake_01A",
     "category": "Muzzle",
-    "fitsType": "Pistols",
+    "fitsTypes": [
+     "Handgun"
+    ],
+    "stats": {
+     "Fits": "M9A3, M1911"
+    },
     "img": "img/IA_MZL_S_Brake_01A.png"
    },
    {
@@ -4917,7 +4990,9 @@ window.NMRIH2 = {
     },
     "statSource": "fandom",
     "category": "Muzzle",
-    "fitsType": "Pistols",
+    "fitsTypes": [
+     "Handgun"
+    ],
     "img": "img/IA_MZL_S_Suppressor.png"
    },
    {
@@ -4925,7 +5000,14 @@ window.NMRIH2 = {
     "name": "Rifle Compensator",
     "raw": "IA_MZL_L_Compensator",
     "category": "Muzzle",
-    "fitsType": "Long Guns",
+    "fitsTypes": [
+     "SMG",
+     "Rifle",
+     "Sniper"
+    ],
+    "stats": {
+     "Fits": "MP5, Rochester 1873, Hunter 85, M14, M7A1, MC-15, Gruber Ranch"
+    },
     "img": "img/IA_MZL_L_Compensator.png"
    },
    {
@@ -4933,7 +5015,14 @@ window.NMRIH2 = {
     "name": "Rifle Muzzle Brake",
     "raw": "IA_MZL_L_Brake_01A",
     "category": "Muzzle",
-    "fitsType": "Long Guns",
+    "fitsTypes": [
+     "SMG",
+     "Rifle",
+     "Sniper"
+    ],
+    "stats": {
+     "Fits": "MP5, Rochester 1873, Hunter 85, M14, M7A1, MC-15, Gruber Ranch"
+    },
     "img": "img/IA_MZL_L_Brake_01A.png"
    },
    {
@@ -4946,7 +5035,11 @@ window.NMRIH2 = {
     },
     "statSource": "fandom",
     "category": "Muzzle",
-    "fitsType": "Long Guns",
+    "fitsTypes": [
+     "SMG",
+     "Rifle",
+     "Sniper"
+    ],
     "img": "img/IA_MZL_L_Suppressor.png"
    },
    {
@@ -4954,7 +5047,9 @@ window.NMRIH2 = {
     "name": "Shotgun Choke",
     "raw": "IA_MZL_L_ShotgunChoke_01A",
     "category": "Muzzle",
-    "fitsType": "Long Guns",
+    "fitsTypes": [
+     "Shotgun"
+    ],
     "img": "img/IA_MZL_L_ShotgunChoke_01A.png"
    }
   ],
