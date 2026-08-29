@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NMRIH2 Toolkit</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>No More Room in Hell 2 <span class="tk">Toolkit</span></h1>
+    <p class="tag">A player reference built straight from the game files &mdash; skills, weapons, gear, recipes and the undead.</p>
+    <div id="statsBanner" class="banner hidden"></div>
+  </div>
+</header>
+
+<nav id="tabs" class="wrap"></nav>
+
+<main class="wrap">
+  <div class="toolbar">
+    <input id="search" type="search" placeholder="Search everything&hellip;" autocomplete="off">
+    <div id="filters" class="filters"></div>
+    <span id="count" class="count"></span>
+  </div>
+  <div id="grid" class="grid"></div>
+  <p id="empty" class="empty hidden">Nothing matches that search.</p>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Data extracted from the local game install (Steam appid 292000, UE5.6). Fan-made; not affiliated with Torn Banner Studios.</p>
+    <p id="statsSource" class="dim"></p>
+    <p id="metaline" class="dim"></p>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+# Extracted raw asset dumps (large; regenerated locally by the extractor)
+data/stats-raw/
+data/test/
+
+# Foreign mappings file — not ours to redistribute; download separately
+data/mappings/*.usmap
+
+# Superseded UE4SS-injection route (ToS-risky; kept locally, not published)
+tools/generate_usmap.ps1
+
+# Build artefacts
+tools/extractor/bin/
+tools/extractor/obj/
+tools/ue4ss/
+dist/
+__pycache__/
+*.pyc
+.DS_Store

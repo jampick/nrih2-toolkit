@@ -1,0 +1,3176 @@
+{
+  "meta": {
+    "game": "No More Room in Hell 2",
+    "appid": 292000,
+    "engine": "UE5.6 (Torn Banner 'Mangle.4')",
+    "note": "Names/paths extracted from unencrypted paks. Numeric stats require a .usmap mappings file (see README).",
+    "counts": {
+      "skills": 66,
+      "skillEffects": 133,
+      "firearmsAndSets": 106,
+      "melee": 36,
+      "consumables": 19,
+      "permanents": 19,
+      "attachments": 19,
+      "recipes": 39,
+      "stims": 20,
+      "attributesTables": 181,
+      "ai": 52,
+      "challengeTasks": 17,
+      "activityCards": 10,
+      "lootCollections": 22
+    }
+  },
+  "skills": [
+    {
+      "name": "SD_Athlete",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Athlete.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Athlete_Ultimate.uasset"
+    },
+    {
+      "name": "SD_AdrenalineRush",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_AdrenalineRush.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_AdrenalineRush_Ultimate.uasset"
+    },
+    {
+      "name": "SD_SpreadTheLove",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_SpreadTheLove.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_SpreadTheLove_Ultimate.uasset"
+    },
+    {
+      "name": "SD_Caravan",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Caravan.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Caravan_Ultimate.uasset"
+    },
+    {
+      "name": "SD_Sniper_IronChamber",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Sniper_IronChamber.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Sniper_IronChamber_Ultimate.uasset"
+    },
+    {
+      "name": "SD_Hitman",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Hitman.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Hitman_Ultimate.uasset"
+    },
+    {
+      "name": "SD_Shotgun_LongRange",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Shotgun_LongRange.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Shotgun_LongRange_Ultimate.uasset"
+    },
+    {
+      "name": "SD_Doorbreaker",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Doorbreaker.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Doorbreaker_Ultimate.uasset"
+    },
+    {
+      "name": "SD_Shotgun_Overkill",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Shotgun_Overkill.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Shotgun_Overkill_Ultimate.uasset"
+    },
+    {
+      "name": "SD_Handgun_SteadyMovement",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Handgun_SteadyMovement.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Handgun_SteadyMovement_Ultimate.uasset"
+    },
+    {
+      "name": "SD_Scavenger",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Scavenger.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Scavenger_Ultimate.uasset"
+    },
+    {
+      "name": "SD_QuickReload_RifleAndSMG",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_QuickReload_RifleAndSMG.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_QuickReload_RifleAndSMG_Ultimate.uasset"
+    },
+    {
+      "name": "SD_MarathonRunner",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_MarathonRunner.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_MarathonRunner_Ultimate.uasset"
+    },
+    {
+      "name": "SD_QuickReload_Shotgun",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_QuickReload_Shotgun.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_QuickReload_Shotgun_Ultimate.uasset"
+    },
+    {
+      "name": "SD_Mule",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Mule.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Mule_Ultimate.uasset"
+    },
+    {
+      "name": "SD_QuietSteps",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_QuietSteps.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_QuietSteps_Ultimate.uasset"
+    },
+    {
+      "name": "SD_LongerBattery",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_LongerBattery.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_LongerBattery_Ultimate.uasset"
+    },
+    {
+      "name": "SD_Foreman",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Foreman.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Foreman_Ult.uasset"
+    },
+    {
+      "name": "SD_WildSlash",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_WildSlash.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_WildSlash_Ultimate.uasset"
+    },
+    {
+      "name": "SD_Butcher",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Butcher.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Butcher_Ultimate.uasset"
+    },
+    {
+      "name": "SD_Juggler",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Juggler.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Juggler_Ultimate.uasset"
+    },
+    {
+      "name": "SD_SkilledMedic",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_SkilledMedic.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_SkilledMedic_Ultimate.uasset"
+    },
+    {
+      "name": "SD_FaterRevive",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_FaterRevive.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_FaterRevive_Ultimate.uasset"
+    },
+    {
+      "name": "SD_1hMelee_Hitman",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_1hMelee_Hitman.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_1hMelee_Hitman_Ultimate.uasset"
+    },
+    {
+      "name": "SD_OneForOne",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_OneForOne.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_OneForOne_Ultimate.uasset"
+    },
+    {
+      "name": "SD_Rifle_Hellfire",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Rifle_Hellfire.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Rifle_Hellfire_Ultimate.uasset"
+    },
+    {
+      "name": "SD_Grenadier",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Grenadier.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Grenadier_Ultimate.uasset"
+    },
+    {
+      "name": "SD_LuckyPathogen",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_LuckyPathogen.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_LuckyPathogen_Ultimate.uasset"
+    },
+    {
+      "name": "SD_HeavyShoves",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_HeavyShoves.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_HeavyShoves_Ultimate.uasset"
+    },
+    {
+      "name": "SD_Antibodies",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Antibodies.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Antibodies_Ultimate.uasset"
+    },
+    {
+      "name": "SD_SMG_Winged",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_SMG_Winged.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_SMG_Winged_Ultimate.uasset"
+    },
+    {
+      "name": "SD_DevilsPact",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_DevilsPact.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_DevilsPact_Ultimate.uasset"
+    },
+    {
+      "name": "SD_QuickReload_Handgun",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_QuickReload_Handgun.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_QuickReload_Handgun_Ultimate.uasset"
+    },
+    {
+      "name": "SD_CrowdControl",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_CrowdControl.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_CrowdControl_Ultimate.uasset"
+    },
+    {
+      "name": "SD_2hMelee_HardBlow",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_2hMelee_HardBlow.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_2hMelee_HardBlow_Ultimate.uasset"
+    },
+    {
+      "name": "SD_Frontliner",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Frontliner.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Frontliner_Ultimate.uasset"
+    },
+    {
+      "name": "SD_TeddyBear",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_TeddyBear.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_TeddyBear_Ultimate.uasset"
+    },
+    {
+      "name": "SD_Shotgun_Icarus",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Shotgun_Icarus.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Shotgun_Icarus_Ultimate.uasset"
+    },
+    {
+      "name": "SD_Grab_EfficientHoldout",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Grab_EfficientHoldout.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Grab_EfficientHoldout_Ultimate.uasset"
+    },
+    {
+      "name": "SD_Shover",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Shover.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Shover_Ultimate.uasset"
+    },
+    {
+      "name": "SD_OutdoorChampion",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_OutdoorChampion.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_OutdoorChampion_Ultimate.uasset"
+    },
+    {
+      "name": "SD_Handgun_QuickAim",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Handgun_QuickAim.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Handgun_QuickAim_Ultimate.uasset"
+    },
+    {
+      "name": "SD_ResidentGeneTherapy",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_ResidentGeneTherapy.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_ResidentGeneTherapy_Ultimate.uasset"
+    },
+    {
+      "name": "SD_SupplyStack",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_SupplyStack.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_SupplyStack_Ultimate.uasset"
+    },
+    {
+      "name": "SD_Handgun_Headblown",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Handgun_Headblown.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Handgun_Headblown_Ultimate.uasset"
+    },
+    {
+      "name": "SD_ThickSkin",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_ThickSkin.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_ThickSkin_Ultimate.uasset"
+    },
+    {
+      "name": "SD_Averaging",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Averaging.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Averaging_Ultimate.uasset"
+    },
+    {
+      "name": "SD_Wicked",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Wicked.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Wicked_Ultimate.uasset"
+    },
+    {
+      "name": "SD_MoreAmmo",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_MoreAmmo.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_MoreAmmo_Ultimate.uasset"
+    },
+    {
+      "name": "SD_Shotgun_TightShot",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Shotgun_TightShot.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Shotgun_TightShot_Ultimate.uasset"
+    },
+    {
+      "name": "SD_Sniper_PenetratingShot",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Sniper_PenetratingShot.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Sniper_PenetratingShot_Ultimate.uasset"
+    },
+    {
+      "name": "SD_2hMelee_HeavyAttackRush",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_2hMelee_HeavyAttackRush.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_2hMelee_HeavyAttackRush_Ultimate.uasset"
+    },
+    {
+      "name": "SD_Headhunter",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Headhunter.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Headhunter_Ultimate.uasset"
+    },
+    {
+      "name": "SD_ScalesofJustice",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_ScalesofJustice.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_ScalesofJustice_Ultimate.uasset"
+    },
+    {
+      "name": "SD_Rifle_ReducedRecoil_Crouch",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Rifle_ReducedRecoil_Crouch.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Rifle_ReducedRecoil_Crouch_Ultimate.uasset"
+    },
+    {
+      "name": "SD_Handgun_SteadyHand",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Handgun_SteadyHand.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Handgun_SteadyHand_Ultimate.uasset"
+    },
+    {
+      "name": "SD_Sniper_StableShot",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Sniper_StableShot.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Sniper_StableShot_Ultimate.uasset"
+    },
+    {
+      "name": "SD_SMG_ReducedRecoil",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_SMG_ReducedRecoil.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_SMG_ReducedRecoil_Ultimate.uasset"
+    },
+    {
+      "name": "SD_Rifle_Mohawk",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Rifle_Mohawk.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Rifle_Mohawk_Ultimate.uasset"
+    },
+    {
+      "name": "SD_LuckyLooter",
+      "hasUltimate": false,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_LuckyLooter.uasset",
+      "datasetUltimate": null
+    },
+    {
+      "name": "SD_Guts",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Guts.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Guts_Ultimate.uasset"
+    },
+    {
+      "name": "SD_LighterHealing",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_LighterHealing.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_LighterHealing_Ultimate.uasset"
+    },
+    {
+      "name": "SD_Deprived",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Deprived.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Deprived_Ultimate.uasset"
+    },
+    {
+      "name": "SD_Limbo",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Limbo.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Limbo_Ultimate.uasset"
+    },
+    {
+      "name": "SD_Builder",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Builder.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Builder_Ultimate.uasset"
+    },
+    {
+      "name": "SD_SturdyBody",
+      "hasUltimate": true,
+      "dataset": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_SturdyBody.uasset",
+      "datasetUltimate": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_SturdyBody_Ultimate.uasset"
+    }
+  ],
+  "skillEffects": [
+    {
+      "name": "SD_Shotgun_LongRange_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/DataSet/SD_Shotgun_LongRange_Ultimate.uasset"
+    },
+    {
+      "name": "GE_2hMelee_HardBlow_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_2hMelee_HardBlow_Ultimate.uasset"
+    },
+    {
+      "name": "GE_2hMelee_HardBlow",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_2hMelee_HardBlow.uasset"
+    },
+    {
+      "name": "GE_2hMelee_HeavyAttackRush_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_2hMelee_HeavyAttackRush_Ultimate.uasset"
+    },
+    {
+      "name": "GE_2hMelee_HeavyAttackRush",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_2hMelee_HeavyAttackRush.uasset"
+    },
+    {
+      "name": "GE_AdrenalinRush_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_AdrenalinRush_Ultimate.uasset"
+    },
+    {
+      "name": "GE_AdrenalinRush",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_AdrenalinRush.uasset"
+    },
+    {
+      "name": "GE_Antibodies_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Antibodies_Ultimate.uasset"
+    },
+    {
+      "name": "GE_Antibodies",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Antibodies.uasset"
+    },
+    {
+      "name": "GE_Athlete_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Athlete_Ultimate.uasset"
+    },
+    {
+      "name": "GE_Athlete",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Athlete.uasset"
+    },
+    {
+      "name": "GE_Averaging_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Averaging_Ultimate.uasset"
+    },
+    {
+      "name": "GE_Averaging",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Averaging.uasset"
+    },
+    {
+      "name": "GE_Builder_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Builder_Ultimate.uasset"
+    },
+    {
+      "name": "GE_Builder",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Builder.uasset"
+    },
+    {
+      "name": "GE_Butcher_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Butcher_Ultimate.uasset"
+    },
+    {
+      "name": "GE_Butcher",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Butcher.uasset"
+    },
+    {
+      "name": "GE_Caravan_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Caravan_Ultimate.uasset"
+    },
+    {
+      "name": "GE_Caravan",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Caravan.uasset"
+    },
+    {
+      "name": "GE_CrowdControl_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_CrowdControl_Ultimate.uasset"
+    },
+    {
+      "name": "GE_CrowdControl",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_CrowdControl.uasset"
+    },
+    {
+      "name": "GE_DecreaseBatteryUsageFlashlight",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_DecreaseBatteryUsageFlashlight.uasset"
+    },
+    {
+      "name": "GE_Deprived_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Deprived_Ultimate.uasset"
+    },
+    {
+      "name": "GE_Deprived",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Deprived.uasset"
+    },
+    {
+      "name": "GE_DevilsPact_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_DevilsPact_Ultimate.uasset"
+    },
+    {
+      "name": "GE_DevilsPact",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_DevilsPact.uasset"
+    },
+    {
+      "name": "GE_DoorBreaker_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_DoorBreaker_Ultimate.uasset"
+    },
+    {
+      "name": "GE_DoorBreaker",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_DoorBreaker.uasset"
+    },
+    {
+      "name": "GE_FasterRevive_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_FasterRevive_Ultimate.uasset"
+    },
+    {
+      "name": "GE_FasterRevive",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_FasterRevive.uasset"
+    },
+    {
+      "name": "GE_Foreman_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Foreman_Ultimate.uasset"
+    },
+    {
+      "name": "GE_Foreman",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Foreman.uasset"
+    },
+    {
+      "name": "GE_Frontliner_Ult",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Frontliner_Ult.uasset"
+    },
+    {
+      "name": "GE_Frontliner",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Frontliner.uasset"
+    },
+    {
+      "name": "GE_FrontlinerCombo_Ult",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_FrontlinerCombo_Ult.uasset"
+    },
+    {
+      "name": "GE_FrontlinerCombo",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_FrontlinerCombo.uasset"
+    },
+    {
+      "name": "GE_Grab_EfficientHoldout",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Grab_EfficientHoldout.uasset"
+    },
+    {
+      "name": "GE_Grenadier_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Grenadier_Ultimate.uasset"
+    },
+    {
+      "name": "GE_Grenadier",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Grenadier.uasset"
+    },
+    {
+      "name": "GE_Guts_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Guts_Ultimate.uasset"
+    },
+    {
+      "name": "GE_Guts",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Guts.uasset"
+    },
+    {
+      "name": "GE_Handgun_Headblown_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Handgun_Headblown_Ultimate.uasset"
+    },
+    {
+      "name": "GE_Handgun_Headblown",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Handgun_Headblown.uasset"
+    },
+    {
+      "name": "GE_Handgun_SteadyHand_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Handgun_SteadyHand_Ultimate.uasset"
+    },
+    {
+      "name": "GE_Handgun_SteadyHand",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Handgun_SteadyHand.uasset"
+    },
+    {
+      "name": "GE_Headhunter_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Headhunter_Ultimate.uasset"
+    },
+    {
+      "name": "GE_Headhunter",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Headhunter.uasset"
+    },
+    {
+      "name": "GE_HealingItemStack_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_HealingItemStack_Ultimate.uasset"
+    },
+    {
+      "name": "GE_HealingItemStack",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_HealingItemStack.uasset"
+    },
+    {
+      "name": "GE_HeavyShoves_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_HeavyShoves_Ultimate.uasset"
+    },
+    {
+      "name": "GE_HeavyShoves",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_HeavyShoves.uasset"
+    },
+    {
+      "name": "GE_Hitman_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Hitman_Ultimate.uasset"
+    },
+    {
+      "name": "GE_Hitman",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Hitman.uasset"
+    },
+    {
+      "name": "GE_Juggler_Effect",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Juggler_Effect.uasset"
+    },
+    {
+      "name": "GE_Juggler_Ultimate_Effect",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Juggler_Ultimate_Effect.uasset"
+    },
+    {
+      "name": "GE_Juggler_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Juggler_Ultimate.uasset"
+    },
+    {
+      "name": "GE_Juggler",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Juggler.uasset"
+    },
+    {
+      "name": "GE_LighterHealingItem_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_LighterHealingItem_Ultimate.uasset"
+    },
+    {
+      "name": "GE_LighterHealingItem",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_LighterHealingItem.uasset"
+    },
+    {
+      "name": "GE_Limbo_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Limbo_Ultimate.uasset"
+    },
+    {
+      "name": "GE_Limbo",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Limbo.uasset"
+    },
+    {
+      "name": "GE_LongerBattery_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_LongerBattery_Ultimate.uasset"
+    },
+    {
+      "name": "GE_LongerBattery",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_LongerBattery.uasset"
+    },
+    {
+      "name": "GE_Lucky_Pathogen_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Lucky_Pathogen_Ultimate.uasset"
+    },
+    {
+      "name": "GE_Lucky_Pathogen",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Lucky_Pathogen.uasset"
+    },
+    {
+      "name": "GE_MarathonRunner_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_MarathonRunner_Ultimate.uasset"
+    },
+    {
+      "name": "GE_MarathonRunner",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_MarathonRunner.uasset"
+    },
+    {
+      "name": "GE_Mule_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Mule_Ultimate.uasset"
+    },
+    {
+      "name": "GE_Mule",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Mule.uasset"
+    },
+    {
+      "name": "GE_OneForOne_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_OneForOne_Ultimate.uasset"
+    },
+    {
+      "name": "GE_OneForOne",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_OneForOne.uasset"
+    },
+    {
+      "name": "GE_OutdoorChampion_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_OutdoorChampion_Ultimate.uasset"
+    },
+    {
+      "name": "GE_OutdoorChampion",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_OutdoorChampion.uasset"
+    },
+    {
+      "name": "GE_QuietSteps_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_QuietSteps_Ultimate.uasset"
+    },
+    {
+      "name": "GE_QuietSteps",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_QuietSteps.uasset"
+    },
+    {
+      "name": "GE_Reload_Speed_HandGun_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Reload_Speed_HandGun_Ultimate.uasset"
+    },
+    {
+      "name": "GE_Reload_Speed_HandGun",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Reload_Speed_HandGun.uasset"
+    },
+    {
+      "name": "GE_Reload_Speed_RifleAndSMG_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Reload_Speed_RifleAndSMG_Ultimate.uasset"
+    },
+    {
+      "name": "GE_Reload_Speed_RifleAndSMG",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Reload_Speed_RifleAndSMG.uasset"
+    },
+    {
+      "name": "GE_Reload_Speed_Shotguns_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Reload_Speed_Shotguns_Ultimate.uasset"
+    },
+    {
+      "name": "GE_Reload_Speed_Shotguns",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Reload_Speed_Shotguns.uasset"
+    },
+    {
+      "name": "GE_Resident_Genes_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Resident_Genes_Ultimate.uasset"
+    },
+    {
+      "name": "GE_Resident_Genes",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Resident_Genes.uasset"
+    },
+    {
+      "name": "GE_Rifle_Hellfire_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Rifle_Hellfire_Ultimate.uasset"
+    },
+    {
+      "name": "GE_Rifle_Hellfire",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Rifle_Hellfire.uasset"
+    },
+    {
+      "name": "GE_Rifle_Mohawk_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Rifle_Mohawk_Ultimate.uasset"
+    },
+    {
+      "name": "GE_Rifle_Mohawk",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Rifle_Mohawk.uasset"
+    },
+    {
+      "name": "GE_Rifle_ReducedRecoil_Crouch_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Rifle_ReducedRecoil_Crouch_Ultimate.uasset"
+    },
+    {
+      "name": "GE_Rifle_ReducedRecoil_Crouch",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Rifle_ReducedRecoil_Crouch.uasset"
+    },
+    {
+      "name": "GE_ScalesofJustice_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_ScalesofJustice_Ultimate.uasset"
+    },
+    {
+      "name": "GE_ScalesofJustice",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_ScalesofJustice.uasset"
+    },
+    {
+      "name": "GE_Scavenger_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Scavenger_Ultimate.uasset"
+    },
+    {
+      "name": "GE_Scavenger",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Scavenger.uasset"
+    },
+    {
+      "name": "GE_Shotgun_Icarus_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Shotgun_Icarus_Ultimate.uasset"
+    },
+    {
+      "name": "GE_Shotgun_Icarus",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Shotgun_Icarus.uasset"
+    },
+    {
+      "name": "GE_Shotgun_IncreasedPellets_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Shotgun_IncreasedPellets_Ultimate.uasset"
+    },
+    {
+      "name": "GE_Shotgun_IncreasedPellets",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Shotgun_IncreasedPellets.uasset"
+    },
+    {
+      "name": "GE_Shotgun_LongRange_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Shotgun_LongRange_Ultimate.uasset"
+    },
+    {
+      "name": "GE_Shotgun_LongRange",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Shotgun_LongRange.uasset"
+    },
+    {
+      "name": "GE_Shotgun_Overkill_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Shotgun_Overkill_Ultimate.uasset"
+    },
+    {
+      "name": "GE_Shotgun_Overkill",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Shotgun_Overkill.uasset"
+    },
+    {
+      "name": "GE_Shotgun_TightShot_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Shotgun_TightShot_Ultimate.uasset"
+    },
+    {
+      "name": "GE_Shotgun_TightShot",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Shotgun_TightShot.uasset"
+    },
+    {
+      "name": "GE_Shover_Ulimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Shover_Ulimate.uasset"
+    },
+    {
+      "name": "GE_Shover",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Shover.uasset"
+    },
+    {
+      "name": "GE_SkilledMedic_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_SkilledMedic_Ultimate.uasset"
+    },
+    {
+      "name": "GE_SkilledMedic",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_SkilledMedic.uasset"
+    },
+    {
+      "name": "GE_SMG_ReducedRecoil_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_SMG_ReducedRecoil_Ultimate.uasset"
+    },
+    {
+      "name": "GE_SMG_ReducedRecoil",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_SMG_ReducedRecoil.uasset"
+    },
+    {
+      "name": "GE_SMG_Winged_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_SMG_Winged_Ultimate.uasset"
+    },
+    {
+      "name": "GE_SMG_Winged",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_SMG_Winged.uasset"
+    },
+    {
+      "name": "GE_Sniper_IronChamber_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Sniper_IronChamber_Ultimate.uasset"
+    },
+    {
+      "name": "GE_Sniper_IronChamber",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Sniper_IronChamber.uasset"
+    },
+    {
+      "name": "GE_Sniper_PenetratingShot_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Sniper_PenetratingShot_Ultimate.uasset"
+    },
+    {
+      "name": "GE_Sniper_PenetratingShot",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Sniper_PenetratingShot.uasset"
+    },
+    {
+      "name": "GE_Sniper_StableShot_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Sniper_StableShot_Ultimate.uasset"
+    },
+    {
+      "name": "GE_Sniper_StableShot",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Sniper_StableShot.uasset"
+    },
+    {
+      "name": "GE_SpreadTheLove_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_SpreadTheLove_Ultimate.uasset"
+    },
+    {
+      "name": "GE_SpreadTheLove",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_SpreadTheLove.uasset"
+    },
+    {
+      "name": "GE_SturdyBody_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_SturdyBody_Ultimate.uasset"
+    },
+    {
+      "name": "GE_SturdyBody",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_SturdyBody.uasset"
+    },
+    {
+      "name": "GE_SupplyStack_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_SupplyStack_Ultimate.uasset"
+    },
+    {
+      "name": "GE_SupplyStack",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_SupplyStack.uasset"
+    },
+    {
+      "name": "GE_TeddyBear_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_TeddyBear_Ultimate.uasset"
+    },
+    {
+      "name": "GE_TeddyBear",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_TeddyBear.uasset"
+    },
+    {
+      "name": "GE_ThickSkin_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_ThickSkin_Ultimate.uasset"
+    },
+    {
+      "name": "GE_ThickSkin",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_ThickSkin.uasset"
+    },
+    {
+      "name": "GE_Vulture_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Vulture_Ultimate.uasset"
+    },
+    {
+      "name": "GE_Vulture",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Vulture.uasset"
+    },
+    {
+      "name": "GE_Wicked_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Wicked_Ultimate.uasset"
+    },
+    {
+      "name": "GE_Wicked",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_Wicked.uasset"
+    },
+    {
+      "name": "GE_WildSlash_Ultimate",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_WildSlash_Ultimate.uasset"
+    },
+    {
+      "name": "GE_WildSlash",
+      "path": "NMRiH2/Content/Blueprints/Abilities/Effects/Character/Skills/GE_WildSlash.uasset"
+    }
+  ],
+  "firearmsAndSets": [
+    {
+      "name": "AES_Player",
+      "path": "NMRiH2/Content/Blueprints/Characters/Player/AES_Player.uasset"
+    },
+    {
+      "name": "AES_Zombie",
+      "path": "NMRiH2/Content/Blueprints/Characters/Zombies/AES_Zombie.uasset"
+    },
+    {
+      "name": "AES_ZombieCrawler",
+      "path": "NMRiH2/Content/Blueprints/Characters/Zombies/AES_ZombieCrawler.uasset"
+    },
+    {
+      "name": "AES_ZombieRunner",
+      "path": "NMRiH2/Content/Blueprints/Characters/Zombies/AES_ZombieRunner.uasset"
+    },
+    {
+      "name": "AES_ZombieRunnerCrawler",
+      "path": "NMRiH2/Content/Blueprints/Characters/Zombies/AES_ZombieRunnerCrawler.uasset"
+    },
+    {
+      "name": "AES_ZombieShambler",
+      "path": "NMRiH2/Content/Blueprints/Characters/Zombies/AES_ZombieShambler.uasset"
+    },
+    {
+      "name": "AES_ZombieShield",
+      "path": "NMRiH2/Content/Blueprints/Characters/Zombies/AES_ZombieShield.uasset"
+    },
+    {
+      "name": "AES_BarricadingPlank",
+      "path": "NMRiH2/Content/Blueprints/Items/Barricading/AES_BarricadingPlank.uasset"
+    },
+    {
+      "name": "AES_AmmoCrate",
+      "path": "NMRiH2/Content/Blueprints/Items/Deployable/AmmoCrate/AES_AmmoCrate.uasset"
+    },
+    {
+      "name": "AES_Barricade",
+      "path": "NMRiH2/Content/Blueprints/Items/Deployable/Barricade/AES_Barricade.uasset"
+    },
+    {
+      "name": "AES_CampingLantern",
+      "path": "NMRiH2/Content/Blueprints/Items/Deployable/CampingLantern/AES_CampingLantern.uasset"
+    },
+    {
+      "name": "AES_WorkLight",
+      "path": "NMRiH2/Content/Blueprints/Items/Deployable/DeployableLamp/AES_WorkLight.uasset"
+    },
+    {
+      "name": "AES_DirectionalMine",
+      "path": "NMRiH2/Content/Blueprints/Items/Deployable/DirectionalMine/AES_DirectionalMine.uasset"
+    },
+    {
+      "name": "AES_IED",
+      "path": "NMRiH2/Content/Blueprints/Items/Deployable/IED/AES_IED.uasset"
+    },
+    {
+      "name": "AES_MedicalCrate",
+      "path": "NMRiH2/Content/Blueprints/Items/Deployable/MedicalCrate/AES_MedicalCrate.uasset"
+    },
+    {
+      "name": "AES_ProximityExplosive",
+      "path": "NMRiH2/Content/Blueprints/Items/Deployable/ProximityExplosive/AES_ProximityExplosive.uasset"
+    },
+    {
+      "name": "AES_Radio",
+      "path": "NMRiH2/Content/Blueprints/Items/Deployable/Radio/AES_Radio.uasset"
+    },
+    {
+      "name": "AES_Winchester_1873",
+      "path": "NMRiH2/Content/Blueprints/Items/Firearms/1873/AES_Winchester_1873.uasset"
+    },
+    {
+      "name": "AES_1911",
+      "path": "NMRiH2/Content/Blueprints/Items/Firearms/1911/AES_1911.uasset"
+    },
+    {
+      "name": "AES_590A1",
+      "path": "NMRiH2/Content/Blueprints/Items/Firearms/590A1/AES_590A1.uasset"
+    },
+    {
+      "name": "AES_870",
+      "path": "NMRiH2/Content/Blueprints/Items/Firearms/870/AES_870.uasset"
+    },
+    {
+      "name": "AES_AP85",
+      "path": "NMRiH2/Content/Blueprints/Items/Firearms/AP85/AES_AP85.uasset"
+    },
+    {
+      "name": "AES_BauerPrecision",
+      "path": "NMRiH2/Content/Blueprints/Items/Firearms/BauerPrecision/AES_BauerPrecision.uasset"
+    },
+    {
+      "name": "AES_Bull",
+      "path": "NMRiH2/Content/Blueprints/Items/Firearms/Bull/AES_Bull.uasset"
+    },
+    {
+      "name": "AES_CoachGun",
+      "path": "NMRiH2/Content/Blueprints/Items/Firearms/CoachGun/AES_CoachGun.uasset"
+    },
+    {
+      "name": "AES_CX8",
+      "path": "NMRiH2/Content/Blueprints/Items/Firearms/CX8/AES_CX8.uasset"
+    },
+    {
+      "name": "AES_DT11",
+      "path": "NMRiH2/Content/Blueprints/Items/Firearms/DT11/AES_DT11.uasset"
+    },
+    {
+      "name": "AES_Eder17",
+      "path": "NMRiH2/Content/Blueprints/Items/Firearms/Eder17/AES_Eder17.uasset"
+    },
+    {
+      "name": "AES_FAL",
+      "path": "NMRiH2/Content/Blueprints/Items/Firearms/FAL/AES_FAL.uasset"
+    },
+    {
+      "name": "AES_Gruber922",
+      "path": "NMRiH2/Content/Blueprints/Items/Firearms/Gruber922/AES_Gruber922.uasset"
+    },
+    {
+      "name": "AES_GruberMkVII",
+      "path": "NMRiH2/Content/Blueprints/Items/Firearms/GruberMkVII/AES_GruberMkVII.uasset"
+    },
+    {
+      "name": "AES_GruberRanch",
+      "path": "NMRiH2/Content/Blueprints/Items/Firearms/GruberRanch/AES_GruberRanch.uasset"
+    },
+    {
+      "name": "AES_Hunter85",
+      "path": "NMRiH2/Content/Blueprints/Items/Firearms/Hunter85/AES_Hunter85.uasset"
+    },
+    {
+      "name": "AES_LeeEnfield",
+      "path": "NMRiH2/Content/Blueprints/Items/Firearms/LeeEnfield/AES_LeeEnfield.uasset"
+    },
+    {
+      "name": "AES_M1014",
+      "path": "NMRiH2/Content/Blueprints/Items/Firearms/M1014/AES_M1014.uasset"
+    },
+    {
+      "name": "AES_M14",
+      "path": "NMRiH2/Content/Blueprints/Items/Firearms/M14/AES_M14.uasset"
+    },
+    {
+      "name": "AES_M16A4",
+      "path": "NMRiH2/Content/Blueprints/Items/Firearms/M16A4/AES_M16A4.uasset"
+    },
+    {
+      "name": "AES_M1Garand",
+      "path": "NMRiH2/Content/Blueprints/Items/Firearms/M1Garand/AES_M1Garand.uasset"
+    },
+    {
+      "name": "AES_M7",
+      "path": "NMRiH2/Content/Blueprints/Items/Firearms/M7/AES_M7.uasset"
+    },
+    {
+      "name": "AES_M9A1",
+      "path": "NMRiH2/Content/Blueprints/Items/Firearms/M9A1/AES_M9A1.uasset"
+    },
+    {
+      "name": "AES_Martial",
+      "path": "NMRiH2/Content/Blueprints/Items/Firearms/Martial/AES_Martial.uasset"
+    },
+    {
+      "name": "AES_MC15",
+      "path": "NMRiH2/Content/Blueprints/Items/Firearms/MC15/AES_MC15.uasset"
+    },
+    {
+      "name": "AES_Mk18",
+      "path": "NMRiH2/Content/Blueprints/Items/Firearms/MK18/AES_Mk18.uasset"
+    },
+    {
+      "name": "AES_Model13",
+      "path": "NMRiH2/Content/Blueprints/Items/Firearms/Model13/AES_Model13.uasset"
+    },
+    {
+      "name": "AES_MP5",
+      "path": "NMRiH2/Content/Blueprints/Items/Firearms/MP5A4/AES_MP5.uasset"
+    },
+    {
+      "name": "AES_MP5A4_Old",
+      "path": "NMRiH2/Content/Blueprints/Items/Firearms/MP5A4/Archive/AES_MP5A4_Old.uasset"
+    },
+    {
+      "name": "AES_P350",
+      "path": "NMRiH2/Content/Blueprints/Items/Firearms/P350/AES_P350.uasset"
+    },
+    {
+      "name": "AES_RX12",
+      "path": "NMRiH2/Content/Blueprints/Items/Firearms/RX12/AES_RX12.uasset"
+    },
+    {
+      "name": "AES_686",
+      "path": "NMRiH2/Content/Blueprints/Items/Firearms/SE686/AES_686.uasset"
+    },
+    {
+      "name": "AES_SKS",
+      "path": "NMRiH2/Content/Blueprints/Items/Firearms/SKS/AES_SKS.uasset"
+    },
+    {
+      "name": "AES_Battery",
+      "path": "NMRiH2/Content/Blueprints/Items/Gear/Battery/AES_Battery.uasset"
+    },
+    {
+      "name": "AES_Clipboard",
+      "path": "NMRiH2/Content/Blueprints/Items/Gear/Clipboard/AES_Clipboard.uasset"
+    },
+    {
+      "name": "AES_HTGPS",
+      "path": "NMRiH2/Content/Blueprints/Items/Gear/HTGPS/AES_HTGPS.uasset"
+    },
+    {
+      "name": "AES_Lighter",
+      "path": "NMRiH2/Content/Blueprints/Items/Gear/Lighter/AES_Lighter.uasset"
+    },
+    {
+      "name": "AES_Maglite",
+      "path": "NMRiH2/Content/Blueprints/Items/Gear/Maglite/AES_Maglite.uasset"
+    },
+    {
+      "name": "AES_PowerCable",
+      "path": "NMRiH2/Content/Blueprints/Items/Gear/PowerCable/AES_PowerCable.uasset"
+    },
+    {
+      "name": "AES_Bandages",
+      "path": "NMRiH2/Content/Blueprints/Items/Medical/Bandages/AES_Bandages.uasset"
+    },
+    {
+      "name": "AES_GeneTherapy",
+      "path": "NMRiH2/Content/Blueprints/Items/Medical/GeneTherapy/AES_GeneTherapy.uasset"
+    },
+    {
+      "name": "AES_MedKit",
+      "path": "NMRiH2/Content/Blueprints/Items/Medical/Medkit/AES_MedKit.uasset"
+    },
+    {
+      "name": "AES_Pills",
+      "path": "NMRiH2/Content/Blueprints/Items/Medical/Pills/AES_Pills.uasset"
+    },
+    {
+      "name": "AES_HockeyStick",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Common/HockeyStick/AES_HockeyStick.uasset"
+    },
+    {
+      "name": "AES_KnifeSmall",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Common/KnifeSmall/AES_KnifeSmall.uasset"
+    },
+    {
+      "name": "AES_Mallet",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Common/Mallet/AES_Mallet.uasset"
+    },
+    {
+      "name": "AES_Pipe",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Common/Pipe/AES_Pipe.uasset"
+    },
+    {
+      "name": "AES_PipeSmall",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Common/PipeSmall/AES_PipeSmall.uasset"
+    },
+    {
+      "name": "AES_Rebar",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Common/Rebar/AES_Rebar.uasset"
+    },
+    {
+      "name": "AES_TireIron",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Common/TireIron/AES_TireIron.uasset"
+    },
+    {
+      "name": "AES_WrenchLarge",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Common/WrenchLarge/AES_WrenchLarge.uasset"
+    },
+    {
+      "name": "AES_WrenchSmall",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Common/WrenchSmall/AES_WrenchSmall.uasset"
+    },
+    {
+      "name": "AES_Fists",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Fists/AES_Fists.uasset"
+    },
+    {
+      "name": "AES_BaseballBat",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Uncommon/BaseballBat/AES_BaseballBat.uasset"
+    },
+    {
+      "name": "AES_ClawHammer",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Uncommon/ClawHammer/AES_ClawHammer.uasset"
+    },
+    {
+      "name": "AES_Cleaver",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Uncommon/Cleaver/AES_Cleaver.uasset"
+    },
+    {
+      "name": "AES_Crowbar",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Uncommon/Crowbar/AES_Crowbar.uasset"
+    },
+    {
+      "name": "AES_FireAxe",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Uncommon/FireAxe/AES_FireAxe.uasset"
+    },
+    {
+      "name": "AES_HatchetWoodsman",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Uncommon/HatchetWoodsman/AES_HatchetWoodsman.uasset"
+    },
+    {
+      "name": "AES_Machete",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Uncommon/Machete/AES_Machete.uasset"
+    },
+    {
+      "name": "AES_Sledge",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Uncommon/Sledge/AES_Sledge.uasset"
+    },
+    {
+      "name": "AES_TreeTrimmer",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Uncommon/TreeTrimmer/AES_TreeTrimmer.uasset"
+    },
+    {
+      "name": "AES_BeerBottle",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Archived/BeerBottle/AES_BeerBottle.uasset"
+    },
+    {
+      "name": "AES_ETool",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Archived/ETool/AES_ETool.uasset"
+    },
+    {
+      "name": "AES_Extinguisher",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Archived/Extinguisher/AES_Extinguisher.uasset"
+    },
+    {
+      "name": "AES_FryingPan",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Archived/FryingPan/AES_FryingPan.uasset"
+    },
+    {
+      "name": "AES_KitchenKnife",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Archived/KitchenKnife/AES_KitchenKnife.uasset"
+    },
+    {
+      "name": "AES_KnifeBayonet",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Archived/KnifeBayonet/AES_KnifeBayonet.uasset"
+    },
+    {
+      "name": "AES_KnifeHunter",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Archived/KnifeHunter/AES_KnifeHunter.uasset"
+    },
+    {
+      "name": "AES_PipeWrench",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Archived/PipeWrench/AES_PipeWrench.uasset"
+    },
+    {
+      "name": "AES_Rake",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Archived/Rake/AES_Rake.uasset"
+    },
+    {
+      "name": "AES_Shovel",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Archived/Shovel/AES_Shovel.uasset"
+    },
+    {
+      "name": "AES_TableLamp",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Archived/TableLamp/AES_TableLamp.uasset"
+    },
+    {
+      "name": "AES_TireIronVariant",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Archived/TireIronVariant/AES_TireIronVariant.uasset"
+    },
+    {
+      "name": "AES_Welder",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Archived/Welder/AES_Welder.uasset"
+    },
+    {
+      "name": "AES_LargePlank",
+      "path": "NMRiH2/Content/Blueprints/Items/Objective/Broadway/AES_LargePlank.uasset"
+    },
+    {
+      "name": "AES_Explosives_01",
+      "path": "NMRiH2/Content/Blueprints/Items/Objective/Explosives_01/AES_Explosives_01.uasset"
+    },
+    {
+      "name": "AES_Pullout_Fuse",
+      "path": "NMRiH2/Content/Blueprints/Items/Objective/Fuse_Pullout_01/AES_Pullout_Fuse.uasset"
+    },
+    {
+      "name": "AES_JerryCan",
+      "path": "NMRiH2/Content/Blueprints/Items/Objective/GasCan_02/AES_JerryCan.uasset"
+    },
+    {
+      "name": "AES_Tire",
+      "path": "NMRiH2/Content/Blueprints/Items/Objective/Tire/AES_Tire.uasset"
+    },
+    {
+      "name": "AES_BoatWaterPump",
+      "path": "NMRiH2/Content/Blueprints/Items/Objective/Waldoboro/BoatWaterPump/AES_BoatWaterPump.uasset"
+    },
+    {
+      "name": "AES_RailRepairPiece",
+      "path": "NMRiH2/Content/Blueprints/Items/Objective/Waldoboro/RailRepairPiece/AES_RailRepairPiece.uasset"
+    },
+    {
+      "name": "AES_Chainsaw",
+      "path": "NMRiH2/Content/Blueprints/Items/PowerTool/Chainsaw/AES_Chainsaw.uasset"
+    },
+    {
+      "name": "AES_Bottle",
+      "path": "NMRiH2/Content/Blueprints/Items/Throwables/Bottle/AES_Bottle.uasset"
+    },
+    {
+      "name": "AES_Dynamite",
+      "path": "NMRiH2/Content/Blueprints/Items/Throwables/Dynamite/AES_Dynamite.uasset"
+    },
+    {
+      "name": "AES_Grenade_M67",
+      "path": "NMRiH2/Content/Blueprints/Items/Throwables/Grenade_M67/AES_Grenade_M67.uasset"
+    },
+    {
+      "name": "AES_Molotov",
+      "path": "NMRiH2/Content/Blueprints/Items/Throwables/Molotov/AES_Molotov.uasset"
+    },
+    {
+      "name": "AES_Pipebomb",
+      "path": "NMRiH2/Content/Blueprints/Items/Throwables/Pipebomb/AES_Pipebomb.uasset"
+    },
+    {
+      "name": "AES_GasCan",
+      "path": "NMRiH2/Content/Blueprints/Props/Objective/PropaneTank/AES_GasCan.uasset"
+    }
+  ],
+  "melee": [
+    {
+      "name": "BP_HockeyStick",
+      "rarity": "Common",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Common/HockeyStick/BP_HockeyStick.uasset"
+    },
+    {
+      "name": "BP_Pickup_HockeyStick",
+      "rarity": "Common",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Common/HockeyStick/BP_Pickup_HockeyStick.uasset"
+    },
+    {
+      "name": "BP_KnifeSmall",
+      "rarity": "Common",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Common/KnifeSmall/BP_KnifeSmall.uasset"
+    },
+    {
+      "name": "BP_Pickup_KnifeSmall",
+      "rarity": "Common",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Common/KnifeSmall/BP_Pickup_KnifeSmall.uasset"
+    },
+    {
+      "name": "BP_Mallet",
+      "rarity": "Common",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Common/Mallet/BP_Mallet.uasset"
+    },
+    {
+      "name": "BP_Pickup_Mallet",
+      "rarity": "Common",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Common/Mallet/BP_Pickup_Mallet.uasset"
+    },
+    {
+      "name": "BP_PickUp_Pipe",
+      "rarity": "Common",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Common/Pipe/BP_PickUp_Pipe.uasset"
+    },
+    {
+      "name": "BP_Pipe",
+      "rarity": "Common",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Common/Pipe/BP_Pipe.uasset"
+    },
+    {
+      "name": "BP_Pickup_PipeSmall",
+      "rarity": "Common",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Common/PipeSmall/BP_Pickup_PipeSmall.uasset"
+    },
+    {
+      "name": "BP_PipeSmall",
+      "rarity": "Common",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Common/PipeSmall/BP_PipeSmall.uasset"
+    },
+    {
+      "name": "BP_PickUp_Rebar",
+      "rarity": "Common",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Common/Rebar/BP_PickUp_Rebar.uasset"
+    },
+    {
+      "name": "BP_Rebar",
+      "rarity": "Common",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Common/Rebar/BP_Rebar.uasset"
+    },
+    {
+      "name": "BP_Pickup_TireIron",
+      "rarity": "Common",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Common/TireIron/BP_Pickup_TireIron.uasset"
+    },
+    {
+      "name": "BP_TireIron",
+      "rarity": "Common",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Common/TireIron/BP_TireIron.uasset"
+    },
+    {
+      "name": "BP_Pickup_WrenchLarge",
+      "rarity": "Common",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Common/WrenchLarge/BP_Pickup_WrenchLarge.uasset"
+    },
+    {
+      "name": "BP_WrenchLarge",
+      "rarity": "Common",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Common/WrenchLarge/BP_WrenchLarge.uasset"
+    },
+    {
+      "name": "BP_Pickup_WrenchSmall",
+      "rarity": "Common",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Common/WrenchSmall/BP_Pickup_WrenchSmall.uasset"
+    },
+    {
+      "name": "BP_WrenchSmall",
+      "rarity": "Common",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Common/WrenchSmall/BP_WrenchSmall.uasset"
+    },
+    {
+      "name": "BP_BaseballBat",
+      "rarity": "Uncommon",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Uncommon/BaseballBat/BP_BaseballBat.uasset"
+    },
+    {
+      "name": "BP_Pickup_BaseballBat",
+      "rarity": "Uncommon",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Uncommon/BaseballBat/BP_Pickup_BaseballBat.uasset"
+    },
+    {
+      "name": "BP_ClawHammer",
+      "rarity": "Uncommon",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Uncommon/ClawHammer/BP_ClawHammer.uasset"
+    },
+    {
+      "name": "BP_Pickup_ClawHammer",
+      "rarity": "Uncommon",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Uncommon/ClawHammer/BP_Pickup_ClawHammer.uasset"
+    },
+    {
+      "name": "BP_Cleaver",
+      "rarity": "Uncommon",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Uncommon/Cleaver/BP_Cleaver.uasset"
+    },
+    {
+      "name": "BP_Pickup_Cleaver",
+      "rarity": "Uncommon",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Uncommon/Cleaver/BP_Pickup_Cleaver.uasset"
+    },
+    {
+      "name": "BP_Crowbar",
+      "rarity": "Uncommon",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Uncommon/Crowbar/BP_Crowbar.uasset"
+    },
+    {
+      "name": "BP_Pickup_Crowbar",
+      "rarity": "Uncommon",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Uncommon/Crowbar/BP_Pickup_Crowbar.uasset"
+    },
+    {
+      "name": "BP_FireAxe",
+      "rarity": "Uncommon",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Uncommon/FireAxe/BP_FireAxe.uasset"
+    },
+    {
+      "name": "BP_Pickup_FireAxe",
+      "rarity": "Uncommon",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Uncommon/FireAxe/BP_Pickup_FireAxe.uasset"
+    },
+    {
+      "name": "BP_HatchetWoodsman",
+      "rarity": "Uncommon",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Uncommon/HatchetWoodsman/BP_HatchetWoodsman.uasset"
+    },
+    {
+      "name": "BP_Pickup_HatchetWoodsman",
+      "rarity": "Uncommon",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Uncommon/HatchetWoodsman/BP_Pickup_HatchetWoodsman.uasset"
+    },
+    {
+      "name": "BP_Machete",
+      "rarity": "Uncommon",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Uncommon/Machete/BP_Machete.uasset"
+    },
+    {
+      "name": "BP_Pickup_Machete",
+      "rarity": "Uncommon",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Uncommon/Machete/BP_Pickup_Machete.uasset"
+    },
+    {
+      "name": "BP_Pickup_Sledge",
+      "rarity": "Uncommon",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Uncommon/Sledge/BP_Pickup_Sledge.uasset"
+    },
+    {
+      "name": "BP_Sledge",
+      "rarity": "Uncommon",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Uncommon/Sledge/BP_Sledge.uasset"
+    },
+    {
+      "name": "BP_Pickup_TreeTrimmer",
+      "rarity": "Uncommon",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Uncommon/TreeTrimmer/BP_Pickup_TreeTrimmer.uasset"
+    },
+    {
+      "name": "BP_TreeTrimmer",
+      "rarity": "Uncommon",
+      "path": "NMRiH2/Content/Blueprints/Items/Melee/Approved/Uncommon/TreeTrimmer/BP_TreeTrimmer.uasset"
+    }
+  ],
+  "consumables": [
+    {
+      "name": "ID_Consumable_Adrenaline",
+      "path": "NMRiH2/Content/Data/Consumables/ID_Consumable_Adrenaline.uasset"
+    },
+    {
+      "name": "ID_Consumable_Bandage",
+      "path": "NMRiH2/Content/Data/Consumables/ID_Consumable_Bandage.uasset"
+    },
+    {
+      "name": "ID_Consumable_C4Explosive",
+      "path": "NMRiH2/Content/Data/Consumables/ID_Consumable_C4Explosive.uasset"
+    },
+    {
+      "name": "ID_Consumable_ClaymoreMine",
+      "path": "NMRiH2/Content/Data/Consumables/ID_Consumable_ClaymoreMine.uasset"
+    },
+    {
+      "name": "ID_Consumable_Dynamite",
+      "path": "NMRiH2/Content/Data/Consumables/ID_Consumable_Dynamite.uasset"
+    },
+    {
+      "name": "ID_Consumable_EMPCharge",
+      "path": "NMRiH2/Content/Data/Consumables/ID_Consumable_EMPCharge.uasset"
+    },
+    {
+      "name": "ID_Consumable_Firecrackers",
+      "path": "NMRiH2/Content/Data/Consumables/ID_Consumable_Firecrackers.uasset"
+    },
+    {
+      "name": "ID_Consumable_GeneTherapy",
+      "path": "NMRiH2/Content/Data/Consumables/ID_Consumable_GeneTherapy.uasset"
+    },
+    {
+      "name": "ID_Consumable_Glowstick",
+      "path": "NMRiH2/Content/Data/Consumables/ID_Consumable_Glowstick.uasset"
+    },
+    {
+      "name": "ID_Consumable_Grenade_ANM14",
+      "path": "NMRiH2/Content/Data/Consumables/ID_Consumable_Grenade_ANM14.uasset"
+    },
+    {
+      "name": "ID_Consumable_Grenade_Flashbang",
+      "path": "NMRiH2/Content/Data/Consumables/ID_Consumable_Grenade_Flashbang.uasset"
+    },
+    {
+      "name": "ID_Consumable_Grenade_M34WP",
+      "path": "NMRiH2/Content/Data/Consumables/ID_Consumable_Grenade_M34WP.uasset"
+    },
+    {
+      "name": "ID_Consumable_Grenade_M67",
+      "path": "NMRiH2/Content/Data/Consumables/ID_Consumable_Grenade_M67.uasset"
+    },
+    {
+      "name": "ID_Consumable_LockpickingKit",
+      "path": "NMRiH2/Content/Data/Consumables/ID_Consumable_LockpickingKit.uasset"
+    },
+    {
+      "name": "ID_Consumable_MassCasualtyKit",
+      "path": "NMRiH2/Content/Data/Consumables/ID_Consumable_MassCasualtyKit.uasset"
+    },
+    {
+      "name": "ID_Consumable_Medkit",
+      "path": "NMRiH2/Content/Data/Consumables/ID_Consumable_Medkit.uasset"
+    },
+    {
+      "name": "ID_Consumable_PhalanxPills",
+      "path": "NMRiH2/Content/Data/Consumables/ID_Consumable_PhalanxPills.uasset"
+    },
+    {
+      "name": "ID_Consumable_ScentMaskingSpray",
+      "path": "NMRiH2/Content/Data/Consumables/ID_Consumable_ScentMaskingSpray.uasset"
+    },
+    {
+      "name": "ID_Consumable_StimPack",
+      "path": "NMRiH2/Content/Data/Consumables/ID_Consumable_StimPack.uasset"
+    }
+  ],
+  "permanents": [
+    {
+      "name": "ID_Permanent_ASP",
+      "path": "NMRiH2/Content/Data/Permanents/ID_Permanent_ASP.uasset"
+    },
+    {
+      "name": "ID_Permanent_CamelPack",
+      "path": "NMRiH2/Content/Data/Permanents/ID_Permanent_CamelPack.uasset"
+    },
+    {
+      "name": "ID_Permanent_DropHolster",
+      "path": "NMRiH2/Content/Data/Permanents/ID_Permanent_DropHolster.uasset"
+    },
+    {
+      "name": "ID_Permanent_DualMagClamp",
+      "path": "NMRiH2/Content/Data/Permanents/ID_Permanent_DualMagClamp.uasset"
+    },
+    {
+      "name": "ID_Permanent_GasMask",
+      "path": "NMRiH2/Content/Data/Permanents/ID_Permanent_GasMask.uasset"
+    },
+    {
+      "name": "ID_Permanent_GunLight_Large",
+      "path": "NMRiH2/Content/Data/Permanents/ID_Permanent_GunLight_Large.uasset"
+    },
+    {
+      "name": "ID_Permanent_GunLight_Small",
+      "path": "NMRiH2/Content/Data/Permanents/ID_Permanent_GunLight_Small.uasset"
+    },
+    {
+      "name": "ID_Permanent_HTGPS",
+      "path": "NMRiH2/Content/Data/Permanents/ID_Permanent_HTGPS.uasset"
+    },
+    {
+      "name": "ID_Permanent_LaserSight",
+      "path": "NMRiH2/Content/Data/Permanents/ID_Permanent_LaserSight.uasset"
+    },
+    {
+      "name": "ID_Permanent_LongGunGPS",
+      "path": "NMRiH2/Content/Data/Permanents/ID_Permanent_LongGunGPS.uasset"
+    },
+    {
+      "name": "ID_Permanent_MagDisplay",
+      "path": "NMRiH2/Content/Data/Permanents/ID_Permanent_MagDisplay.uasset"
+    },
+    {
+      "name": "ID_Permanent_MagLite",
+      "path": "NMRiH2/Content/Data/Permanents/ID_Permanent_MagLite.uasset"
+    },
+    {
+      "name": "ID_Permanent_MedicalSmartwatch",
+      "path": "NMRiH2/Content/Data/Permanents/ID_Permanent_MedicalSmartwatch.uasset"
+    },
+    {
+      "name": "ID_Permanent_NVG",
+      "path": "NMRiH2/Content/Data/Permanents/ID_Permanent_NVG.uasset"
+    },
+    {
+      "name": "ID_Permanent_ShoulderMountedLight",
+      "path": "NMRiH2/Content/Data/Permanents/ID_Permanent_ShoulderMountedLight.uasset"
+    },
+    {
+      "name": "ID_Permanent_Suppressor_Large",
+      "path": "NMRiH2/Content/Data/Permanents/ID_Permanent_Suppressor_Large.uasset"
+    },
+    {
+      "name": "ID_Permanent_Suppressor_Small",
+      "path": "NMRiH2/Content/Data/Permanents/ID_Permanent_Suppressor_Small.uasset"
+    },
+    {
+      "name": "ID_Permanent_ThermalGoggles",
+      "path": "NMRiH2/Content/Data/Permanents/ID_Permanent_ThermalGoggles.uasset"
+    },
+    {
+      "name": "ID_Permanent_ThrowablesBandolier",
+      "path": "NMRiH2/Content/Data/Permanents/ID_Permanent_ThrowablesBandolier.uasset"
+    }
+  ],
+  "attachments": [
+    {
+      "name": "IA_MZL_L_Brake_01A",
+      "path": "NMRiH2/Content/Data/Attachments/IA_MZL_L_Brake_01A.uasset"
+    },
+    {
+      "name": "IA_MZL_L_Compensator",
+      "path": "NMRiH2/Content/Data/Attachments/IA_MZL_L_Compensator.uasset"
+    },
+    {
+      "name": "IA_MZL_L_ShotgunChoke_01A",
+      "path": "NMRiH2/Content/Data/Attachments/IA_MZL_L_ShotgunChoke_01A.uasset"
+    },
+    {
+      "name": "IA_MZL_L_Suppressor",
+      "path": "NMRiH2/Content/Data/Attachments/IA_MZL_L_Suppressor.uasset"
+    },
+    {
+      "name": "IA_MZL_S_Brake_01A",
+      "path": "NMRiH2/Content/Data/Attachments/IA_MZL_S_Brake_01A.uasset"
+    },
+    {
+      "name": "IA_MZL_S_Compensator",
+      "path": "NMRiH2/Content/Data/Attachments/IA_MZL_S_Compensator.uasset"
+    },
+    {
+      "name": "IA_MZL_S_Suppressor",
+      "path": "NMRiH2/Content/Data/Attachments/IA_MZL_S_Suppressor.uasset"
+    },
+    {
+      "name": "IA_RAIL_L_Laser",
+      "path": "NMRiH2/Content/Data/Attachments/IA_RAIL_L_Laser.uasset"
+    },
+    {
+      "name": "IA_RAIL_L_Light",
+      "path": "NMRiH2/Content/Data/Attachments/IA_RAIL_L_Light.uasset"
+    },
+    {
+      "name": "IA_RAIL_MP5_Light",
+      "path": "NMRiH2/Content/Data/Attachments/IA_RAIL_MP5_Light.uasset"
+    },
+    {
+      "name": "IA_RAIL_S_Laser",
+      "path": "NMRiH2/Content/Data/Attachments/IA_RAIL_S_Laser.uasset"
+    },
+    {
+      "name": "IA_RAIL_S_Light",
+      "path": "NMRiH2/Content/Data/Attachments/IA_RAIL_S_Light.uasset"
+    },
+    {
+      "name": "IA_SIGHT_ACOG",
+      "path": "NMRiH2/Content/Data/Attachments/IA_SIGHT_ACOG.uasset"
+    },
+    {
+      "name": "IA_SIGHT_BUIS",
+      "path": "NMRiH2/Content/Data/Attachments/IA_SIGHT_BUIS.uasset"
+    },
+    {
+      "name": "IA_SIGHT_CarryHandle",
+      "path": "NMRiH2/Content/Data/Attachments/IA_SIGHT_CarryHandle.uasset"
+    },
+    {
+      "name": "IA_SIGHT_GhostRing",
+      "path": "NMRiH2/Content/Data/Attachments/IA_SIGHT_GhostRing.uasset"
+    },
+    {
+      "name": "IA_SIGHT_Holo",
+      "path": "NMRiH2/Content/Data/Attachments/IA_SIGHT_Holo.uasset"
+    },
+    {
+      "name": "IA_SIGHT_HoloSmall",
+      "path": "NMRiH2/Content/Data/Attachments/IA_SIGHT_HoloSmall.uasset"
+    },
+    {
+      "name": "IA_SIGHT_Scope",
+      "path": "NMRiH2/Content/Data/Attachments/IA_SIGHT_Scope.uasset"
+    }
+  ],
+  "recipes": [
+    {
+      "name": "ID_Recipe_Barricade_Electrified",
+      "path": "NMRiH2/Content/Data/Recipes/Barricades/ID_Recipe_Barricade_Electrified.uasset"
+    },
+    {
+      "name": "ID_Recipe_Barricade_Explosive",
+      "path": "NMRiH2/Content/Data/Recipes/Barricades/ID_Recipe_Barricade_Explosive.uasset"
+    },
+    {
+      "name": "ID_Recipe_Barricade_Incendiary",
+      "path": "NMRiH2/Content/Data/Recipes/Barricades/ID_Recipe_Barricade_Incendiary.uasset"
+    },
+    {
+      "name": "ID_Recipe_Barricade_Reinforced",
+      "path": "NMRiH2/Content/Data/Recipes/Barricades/ID_Recipe_Barricade_Reinforced.uasset"
+    },
+    {
+      "name": "ID_Recipe_Barricade_ShotgunAmmo",
+      "path": "NMRiH2/Content/Data/Recipes/Barricades/ID_Recipe_Barricade_ShotgunAmmo.uasset"
+    },
+    {
+      "name": "ID_Recipe_Barricade_Spiked",
+      "path": "NMRiH2/Content/Data/Recipes/Barricades/ID_Recipe_Barricade_Spiked.uasset"
+    },
+    {
+      "name": "ID_Recipe_Barricade_Wooden",
+      "path": "NMRiH2/Content/Data/Recipes/Barricades/ID_Recipe_Barricade_Wooden.uasset"
+    },
+    {
+      "name": "ID_Recipe_AntibioticBandage",
+      "path": "NMRiH2/Content/Data/Recipes/Medical/ID_Recipe_AntibioticBandage.uasset"
+    },
+    {
+      "name": "ID_Recipe_AntibioticSyringe",
+      "path": "NMRiH2/Content/Data/Recipes/Medical/ID_Recipe_AntibioticSyringe.uasset"
+    },
+    {
+      "name": "ID_Recipe_Bandage",
+      "path": "NMRiH2/Content/Data/Recipes/Medical/ID_Recipe_Bandage.uasset"
+    },
+    {
+      "name": "ID_Recipe_CauterizedDisinfectant",
+      "path": "NMRiH2/Content/Data/Recipes/Medical/ID_Recipe_CauterizedDisinfectant.uasset"
+    },
+    {
+      "name": "ID_Recipe_DirtyHeal",
+      "path": "NMRiH2/Content/Data/Recipes/Medical/ID_Recipe_DirtyHeal.uasset"
+    },
+    {
+      "name": "ID_Recipe_HydrogenPeroxide",
+      "path": "NMRiH2/Content/Data/Recipes/Medical/ID_Recipe_HydrogenPeroxide.uasset"
+    },
+    {
+      "name": "ID_Recipe_Salve",
+      "path": "NMRiH2/Content/Data/Recipes/Medical/ID_Recipe_Salve.uasset"
+    },
+    {
+      "name": "ID_Recipe_Splint",
+      "path": "NMRiH2/Content/Data/Recipes/Medical/ID_Recipe_Splint.uasset"
+    },
+    {
+      "name": "ID_Recipe_Stimulants",
+      "path": "NMRiH2/Content/Data/Recipes/Medical/ID_Recipe_Stimulants.uasset"
+    },
+    {
+      "name": "ID_Recipe_Tourniquet",
+      "path": "NMRiH2/Content/Data/Recipes/Medical/ID_Recipe_Tourniquet.uasset"
+    },
+    {
+      "name": "ID_Recipe_BloodBomb",
+      "path": "NMRiH2/Content/Data/Recipes/Throwables/ID_Recipe_BloodBomb.uasset"
+    },
+    {
+      "name": "ID_Recipe_BloodLure",
+      "path": "NMRiH2/Content/Data/Recipes/Throwables/ID_Recipe_BloodLure.uasset"
+    },
+    {
+      "name": "ID_Recipe_EMP",
+      "path": "NMRiH2/Content/Data/Recipes/Throwables/ID_Recipe_EMP.uasset"
+    },
+    {
+      "name": "ID_Recipe_ImprovisedFlashbang",
+      "path": "NMRiH2/Content/Data/Recipes/Throwables/ID_Recipe_ImprovisedFlashbang.uasset"
+    },
+    {
+      "name": "ID_Recipe_ImprovisedTearGas",
+      "path": "NMRiH2/Content/Data/Recipes/Throwables/ID_Recipe_ImprovisedTearGas.uasset"
+    },
+    {
+      "name": "ID_Recipe_Molotov",
+      "path": "NMRiH2/Content/Data/Recipes/Throwables/ID_Recipe_Molotov.uasset"
+    },
+    {
+      "name": "ID_Recipe_MustardGas",
+      "path": "NMRiH2/Content/Data/Recipes/Throwables/ID_Recipe_MustardGas.uasset"
+    },
+    {
+      "name": "ID_Recipe_Pipebomb",
+      "path": "NMRiH2/Content/Data/Recipes/Throwables/ID_Recipe_Pipebomb.uasset"
+    },
+    {
+      "name": "ID_Recipe_RomanCocktail",
+      "path": "NMRiH2/Content/Data/Recipes/Throwables/ID_Recipe_RomanCocktail.uasset"
+    },
+    {
+      "name": "ID_Recipe_BasicTripwire",
+      "path": "NMRiH2/Content/Data/Recipes/Traps/ID_Recipe_BasicTripwire.uasset"
+    },
+    {
+      "name": "ID_Recipe_BuckshotTripwire",
+      "path": "NMRiH2/Content/Data/Recipes/Traps/ID_Recipe_BuckshotTripwire.uasset"
+    },
+    {
+      "name": "ID_Recipe_ChemicalFireTrap",
+      "path": "NMRiH2/Content/Data/Recipes/Traps/ID_Recipe_ChemicalFireTrap.uasset"
+    },
+    {
+      "name": "ID_Recipe_DirectionalMine",
+      "path": "NMRiH2/Content/Data/Recipes/Traps/ID_Recipe_DirectionalMine.uasset"
+    },
+    {
+      "name": "ID_Recipe_ElectrifiedChainlink",
+      "path": "NMRiH2/Content/Data/Recipes/Traps/ID_Recipe_ElectrifiedChainlink.uasset"
+    },
+    {
+      "name": "ID_Recipe_ElectrifiedTripwire",
+      "path": "NMRiH2/Content/Data/Recipes/Traps/ID_Recipe_ElectrifiedTripwire.uasset"
+    },
+    {
+      "name": "ID_Recipe_IED",
+      "path": "NMRiH2/Content/Data/Recipes/Traps/ID_Recipe_IED.uasset"
+    },
+    {
+      "name": "ID_Recipe_NoiseMakerFlasher",
+      "path": "NMRiH2/Content/Data/Recipes/Traps/ID_Recipe_NoiseMakerFlasher.uasset"
+    },
+    {
+      "name": "ID_Recipe_SmokeTripwire",
+      "path": "NMRiH2/Content/Data/Recipes/Traps/ID_Recipe_SmokeTripwire.uasset"
+    },
+    {
+      "name": "ID_Recipe_SoundTripwire",
+      "path": "NMRiH2/Content/Data/Recipes/Traps/ID_Recipe_SoundTripwire.uasset"
+    },
+    {
+      "name": "ID_Recipe_SpikedTripwire",
+      "path": "NMRiH2/Content/Data/Recipes/Traps/ID_Recipe_SpikedTripwire.uasset"
+    },
+    {
+      "name": "ID_Recipe_WallmountedBuckshot",
+      "path": "NMRiH2/Content/Data/Recipes/Traps/ID_Recipe_WallmountedBuckshot.uasset"
+    },
+    {
+      "name": "ID_Recipe_WallmountedExplosive",
+      "path": "NMRiH2/Content/Data/Recipes/Traps/ID_Recipe_WallmountedExplosive.uasset"
+    }
+  ],
+  "stims": [
+    {
+      "name": "STIM_Explosion",
+      "path": "NMRiH2/Content/Data/Stims/Items/Explosives/STIM_Explosion.uasset"
+    },
+    {
+      "name": "STIM_PipeBomb",
+      "path": "NMRiH2/Content/Data/Stims/Items/Explosives/STIM_PipeBomb.uasset"
+    },
+    {
+      "name": "STIM_Gunshot_AssaultRifle",
+      "path": "NMRiH2/Content/Data/Stims/Items/Guns/STIM_Gunshot_AssaultRifle.uasset"
+    },
+    {
+      "name": "STIM_Gunshot_Pistol",
+      "path": "NMRiH2/Content/Data/Stims/Items/Guns/STIM_Gunshot_Pistol.uasset"
+    },
+    {
+      "name": "STIM_Gunshot_Rifle",
+      "path": "NMRiH2/Content/Data/Stims/Items/Guns/STIM_Gunshot_Rifle.uasset"
+    },
+    {
+      "name": "STIM_Gunshot_Shotgun",
+      "path": "NMRiH2/Content/Data/Stims/Items/Guns/STIM_Gunshot_Shotgun.uasset"
+    },
+    {
+      "name": "STIM_Gunshot_Silenced",
+      "path": "NMRiH2/Content/Data/Stims/Items/Guns/STIM_Gunshot_Silenced.uasset"
+    },
+    {
+      "name": "STIM_Gunshot",
+      "path": "NMRiH2/Content/Data/Stims/Items/Guns/STIM_Gunshot.uasset"
+    },
+    {
+      "name": "STIM_ThrownItemLandedOnSurface",
+      "path": "NMRiH2/Content/Data/Stims/Items/STIM_ThrownItemLandedOnSurface.uasset"
+    },
+    {
+      "name": "STIM_Weld",
+      "path": "NMRiH2/Content/Data/Stims/Items/STIM_Weld.uasset"
+    },
+    {
+      "name": "STIM_AlarmBox_Alarm",
+      "path": "NMRiH2/Content/Data/Stims/Objective/STIM_AlarmBox_Alarm.uasset"
+    },
+    {
+      "name": "STIM_Player_Footstep_Crouch_PowerPlant",
+      "path": "NMRiH2/Content/Data/Stims/player/STIM_Player_Footstep_Crouch_PowerPlant.uasset"
+    },
+    {
+      "name": "STIM_Player_Footstep_Crouch",
+      "path": "NMRiH2/Content/Data/Stims/Player/STIM_Player_Footstep_Crouch.uasset"
+    },
+    {
+      "name": "STIM_Player_Footstep_Sprint_PowerPlant",
+      "path": "NMRiH2/Content/Data/Stims/player/STIM_Player_Footstep_Sprint_PowerPlant.uasset"
+    },
+    {
+      "name": "STIM_Player_Footstep_Sprint",
+      "path": "NMRiH2/Content/Data/Stims/Player/STIM_Player_Footstep_Sprint.uasset"
+    },
+    {
+      "name": "STIM_Player_Footstep_Walk_PowerPlant",
+      "path": "NMRiH2/Content/Data/Stims/player/STIM_Player_Footstep_Walk_PowerPlant.uasset"
+    },
+    {
+      "name": "STIM_Player_Footstep_Walk",
+      "path": "NMRiH2/Content/Data/Stims/Player/STIM_Player_Footstep_Walk.uasset"
+    },
+    {
+      "name": "STIM_AirDrop",
+      "path": "NMRiH2/Content/Data/Stims/Props/STIM_AirDrop.uasset"
+    },
+    {
+      "name": "STIM_CarAlarm",
+      "path": "NMRiH2/Content/Data/Stims/Props/STIM_CarAlarm.uasset"
+    },
+    {
+      "name": "STIM_Zombie_Shriek",
+      "path": "NMRiH2/Content/Data/Stims/Zombie/STIM_Zombie_Shriek.uasset"
+    }
+  ],
+  "attributesTables": [
+    {
+      "name": "CCT_Attributes_AI",
+      "path": "NMRiH2/Content/Data/Attributes/AI/CCT_Attributes_AI.uasset"
+    },
+    {
+      "name": "CCT_Tunables_AI",
+      "path": "NMRiH2/Content/Data/Attributes/AI/Tunables/CCT_Tunables_AI.uasset"
+    },
+    {
+      "name": "CT_Tunables_AI",
+      "path": "NMRiH2/Content/Data/Attributes/AI/Tunables/CT_Tunables_AI.uasset"
+    },
+    {
+      "name": "CT_ATT_Zomb_Adult_MUT",
+      "path": "NMRiH2/Content/Data/Attributes/AI/Zombies/CT_ATT_Zomb_Adult_MUT.uasset"
+    },
+    {
+      "name": "CT_ATT_Zomb_Adult_RNR",
+      "path": "NMRiH2/Content/Data/Attributes/AI/Zombies/CT_ATT_Zomb_Adult_RNR.uasset"
+    },
+    {
+      "name": "CT_ATT_Zomb_Adult_SHA",
+      "path": "NMRiH2/Content/Data/Attributes/AI/Zombies/CT_ATT_Zomb_Adult_SHA.uasset"
+    },
+    {
+      "name": "CT_ATT_Zomb_Adult_WLK",
+      "path": "NMRiH2/Content/Data/Attributes/AI/Zombies/CT_ATT_Zomb_Adult_WLK.uasset"
+    },
+    {
+      "name": "CT_ATT_Zomb_Child_RNR",
+      "path": "NMRiH2/Content/Data/Attributes/AI/Zombies/CT_ATT_Zomb_Child_RNR.uasset"
+    },
+    {
+      "name": "CT_ATT_Zomb_Child_SHA",
+      "path": "NMRiH2/Content/Data/Attributes/AI/Zombies/CT_ATT_Zomb_Child_SHA.uasset"
+    },
+    {
+      "name": "CT_ATT_Zomb_Child_WLK",
+      "path": "NMRiH2/Content/Data/Attributes/AI/Zombies/CT_ATT_Zomb_Child_WLK.uasset"
+    },
+    {
+      "name": "ATT_GlobalDefault",
+      "path": "NMRiH2/Content/Data/Attributes/ATT_GlobalDefault.uasset"
+    },
+    {
+      "name": "ATT_AlarmBox",
+      "path": "NMRiH2/Content/Data/Attributes/Breakables/ATT_AlarmBox.uasset"
+    },
+    {
+      "name": "ATT_BarricadeBoard",
+      "path": "NMRiH2/Content/Data/Attributes/Breakables/ATT_BarricadeBoard.uasset"
+    },
+    {
+      "name": "ATT_DoorBase",
+      "path": "NMRiH2/Content/Data/Attributes/Breakables/ATT_DoorBase.uasset"
+    },
+    {
+      "name": "ATT_Padlock",
+      "path": "NMRiH2/Content/Data/Attributes/Breakables/ATT_Padlock.uasset"
+    },
+    {
+      "name": "ATT_RadioItem",
+      "path": "NMRiH2/Content/Data/Attributes/Breakables/ATT_RadioItem.uasset"
+    },
+    {
+      "name": "ATT_StrongDoor",
+      "path": "NMRiH2/Content/Data/Attributes/Breakables/ATT_StrongDoor.uasset"
+    },
+    {
+      "name": "ATT_StrongWindow",
+      "path": "NMRiH2/Content/Data/Attributes/Breakables/ATT_StrongWindow.uasset"
+    },
+    {
+      "name": "ATT_WeakDoor",
+      "path": "NMRiH2/Content/Data/Attributes/Breakables/ATT_WeakDoor.uasset"
+    },
+    {
+      "name": "ATT_WeakWindow",
+      "path": "NMRiH2/Content/Data/Attributes/Breakables/ATT_WeakWindow.uasset"
+    },
+    {
+      "name": "590A1_DamageFalloff",
+      "path": "NMRiH2/Content/Data/Attributes/DamageFallOffCurves/590A1_DamageFalloff.uasset"
+    },
+    {
+      "name": "DT11_DamageFalloff",
+      "path": "NMRiH2/Content/Data/Attributes/DamageFallOffCurves/DT11_DamageFalloff.uasset"
+    },
+    {
+      "name": "GruberMkVII_DamageFalloff",
+      "path": "NMRiH2/Content/Data/Attributes/DamageFallOffCurves/GruberMkVII_DamageFalloff.uasset"
+    },
+    {
+      "name": "GruberRanch_DamageFalloff",
+      "path": "NMRiH2/Content/Data/Attributes/DamageFallOffCurves/GruberRanch_DamageFalloff.uasset"
+    },
+    {
+      "name": "HandGun_DamageFalloff",
+      "path": "NMRiH2/Content/Data/Attributes/DamageFallOffCurves/HandGun_DamageFalloff.uasset"
+    },
+    {
+      "name": "HeavyRifle_DamageFalloff",
+      "path": "NMRiH2/Content/Data/Attributes/DamageFallOffCurves/HeavyRifle_DamageFalloff.uasset"
+    },
+    {
+      "name": "LightRifle_DamageFalloff",
+      "path": "NMRiH2/Content/Data/Attributes/DamageFallOffCurves/LightRifle_DamageFalloff.uasset"
+    },
+    {
+      "name": "M14_DamageFalloff",
+      "path": "NMRiH2/Content/Data/Attributes/DamageFallOffCurves/M14_DamageFalloff.uasset"
+    },
+    {
+      "name": "M7_DamageFalloff",
+      "path": "NMRiH2/Content/Data/Attributes/DamageFallOffCurves/M7_DamageFalloff.uasset"
+    },
+    {
+      "name": "MC15_DamageFalloff",
+      "path": "NMRiH2/Content/Data/Attributes/DamageFallOffCurves/MC15_DamageFalloff.uasset"
+    },
+    {
+      "name": "MP5_DamageFalloff",
+      "path": "NMRiH2/Content/Data/Attributes/DamageFallOffCurves/MP5_DamageFalloff.uasset"
+    },
+    {
+      "name": "RX12_DamageFalloff",
+      "path": "NMRiH2/Content/Data/Attributes/DamageFallOffCurves/RX12_DamageFalloff.uasset"
+    },
+    {
+      "name": "Winchester_DamageFalloff",
+      "path": "NMRiH2/Content/Data/Attributes/DamageFallOffCurves/Winchester_DamageFalloff.uasset"
+    },
+    {
+      "name": "ATT_Bandages",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/ATT_Bandages.uasset"
+    },
+    {
+      "name": "ATT_Battery",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/ATT_Battery.uasset"
+    },
+    {
+      "name": "ATT_MedKit",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/ATT_MedKit.uasset"
+    },
+    {
+      "name": "ATT_Carryables",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Carryables/ATT_Carryables.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_Battery",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/CT_ItemAttributes_Battery.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_Medical",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/CT_ItemAttributes_Medical.uasset"
+    },
+    {
+      "name": "ATT_ProximityExplosive",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Deployables/ATT_ProximityExplosive.uasset"
+    },
+    {
+      "name": "ATT_Gruber922",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Firearms/ATT_Gruber922.uasset"
+    },
+    {
+      "name": "ATT_GruberRanch",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Firearms/ATT_GruberRanch.uasset"
+    },
+    {
+      "name": "ATT_Hunter85",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Firearms/ATT_Hunter85.uasset"
+    },
+    {
+      "name": "ATT_M14",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Firearms/ATT_M14.uasset"
+    },
+    {
+      "name": "ATT_M1911",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Firearms/ATT_M1911.uasset"
+    },
+    {
+      "name": "ATT_M7",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Firearms/ATT_M7.uasset"
+    },
+    {
+      "name": "ATT_M9A1",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Firearms/ATT_M9A1.uasset"
+    },
+    {
+      "name": "ATT_MC15",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Firearms/ATT_MC15.uasset"
+    },
+    {
+      "name": "ATT_Model13",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Firearms/ATT_Model13.uasset"
+    },
+    {
+      "name": "ATT_MP5",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Firearms/ATT_MP5.uasset"
+    },
+    {
+      "name": "ATT_Shotgun_DT11",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Firearms/ATT_Shotgun_DT11.uasset"
+    },
+    {
+      "name": "ATT_Shotgun_M590A1",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Firearms/ATT_Shotgun_M590A1.uasset"
+    },
+    {
+      "name": "ATT_Shotgun_RX12",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Firearms/ATT_Shotgun_RX12.uasset"
+    },
+    {
+      "name": "ATT_Winchester_1873",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Firearms/ATT_Winchester_1873.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_BauerPrecision",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Firearms/CT_ItemAttributes_BauerPrecision.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_CommonFirearm",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Firearms/CT_ItemAttributes_CommonFirearm.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_CommonShotgun",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Firearms/CT_ItemAttributes_CommonShotgun.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_DT11",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Firearms/CT_ItemAttributes_DT11.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_Gruber922",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Firearms/CT_ItemAttributes_Gruber922.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_GruberMkVII",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Firearms/CT_ItemAttributes_GruberMkVII.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_GruberRanch",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Firearms/CT_ItemAttributes_GruberRanch.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_Hunter85",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Firearms/CT_ItemAttributes_Hunter85.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_M14",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Firearms/CT_ItemAttributes_M14.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_M1911",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Firearms/CT_ItemAttributes_M1911.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_M590A1",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Firearms/CT_ItemAttributes_M590A1.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_M7",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Firearms/CT_ItemAttributes_M7.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_M9A1",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Firearms/CT_ItemAttributes_M9A1.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_MC15",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Firearms/CT_ItemAttributes_MC15.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_Model13",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Firearms/CT_ItemAttributes_Model13.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_MP5",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Firearms/CT_ItemAttributes_MP5.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_RX12",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Firearms/CT_ItemAttributes_RX12.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_Winchester_1873",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Firearms/CT_ItemAttributes_Winchester_1873.uasset"
+    },
+    {
+      "name": "ATT_Melee_BaseballBat",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/ATT_Melee_BaseballBat.uasset"
+    },
+    {
+      "name": "ATT_Melee_ClawHammer",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/ATT_Melee_ClawHammer.uasset"
+    },
+    {
+      "name": "ATT_Melee_Cleaver",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/ATT_Melee_Cleaver.uasset"
+    },
+    {
+      "name": "ATT_Melee_Crowbar",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/ATT_Melee_Crowbar.uasset"
+    },
+    {
+      "name": "ATT_Melee_FireAxe",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/ATT_Melee_FireAxe.uasset"
+    },
+    {
+      "name": "ATT_Melee_Fists",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/ATT_Melee_Fists.uasset"
+    },
+    {
+      "name": "ATT_Melee_Hatchet",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/ATT_Melee_Hatchet.uasset"
+    },
+    {
+      "name": "ATT_Melee_KnifeSmall",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/ATT_Melee_KnifeSmall.uasset"
+    },
+    {
+      "name": "ATT_Melee_Machete",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/ATT_Melee_Machete.uasset"
+    },
+    {
+      "name": "ATT_Melee_Mallet",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/ATT_Melee_Mallet.uasset"
+    },
+    {
+      "name": "ATT_Melee_PipeLarge",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/ATT_Melee_PipeLarge.uasset"
+    },
+    {
+      "name": "ATT_Melee_PipeSmall",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/ATT_Melee_PipeSmall.uasset"
+    },
+    {
+      "name": "ATT_Melee_Rebar",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/ATT_Melee_Rebar.uasset"
+    },
+    {
+      "name": "ATT_Melee_Shovel",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/ATT_Melee_Shovel.uasset"
+    },
+    {
+      "name": "ATT_Melee_Sledge",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/ATT_Melee_Sledge.uasset"
+    },
+    {
+      "name": "ATT_Melee_TireIron",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/ATT_Melee_TireIron.uasset"
+    },
+    {
+      "name": "ATT_Melee_TreeTrimmer",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/ATT_Melee_TreeTrimmer.uasset"
+    },
+    {
+      "name": "ATT_Melee_WrenchLarge",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/ATT_Melee_WrenchLarge.uasset"
+    },
+    {
+      "name": "ATT_Melee_WrenchSmall",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/ATT_Melee_WrenchSmall.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_BaseballBat",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/CT_ItemAttributes_BaseballBat.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_Chainsaw",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/CT_ItemAttributes_Chainsaw.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_ClawHammer",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/CT_ItemAttributes_ClawHammer.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_Cleaver",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/CT_ItemAttributes_Cleaver.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_CommonCarryable",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/CT_ItemAttributes_CommonCarryable.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_CommonMelee",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/CT_ItemAttributes_CommonMelee.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_Crowbar",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/CT_ItemAttributes_Crowbar.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_FireAxe_MeleeTest",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/CT_ItemAttributes_FireAxe_MeleeTest.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_FireAxe",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/CT_ItemAttributes_FireAxe.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_Fists",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/CT_ItemAttributes_Fists.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_Hatchet_MeleeTest",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/CT_ItemAttributes_Hatchet_MeleeTest.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_Hatchet",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/CT_ItemAttributes_Hatchet.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_HockeyStick",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/CT_ItemAttributes_HockeyStick.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_KnifeSmall",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/CT_ItemAttributes_KnifeSmall.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_Machete",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/CT_ItemAttributes_Machete.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_Mallet",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/CT_ItemAttributes_Mallet.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_PipeLarge",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/CT_ItemAttributes_PipeLarge.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_PipeSmall_MeleeTest",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/CT_ItemAttributes_PipeSmall_MeleeTest.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_PipeSmall",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/CT_ItemAttributes_PipeSmall.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_Rebar",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/CT_ItemAttributes_Rebar.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_Shovel",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/CT_ItemAttributes_Shovel.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_Sledge_MeleeTest",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/CT_ItemAttributes_Sledge_MeleeTest.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_Sledge",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/CT_ItemAttributes_Sledge.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_TireIron",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/CT_ItemAttributes_TireIron.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_TreeTrimmer",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/CT_ItemAttributes_TreeTrimmer.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_WrenchLarge",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/CT_ItemAttributes_WrenchLarge.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_WrenchSmall",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Melee/CT_ItemAttributes_WrenchSmall.uasset"
+    },
+    {
+      "name": "ATT_Bottle",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Throwables/ATT_Bottle.uasset"
+    },
+    {
+      "name": "ATT_M67",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Throwables/ATT_M67.uasset"
+    },
+    {
+      "name": "ATT_Molotov",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Throwables/ATT_Molotov.uasset"
+    },
+    {
+      "name": "ATT_PipeBomb",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Throwables/ATT_PipeBomb.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_Grenade_M67",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Throwables/CT_ItemAttributes_Grenade_M67.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_Molotov",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Throwables/CT_ItemAttributes_Molotov.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_PipeBomb",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Approved/Throwables/CT_ItemAttributes_PipeBomb.uasset"
+    },
+    {
+      "name": "ATT_AP85",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_AP85.uasset"
+    },
+    {
+      "name": "ATT_Bull",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_Bull.uasset"
+    },
+    {
+      "name": "ATT_Clipboard",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_Clipboard.uasset"
+    },
+    {
+      "name": "ATT_CX8",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_CX8.uasset"
+    },
+    {
+      "name": "ATT_DirectionalMine",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_DirectionalMine.uasset"
+    },
+    {
+      "name": "ATT_Dynamite",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_Dynamite.uasset"
+    },
+    {
+      "name": "ATT_Eder17",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_Eder17.uasset"
+    },
+    {
+      "name": "ATT_FAL",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_FAL.uasset"
+    },
+    {
+      "name": "ATT_GeneTherapy",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_GeneTherapy.uasset"
+    },
+    {
+      "name": "ATT_IED",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_IED.uasset"
+    },
+    {
+      "name": "ATT_LeeEnfield",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_LeeEnfield.uasset"
+    },
+    {
+      "name": "ATT_M16A4",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_M16A4.uasset"
+    },
+    {
+      "name": "ATT_M1Garand",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_M1Garand.uasset"
+    },
+    {
+      "name": "ATT_Melee_BeerBottle",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_Melee_BeerBottle.uasset"
+    },
+    {
+      "name": "ATT_Melee_Chainsaw",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_Melee_Chainsaw.uasset"
+    },
+    {
+      "name": "ATT_Melee_Cleaver-DEP",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_Melee_Cleaver-DEP.uasset"
+    },
+    {
+      "name": "ATT_Melee_ETool",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_Melee_ETool.uasset"
+    },
+    {
+      "name": "ATT_Melee_Extinguisher",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_Melee_Extinguisher.uasset"
+    },
+    {
+      "name": "ATT_Melee_FryingPan",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_Melee_FryingPan.uasset"
+    },
+    {
+      "name": "ATT_Melee_KitchenKnife",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_Melee_KitchenKnife.uasset"
+    },
+    {
+      "name": "ATT_Melee_KnifeBayonet",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_Melee_KnifeBayonet.uasset"
+    },
+    {
+      "name": "ATT_Melee_KnifeHunter",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_Melee_KnifeHunter.uasset"
+    },
+    {
+      "name": "ATT_Melee_PipeWrench",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_Melee_PipeWrench.uasset"
+    },
+    {
+      "name": "ATT_Melee_Rake",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_Melee_Rake.uasset"
+    },
+    {
+      "name": "ATT_Melee_TableLamp",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_Melee_TableLamp.uasset"
+    },
+    {
+      "name": "ATT_Melee_TireIronVariant",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_Melee_TireIronVariant.uasset"
+    },
+    {
+      "name": "ATT_Melee_Welder",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_Melee_Welder.uasset"
+    },
+    {
+      "name": "ATT_Mk18",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_Mk18.uasset"
+    },
+    {
+      "name": "ATT_MP5A4",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_MP5A4.uasset"
+    },
+    {
+      "name": "ATT_P350",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_P350.uasset"
+    },
+    {
+      "name": "ATT_Pills",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_Pills.uasset"
+    },
+    {
+      "name": "ATT_PowerCable",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_PowerCable.uasset"
+    },
+    {
+      "name": "ATT_SE686",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_SE686.uasset"
+    },
+    {
+      "name": "ATT_Shotgun_870",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_Shotgun_870.uasset"
+    },
+    {
+      "name": "ATT_Shotgun_CoachGun",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_Shotgun_CoachGun.uasset"
+    },
+    {
+      "name": "ATT_Shotgun_M1014",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_Shotgun_M1014.uasset"
+    },
+    {
+      "name": "ATT_Shotgun_Martial",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_Shotgun_Martial.uasset"
+    },
+    {
+      "name": "ATT_SKS",
+      "path": "NMRiH2/Content/Data/Attributes/Items/Archived/ATT_SKS.uasset"
+    },
+    {
+      "name": "CT_ItemAttributes_Default",
+      "path": "NMRiH2/Content/Data/Attributes/Items/CT_ItemAttributes_Default.uasset"
+    },
+    {
+      "name": "DR_ItemAttributes",
+      "path": "NMRiH2/Content/Data/Attributes/Items/DR_ItemAttributes.uasset"
+    },
+    {
+      "name": "ATT_Armor_Shield",
+      "path": "NMRiH2/Content/Data/Attributes/NPCEquipment/ATT_Armor_Shield.uasset"
+    },
+    {
+      "name": "ATT_Equipment_Hat",
+      "path": "NMRiH2/Content/Data/Attributes/NPCEquipment/ATT_Equipment_Hat.uasset"
+    },
+    {
+      "name": "ATT_Equipment_Helmet_Construction",
+      "path": "NMRiH2/Content/Data/Attributes/NPCEquipment/ATT_Equipment_Helmet_Construction.uasset"
+    },
+    {
+      "name": "ATT_Equipment_Helmet_FireFighter",
+      "path": "NMRiH2/Content/Data/Attributes/NPCEquipment/ATT_Equipment_Helmet_FireFighter.uasset"
+    },
+    {
+      "name": "ATT_Equipment_Helmet_PONationalGuard",
+      "path": "NMRiH2/Content/Data/Attributes/NPCEquipment/ATT_Equipment_Helmet_PONationalGuard.uasset"
+    },
+    {
+      "name": "ATT_Equipment_Helmet_RiotPolice",
+      "path": "NMRiH2/Content/Data/Attributes/NPCEquipment/ATT_Equipment_Helmet_RiotPolice.uasset"
+    },
+    {
+      "name": "ATT_Equipment_Helmet",
+      "path": "NMRiH2/Content/Data/Attributes/NPCEquipment/ATT_Equipment_Helmet.uasset"
+    },
+    {
+      "name": "ATT_Firefighter_OxygenTank",
+      "path": "NMRiH2/Content/Data/Attributes/NPCEquipment/ATT_Firefighter_OxygenTank.uasset"
+    },
+    {
+      "name": "ATT_Destructible_Objective_Base",
+      "path": "NMRiH2/Content/Data/Attributes/Objectives/ATT_Destructible_Objective_Base.uasset"
+    },
+    {
+      "name": "ATT_Destructible_Objective_PowerPanel",
+      "path": "NMRiH2/Content/Data/Attributes/Objectives/ATT_Destructible_Objective_PowerPanel.uasset"
+    },
+    {
+      "name": "ATT_Destructible_Objective_RadioTower",
+      "path": "NMRiH2/Content/Data/Attributes/Objectives/ATT_Destructible_Objective_RadioTower.uasset"
+    },
+    {
+      "name": "ATT_AVTR",
+      "path": "NMRiH2/Content/Data/Attributes/Player/ATT_AVTR.uasset"
+    },
+    {
+      "name": "ATT_Explosive_01",
+      "path": "NMRiH2/Content/Data/Attributes/Props/Explosive/ATT_Explosive_01.uasset"
+    },
+    {
+      "name": "ATT_Extinquisher",
+      "path": "NMRiH2/Content/Data/Attributes/Props/Explosive/ATT_Extinquisher.uasset"
+    },
+    {
+      "name": "ATT_FuelPuddle",
+      "path": "NMRiH2/Content/Data/Attributes/Props/Fire/ATT_FuelPuddle.uasset"
+    },
+    {
+      "name": "AttackersToStabilityDamageModifierCurve",
+      "path": "NMRiH2/Content/Data/Attributes/Zombies/AttackersToStabilityDamageModifierCurve.uasset"
+    }
+  ],
+  "ai": [
+    {
+      "name": "CDT_AIArchetypes",
+      "path": "NMRiH2/Content/Data/AI/Archetypes/CDT_AIArchetypes.uasset"
+    },
+    {
+      "name": "DT_AIArchetypes_Zombies",
+      "path": "NMRiH2/Content/Data/AI/Archetypes/Tables/DT_AIArchetypes_Zombies.uasset"
+    },
+    {
+      "name": "DT_AIPrototypes_Zombies_Crawlers",
+      "path": "NMRiH2/Content/Data/AI/Archetypes/Tables/DT_AIPrototypes_Zombies_Crawlers.uasset"
+    },
+    {
+      "name": "DT_AIPrototypes_Zombies",
+      "path": "NMRiH2/Content/Data/AI/Archetypes/Tables/DT_AIPrototypes_Zombies.uasset"
+    },
+    {
+      "name": "AIClass_Player",
+      "path": "NMRiH2/Content/Data/AI/Classes/AIClass_Player.uasset"
+    },
+    {
+      "name": "AIClass_Zombie",
+      "path": "NMRiH2/Content/Data/AI/Classes/AIClass_Zombie.uasset"
+    },
+    {
+      "name": "AICombatAction_ZOM_BasicLeft",
+      "path": "NMRiH2/Content/Data/AI/Combat/Actions/Zombies/AICombatAction_ZOM_BasicLeft.uasset"
+    },
+    {
+      "name": "AICombatAction_ZOM_BasicRight",
+      "path": "NMRiH2/Content/Data/AI/Combat/Actions/Zombies/AICombatAction_ZOM_BasicRight.uasset"
+    },
+    {
+      "name": "AICombatAction_ZOM_Grab",
+      "path": "NMRiH2/Content/Data/AI/Combat/Actions/Zombies/AICombatAction_ZOM_Grab.uasset"
+    },
+    {
+      "name": "AICombatAction_ZOM_Heavy",
+      "path": "NMRiH2/Content/Data/AI/Combat/Actions/Zombies/AICombatAction_ZOM_Heavy.uasset"
+    },
+    {
+      "name": "AICombatAction_ZOM_LongLeft_RUN",
+      "path": "NMRiH2/Content/Data/AI/Combat/Actions/Zombies/AICombatAction_ZOM_LongLeft_RUN.uasset"
+    },
+    {
+      "name": "AICombatAction_ZOM_LongLeft",
+      "path": "NMRiH2/Content/Data/AI/Combat/Actions/Zombies/AICombatAction_ZOM_LongLeft.uasset"
+    },
+    {
+      "name": "AICombatAction_ZOM_LongRight_RUN",
+      "path": "NMRiH2/Content/Data/AI/Combat/Actions/Zombies/AICombatAction_ZOM_LongRight_RUN.uasset"
+    },
+    {
+      "name": "AICombatAction_ZOM_LongRight",
+      "path": "NMRiH2/Content/Data/AI/Combat/Actions/Zombies/AICombatAction_ZOM_LongRight.uasset"
+    },
+    {
+      "name": "AICombatAction_ZOM_Lunge_RUN",
+      "path": "NMRiH2/Content/Data/AI/Combat/Actions/Zombies/AICombatAction_ZOM_Lunge_RUN.uasset"
+    },
+    {
+      "name": "AICombatAction_ZOM_Lunge",
+      "path": "NMRiH2/Content/Data/AI/Combat/Actions/Zombies/AICombatAction_ZOM_Lunge.uasset"
+    },
+    {
+      "name": "AICombatAction_ZOM_UnreachableAttack_Low",
+      "path": "NMRiH2/Content/Data/AI/Combat/Actions/Zombies/AICombatAction_ZOM_UnreachableAttack_Low.uasset"
+    },
+    {
+      "name": "AICombatPattern_ZOM_RUN_Army",
+      "path": "NMRiH2/Content/Data/AI/Combat/Patterns/Zombies/AICombatPattern_ZOM_RUN_Army.uasset"
+    },
+    {
+      "name": "AICombatPattern_ZOM_RUN_Crawler",
+      "path": "NMRiH2/Content/Data/AI/Combat/Patterns/Zombies/AICombatPattern_ZOM_RUN_Crawler.uasset"
+    },
+    {
+      "name": "AICombatPattern_ZOM_RUN",
+      "path": "NMRiH2/Content/Data/AI/Combat/Patterns/Zombies/AICombatPattern_ZOM_RUN.uasset"
+    },
+    {
+      "name": "AICombatPattern_ZOM_SHA",
+      "path": "NMRiH2/Content/Data/AI/Combat/Patterns/Zombies/AICombatPattern_ZOM_SHA.uasset"
+    },
+    {
+      "name": "AICombatPattern_ZOM_WLK_Army",
+      "path": "NMRiH2/Content/Data/AI/Combat/Patterns/Zombies/AICombatPattern_ZOM_WLK_Army.uasset"
+    },
+    {
+      "name": "AICombatPattern_ZOM_WLK_Crawler",
+      "path": "NMRiH2/Content/Data/AI/Combat/Patterns/Zombies/AICombatPattern_ZOM_WLK_Crawler.uasset"
+    },
+    {
+      "name": "AICombatPattern_ZOM_WLK",
+      "path": "NMRiH2/Content/Data/AI/Combat/Patterns/Zombies/AICombatPattern_ZOM_WLK.uasset"
+    },
+    {
+      "name": "GrabCurve_ButtonMashCountByPercentStamina_Default",
+      "path": "NMRiH2/Content/Data/AI/GrabProfiles/GrabCurve_ButtonMashCountByPercentStamina_Default.uasset"
+    },
+    {
+      "name": "GrabCurve_ButtonMashDurationByPercentStamina_Default",
+      "path": "NMRiH2/Content/Data/AI/GrabProfiles/GrabCurve_ButtonMashDurationByPercentStamina_Default.uasset"
+    },
+    {
+      "name": "GrabCurve_FailureDurationByPercentStamina_Default",
+      "path": "NMRiH2/Content/Data/AI/GrabProfiles/GrabCurve_FailureDurationByPercentStamina_Default.uasset"
+    },
+    {
+      "name": "GrabCurve_ReleaseHoldDurationByPercentStamina_Default",
+      "path": "NMRiH2/Content/Data/AI/GrabProfiles/GrabCurve_ReleaseHoldDurationByPercentStamina_Default.uasset"
+    },
+    {
+      "name": "GrabDefinition_Default",
+      "path": "NMRiH2/Content/Data/AI/GrabProfiles/GrabDefinition_Default.uasset"
+    },
+    {
+      "name": "GrabProfile_Default",
+      "path": "NMRiH2/Content/Data/AI/GrabProfiles/GrabProfile_Default.uasset"
+    },
+    {
+      "name": "AIMove_Default",
+      "path": "NMRiH2/Content/Data/AI/Movement/AIMove_Default.uasset"
+    },
+    {
+      "name": "AIMove_ZOM_CRWL",
+      "path": "NMRiH2/Content/Data/AI/Movement/Zombies/AIMove_ZOM_CRWL.uasset"
+    },
+    {
+      "name": "AIMove_ZOM_RNR_CRWL",
+      "path": "NMRiH2/Content/Data/AI/Movement/Zombies/AIMove_ZOM_RNR_CRWL.uasset"
+    },
+    {
+      "name": "AIMove_ZOM_RUN",
+      "path": "NMRiH2/Content/Data/AI/Movement/Zombies/AIMove_ZOM_RUN.uasset"
+    },
+    {
+      "name": "AIMove_ZOM_SHA",
+      "path": "NMRiH2/Content/Data/AI/Movement/Zombies/AIMove_ZOM_SHA.uasset"
+    },
+    {
+      "name": "AIMove_ZOM_WLK",
+      "path": "NMRiH2/Content/Data/AI/Movement/Zombies/AIMove_ZOM_WLK.uasset"
+    },
+    {
+      "name": "SigProfile_Default",
+      "path": "NMRiH2/Content/Data/AI/Significance/SigProfile_Default.uasset"
+    },
+    {
+      "name": "AITicket_Acquire",
+      "path": "NMRiH2/Content/Data/AI/Tickets/AITicket_Acquire.uasset"
+    },
+    {
+      "name": "AITicket_BasicAttack",
+      "path": "NMRiH2/Content/Data/AI/Tickets/AITicket_BasicAttack.uasset"
+    },
+    {
+      "name": "AITicket_Grab",
+      "path": "NMRiH2/Content/Data/AI/Tickets/AITicket_Grab.uasset"
+    },
+    {
+      "name": "AITicket_HeavyAttack",
+      "path": "NMRiH2/Content/Data/AI/Tickets/AITicket_HeavyAttack.uasset"
+    },
+    {
+      "name": "AITicket_LungeAttack",
+      "path": "NMRiH2/Content/Data/AI/Tickets/AITicket_LungeAttack.uasset"
+    },
+    {
+      "name": "AITicket_Taunt",
+      "path": "NMRiH2/Content/Data/AI/Tickets/AITicket_Taunt.uasset"
+    },
+    {
+      "name": "AITicket_LungeAttack_RUN",
+      "path": "NMRiH2/Content/Data/AI/Tickets/Zombies/AITicket_LungeAttack_RUN.uasset"
+    },
+    {
+      "name": "NPCD_ZOM_Default",
+      "path": "NMRiH2/Content/Data/AI/Zombies/NPCData/NPCD_ZOM_Default.uasset"
+    },
+    {
+      "name": "NPCD_ZOM_RUN",
+      "path": "NMRiH2/Content/Data/AI/Zombies/NPCData/NPCD_ZOM_RUN.uasset"
+    },
+    {
+      "name": "NPCD_ZOM_SHA",
+      "path": "NMRiH2/Content/Data/AI/Zombies/NPCData/NPCD_ZOM_SHA.uasset"
+    },
+    {
+      "name": "KTC_Crawler",
+      "path": "NMRiH2/Content/Data/AI/Zombies/Targeting/KTC_Crawler.uasset"
+    },
+    {
+      "name": "KTC_Default",
+      "path": "NMRiH2/Content/Data/AI/Zombies/Targeting/KTC_Default.uasset"
+    },
+    {
+      "name": "KTC_Runner",
+      "path": "NMRiH2/Content/Data/AI/Zombies/Targeting/KTC_Runner.uasset"
+    },
+    {
+      "name": "KTC_Shambler",
+      "path": "NMRiH2/Content/Data/AI/Zombies/Targeting/KTC_Shambler.uasset"
+    },
+    {
+      "name": "KTC_Walker",
+      "path": "NMRiH2/Content/Data/AI/Zombies/Targeting/KTC_Walker.uasset"
+    }
+  ],
+  "challengeTasks": [
+    {
+      "name": "ChallengeTask_Barricades",
+      "path": "NMRiH2/Content/Data/ChallengeSystem/Tasks/ChallengeTask_Barricades.uasset"
+    },
+    {
+      "name": "ChallengeTask_DeployItems",
+      "path": "NMRiH2/Content/Data/ChallengeSystem/Tasks/ChallengeTask_DeployItems.uasset"
+    },
+    {
+      "name": "ChallengeTask_Dismemberments",
+      "path": "NMRiH2/Content/Data/ChallengeSystem/Tasks/ChallengeTask_Dismemberments.uasset"
+    },
+    {
+      "name": "ChallengeTask_Extractions",
+      "path": "NMRiH2/Content/Data/ChallengeSystem/Tasks/ChallengeTask_Extractions.uasset"
+    },
+    {
+      "name": "ChallengeTask_GatherSupplies",
+      "path": "NMRiH2/Content/Data/ChallengeSystem/Tasks/ChallengeTask_GatherSupplies.uasset"
+    },
+    {
+      "name": "ChallengeTask_Headshots",
+      "path": "NMRiH2/Content/Data/ChallengeSystem/Tasks/ChallengeTask_Headshots.uasset"
+    },
+    {
+      "name": "ChallengeTask_Kicks",
+      "path": "NMRiH2/Content/Data/ChallengeSystem/Tasks/ChallengeTask_Kicks.uasset"
+    },
+    {
+      "name": "ChallengeTask_Kill_Zombies",
+      "path": "NMRiH2/Content/Data/ChallengeSystem/Tasks/ChallengeTask_Kill_Zombies.uasset"
+    },
+    {
+      "name": "ChallengeTask_Kills_Explosive",
+      "path": "NMRiH2/Content/Data/ChallengeSystem/Tasks/ChallengeTask_Kills_Explosive.uasset"
+    },
+    {
+      "name": "ChallengeTask_Kills_Melee_Bladed",
+      "path": "NMRiH2/Content/Data/ChallengeSystem/Tasks/ChallengeTask_Kills_Melee_Bladed.uasset"
+    },
+    {
+      "name": "ChallengeTask_Kills_Melee_Blunt",
+      "path": "NMRiH2/Content/Data/ChallengeSystem/Tasks/ChallengeTask_Kills_Melee_Blunt.uasset"
+    },
+    {
+      "name": "ChallengeTask_Kills_Pistol",
+      "path": "NMRiH2/Content/Data/ChallengeSystem/Tasks/ChallengeTask_Kills_Pistol.uasset"
+    },
+    {
+      "name": "ChallengeTask_Kills_Rifle",
+      "path": "NMRiH2/Content/Data/ChallengeSystem/Tasks/ChallengeTask_Kills_Rifle.uasset"
+    },
+    {
+      "name": "ChallengeTask_Kills_Shotgun",
+      "path": "NMRiH2/Content/Data/ChallengeSystem/Tasks/ChallengeTask_Kills_Shotgun.uasset"
+    },
+    {
+      "name": "ChallengeTask_Kills_Thrown",
+      "path": "NMRiH2/Content/Data/ChallengeSystem/Tasks/ChallengeTask_Kills_Thrown.uasset"
+    },
+    {
+      "name": "ChallengeTask_ObjectiveCompletions",
+      "path": "NMRiH2/Content/Data/ChallengeSystem/Tasks/ChallengeTask_ObjectiveCompletions.uasset"
+    },
+    {
+      "name": "ChallengeTask_Shoves",
+      "path": "NMRiH2/Content/Data/ChallengeSystem/Tasks/ChallengeTask_Shoves.uasset"
+    }
+  ],
+  "activityCards": [
+    {
+      "name": "ActivityRoot",
+      "path": "NMRiH2/Content/Data/ActivityCards/ActivityRoot.uasset"
+    },
+    {
+      "name": "BroadwayActivitySubTask",
+      "path": "NMRiH2/Content/Data/ActivityCards/BroadwayActivitySubTask.uasset"
+    },
+    {
+      "name": "BunkerActivitySubTask",
+      "path": "NMRiH2/Content/Data/ActivityCards/BunkerActivitySubTask.uasset"
+    },
+    {
+      "name": "FloodedActivitySubTask",
+      "path": "NMRiH2/Content/Data/ActivityCards/FloodedActivitySubTask.uasset"
+    },
+    {
+      "name": "HospitalActivitySubTask",
+      "path": "NMRiH2/Content/Data/ActivityCards/HospitalActivitySubTask.uasset"
+    },
+    {
+      "name": "LightHouseActivitySubTask",
+      "path": "NMRiH2/Content/Data/ActivityCards/LightHouseActivitySubTask.uasset"
+    },
+    {
+      "name": "NightOfTheLivingDeadActivitySubTask",
+      "path": "NMRiH2/Content/Data/ActivityCards/NightOfTheLivingDeadActivitySubTask.uasset"
+    },
+    {
+      "name": "PottsvilleActivitySubTask",
+      "path": "NMRiH2/Content/Data/ActivityCards/PottsvilleActivitySubTask.uasset"
+    },
+    {
+      "name": "PowerPlantActivitySubTask",
+      "path": "NMRiH2/Content/Data/ActivityCards/PowerPlantActivitySubTask.uasset"
+    },
+    {
+      "name": "WaldoboroActivitySubTask",
+      "path": "NMRiH2/Content/Data/ActivityCards/WaldoboroActivitySubTask.uasset"
+    }
+  ],
+  "lootCollections": [
+    {
+      "name": "KSC_Ammo",
+      "path": "NMRiH2/Content/Data/Items/LootCollections/KSC_Ammo.uasset"
+    },
+    {
+      "name": "KSC_AmmoBox",
+      "path": "NMRiH2/Content/Data/Items/LootCollections/KSC_AmmoBox.uasset"
+    },
+    {
+      "name": "KSC_Deployables",
+      "path": "NMRiH2/Content/Data/Items/LootCollections/KSC_Deployables.uasset"
+    },
+    {
+      "name": "KSC_Firearms",
+      "path": "NMRiH2/Content/Data/Items/LootCollections/KSC_Firearms.uasset"
+    },
+    {
+      "name": "KSC_HERAFiller",
+      "path": "NMRiH2/Content/Data/Items/LootCollections/KSC_HERAFiller.uasset"
+    },
+    {
+      "name": "KSC_Items_Bandages",
+      "path": "NMRiH2/Content/Data/Items/LootCollections/KSC_Items_Bandages.uasset"
+    },
+    {
+      "name": "KSC_Items_Batteries",
+      "path": "NMRiH2/Content/Data/Items/LootCollections/KSC_Items_Batteries.uasset"
+    },
+    {
+      "name": "KSC_Items_GeneTherapy",
+      "path": "NMRiH2/Content/Data/Items/LootCollections/KSC_Items_GeneTherapy.uasset"
+    },
+    {
+      "name": "KSC_Items_Medkits",
+      "path": "NMRiH2/Content/Data/Items/LootCollections/KSC_Items_Medkits.uasset"
+    },
+    {
+      "name": "KSC_Items_Pills",
+      "path": "NMRiH2/Content/Data/Items/LootCollections/KSC_Items_Pills.uasset"
+    },
+    {
+      "name": "KSC_Items_Radio",
+      "path": "NMRiH2/Content/Data/Items/LootCollections/KSC_Items_Radio.uasset"
+    },
+    {
+      "name": "KSC_Items_Traps",
+      "path": "NMRiH2/Content/Data/Items/LootCollections/KSC_Items_Traps.uasset"
+    },
+    {
+      "name": "KSC_Medical",
+      "path": "NMRiH2/Content/Data/Items/LootCollections/KSC_Medical.uasset"
+    },
+    {
+      "name": "KSC_Melee",
+      "path": "NMRiH2/Content/Data/Items/LootCollections/KSC_Melee.uasset"
+    },
+    {
+      "name": "KSC_PowerUp_CratesOnly",
+      "path": "NMRiH2/Content/Data/Items/LootCollections/KSC_PowerUp_CratesOnly.uasset"
+    },
+    {
+      "name": "KSC_PowerUp_Syringe",
+      "path": "NMRiH2/Content/Data/Items/LootCollections/KSC_PowerUp_Syringe.uasset"
+    },
+    {
+      "name": "KSC_PowerUps",
+      "path": "NMRiH2/Content/Data/Items/LootCollections/KSC_PowerUps.uasset"
+    },
+    {
+      "name": "KSC_Supplies_Hero",
+      "path": "NMRiH2/Content/Data/Items/LootCollections/KSC_Supplies_Hero.uasset"
+    },
+    {
+      "name": "KSC_Supplies_Large",
+      "path": "NMRiH2/Content/Data/Items/LootCollections/KSC_Supplies_Large.uasset"
+    },
+    {
+      "name": "KSC_Supplies_Medium",
+      "path": "NMRiH2/Content/Data/Items/LootCollections/KSC_Supplies_Medium.uasset"
+    },
+    {
+      "name": "KSC_Supplies_Small",
+      "path": "NMRiH2/Content/Data/Items/LootCollections/KSC_Supplies_Small.uasset"
+    },
+    {
+      "name": "KSC_Utility",
+      "path": "NMRiH2/Content/Data/Items/LootCollections/KSC_Utility.uasset"
+    }
+  ]
+}
