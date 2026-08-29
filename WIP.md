@@ -1,131 +1,92 @@
 # WIP — NMRIH2 Toolkit (resume here)
 
-**Last worked:** 2026-08-29. **Goal:** an Icarus-Toolkit-style player guide/tools site for
-No More Room in Hell 2, built from the game's own files, enriched with community-wiki numbers.
+**Last worked:** 2026-08-29. **Status: LIVE and feature-complete for current game content.**
+**Goal:** an Icarus-Toolkit-style player guide for No More Room in Hell 2, built from the game's
+own files, enriched with community-wiki numbers.
 
-**PUBLISHED:** https://jampick.github.io/nrih2-toolkit/ (repo: github.com/jampick/nrih2-toolkit,
-GitHub Pages via .github/workflows/deploy.yml — push to main auto-deploys). Live site shows real
-from-files weapon/melee/throwable/zombie stats (47 cards, "from files" badge + expandable full
-attribute lists) AND wiki-sourced skill effects (44/66 skills: Effect + Expert effect + Expert
-unlock level, "from wiki" badge, Fandom CC-BY-SA credited in footer). 22 unreleased skills stay
-name-only. Verified rendering in browser.
+- **Live site:** https://jampick.github.io/nrih2-toolkit/
+- **Repo:** github.com/jampick/nrih2-toolkit (gh auth = `jampick`). GitHub Pages via
+  `.github/workflows/deploy.yml` — **push to `main` auto-deploys** the `site/` folder (~20s).
+- **Game install:** `E:\SteamLibrary\steamapps\common\nmrih2` (Steam appid 292000, UE5.6).
 
-**IMAGES (2026-08-29):** game-file icons on 117 cards (firearms, melee 18/18, skills 53/66,
-throwables, attachments 17/19) + firearm CALIBER rows w/ ammo icons + a random map loading-screen
-as the spooky header hero. Textures decode via foreign usmap; native detex isn't shipped so the
-extractor dumps raw mips (`texraw`) and Python (texture2ddecoder+Pillow) decompresses BC7/DXT.
-Pipeline: extractor texraw -> decode_images.py/decode_flavor.py -> match_images.py -> build_site_data.py.
-**The site is feature-complete for current game content.**
+## What the live site shows
+- **Firearms** — real from-files stats (16 with full sheets; unreleased guns show "no stat table"),
+  game-file icon, and a clear **AMMO row** (caliber + ammo icon) for the 11 released guns.
+- **Melee** (18/18) / **Throwables** — real stats + icons + rarity.
+- **Zombies** (10 profiles incl. **Prime** elites) — real stats from `CT_ATT_Zomb_*`, Adult/Child/Prime filters.
+- **Skills** (66) — wiki-sourced Effect / Expert effect / Expert unlock level for 44; icons for 53.
+  22 unreleased skills are name-only.
+- **Consumables / Gear / Attachments / Recipes / Challenges** — names + icons where available.
+- Source tags everywhere: green **from files** (decoded) vs blue **from wiki** (Fandom, CC-BY-SA).
+- **Spooky header hero** = a random in-game map loading-screen behind a dark wash (per visit).
 
-## TL;DR of where we are
-- Full **from-files catalog** is DONE and is the backbone (names/paths/structure).
-- **BREAKTHROUGH (2026-08-29): real from-files numbers are now UNLOCKED, ToS-safely,** via a
-  **foreign UE 5.6.1 usmap** (no injection, no EAC — just a downloaded mappings file). It decodes
-  everything stored in native `UCurveTable` assets, which turns out to be the **entire weapon /
-  melee / throwable / zombie / item stat backbone.** Verified: `CT_ItemAttributes_M14` gives
-  Damage=35, HeadshotDamage=150, LimbDamage=50, AmmoCapacity=20, RateOfFire=0.05, full recoil/
-  spread/penetration/range — a complete stat sheet, per weapon. Raw JSON in `data/stats-raw/`.
-- **Still wiki-only: SKILLS.** The 66 skills' numeric effects live in Blueprint `GE_` GameplayEffect
-  CDOs, whose property layout is game-specific and NOT in a foreign usmap, so they deserialize empty.
-  A native usmap would fix this but needs EAC injection (declined). Skills stay on the wiki overlay.
-- A **names-only site** is already built and works (`site/`). Next: merge the real curve-table stats
-  (weapons/zombies) + wiki skill stats into the site.
+## How the numbers were unlocked (the key insight)
+Paks are unencrypted but use UE5 **unversioned properties**, so decoding needs a `.usmap`.
+Self-generating one needs UE4SS/Dumper injected into the running game → **kernel-level EAC**
+(no downloadable dedicated-server exe to target offline) → ToS/account risk → **declined**.
+**Solution: a FOREIGN UE 5.6.1 usmap** (`data/mappings/Mappings.usmap` = NewMoon/Mixtape from
+Nexus; git-ignored, not ours to redistribute). A cross-game usmap decodes all **engine +
+shared-plugin** types — which is exactly where our numbers live: `UCurveTable` = weapon/melee/
+throwable/zombie/item stats. **Blueprint `GE_` GameplayEffects (skill magnitudes) do NOT decode**
+with a foreign usmap → skills use the wiki overlay instead.
 
-## The EAC blocker (why we pivoted to wiki data)
-Game is UE5.6, paks are unencrypted but use unversioned properties -> need a `.usmap` to decode
-stats. No public usmap exists. Generating one needs UE4SS injected into the running game, but this
-title arms EAC from inside the shipping exe (via `EOSSDK-Win64-Shipping.dll`), so UE4SS is blocked
-(error `0xc0e90002`). Defeating EAC = ToS/account risk; we declined. UE4SS was removed from the
-game folder (install is clean). If a usmap ever appears at `data/mappings/Mappings.usmap`, the
-extractor (`tools/extractor`) can produce pure from-files numbers — pipeline is ready (see README).
+## Pipeline (all under `tools/`)
+```
+extractor/        .NET/CUE4Parse app. Commands:
+  list   GAME_UE5_6                                  -> bin/.../file_list.txt (76,637 files)
+  export <out> <filter> GAME_UE5_6 <usmap>           -> asset JSON (stats)
+  texture <out> <filter> GAME_UE5_6 <usmap>          -> PNG (only uncompressed; BC7/DXT FAIL, see below)
+  texraw  <out> <filter> GAME_UE5_6 <usmap>          -> raw mip bytes + manifest.txt (BC7/DXT workaround)
+build_catalog.ps1        -> data/catalog/catalog.json (names/paths of everything)
+build_stats.py           -> data/stats/stats.json    (curve tables: weapons/zombies/items)
+build_skill_stats.py     -> data/stats/skills.json   (Fandom wiki skill effects, name->SD_ map)
+decode_images.py         -> data/images-png/*.png     (BC7/DXT icons -> cropped web PNGs, 256px)
+decode_flavor.py         -> site/img/flavor/*.jpg     (map loading-screens -> 1600px JPEGs)
+match_images.py          -> site/img/* + data/images/images.json (icon<->item/skill matching)
+build_site_data.py       -> site/data.js             (merges catalog + all overlays + images)
+```
+`data/stats/ammo.json` = hand-authored firearm calibers (wiki, 11 released guns).
 
-## usmap revisited (2026-08-29) — the ToS-SAFE way forward: a FOREIGN UE 5.6 usmap
-Researched the modding community (FModel/CUE4Parse Discussions, Unreal-Mappings-Archive, Nexus,
-UE4SS docs). Conclusions:
-- **Every self-generation tool needs the LIVE process** — UE4SS, Dumper-7, UnrealMappingsDumper all
-  inject a DLL / load into the running game. NMRiH2 runs **kernel-level EAC** and hosts all MP on
-  Torn Banner's own cloud servers (NO downloadable dedicated-server exe to target offline). So there
-  is no safe self-generate route. Declining injection was correct — kernel AC + inject = worst case.
-- **The safe route: use a usmap from a DIFFERENT UE 5.6.x game.** Per FModel Discussion #418, a
-  cross-game usmap correctly decodes all **engine + shared-plugin types** (UCurveTable, UDataTable,
-  and the **GAS** GameplayEffect/GameplayAbility classes). Only a game's *custom* UStructs fail.
-  This is a plain file download — **zero injection, zero EAC contact, no ToS issue at all.**
-- **Why this should unlock most of our numbers:** the stats we want live largely in engine/plugin
-  types — `CT_ATT_*` zombie curve tables + weapon `DamageFalloff` (UCurveTable = engine, should
-  decode), and `GE_` gameplay effects (GAS plugin = shared, should decode). Torn Banner's custom
-  `AES_`/skill data-asset subclasses may not map (top-level class must be known to deserialize) —
-  those stay "stats pending", same honesty policy as the wiki overlay.
-- **Sources to get a UE 5.6 usmap (needs your Nexus login to download):** "Mixtape Mappings.usmap
-  – UE 5.6.1" (nexusmods.com/mixtape/mods/9), Outer Worlds 2, Silent Hill f, Oblivion Remastered
-  (all UE 5.6-era). Prefer the highest 5.6.x. Also TheNaeem/Unreal-Mappings-Archive on GitHub.
+## Refresh after a game update (in order)
+1. `cd tools/extractor && dotnet run -- list GAME_UE5_6` (+ `build_catalog.ps1` if roster changed)
+2. `dotnet run -- export ../../data/stats-raw CT_ItemAttributes GAME_UE5_6 ../../data/mappings/Mappings.usmap`
+   and again with filter `CT_ATT_Zomb`.  Then `python tools/build_stats.py`.
+3. For icons: `dotnet run -- texraw ../../data/rawmip "UI/Icons/<Cat>/" ...` per category, then
+   `python tools/decode_images.py` and `python tools/match_images.py`.
+4. `python tools/build_skill_stats.py` (skills) — re-check the name->SD_ map if skills were added.
+5. `python tools/build_site_data.py`, then `git add -A && git commit && git push` (auto-deploys).
+6. Verify live (browser can't reach localhost here — check the https Pages URL after deploy).
 
-### usmap path — DONE, here's what landed (2026-08-29)
-- usmap in place: `data/mappings/Mappings.usmap` = `NewMoon-5.6.1-0+UE5-dd6777a8.usmap` (Mixtape /
-  "NewMoon", UE 5.6.1). Downloaded from Nexus by user; zip verified clean (1 file, usmap magic
-  `C4 30`, no exe). Extractor cmd:
-  `dotnet run -- export ../../data/stats-raw <filter> GAME_UE5_6 ../../data/mappings/Mappings.usmap`
-- **WORKS (real numbers, in `data/stats-raw/`):** 59 `UCurveTable` files —
-  `CT_ItemAttributes_*` (all firearms/melee/throwables), `CT_ATT_Zomb_*` (all zombie types),
-  `CT_Tunables_AI`, `CT_ItemAttributes_Battery/Medical`, weapon `DamageFalloff` curves.
-- **DOESN'T work (empty on foreign usmap):** Blueprint `GE_` GameplayEffects (325 empty CDOs) =
-  skill magnitudes; and BP-defined props on `AES_` sets. Needs native usmap (EAC-blocked). → wiki.
+## Gotchas / hard-won facts (don't relearn these)
+- **Texture decode:** CUE4Parse's native detex ISN'T shipped ("Detex decompression failed: not
+  initialized") so the `texture` cmd fails on BC7/DXT. Workaround = `texraw` dumps raw mips, Python
+  `texture2ddecoder` (pip) + Pillow decompresses. Formats seen: PF_BC7, PF_DXT1, PF_DXT5.
+- **Version pin:** extractor pinned to **CUE4Parse 1.2.2.202607** to match CUE4Parse-Conversion
+  .202607 (was .202608 → PixelFormatUtils field-not-found). Don't bump one without the other.
+- **Icon matching:** exact + explicit alias ONLY. A fuzzy-substring fallback caused false hits
+  (MP5 rail grabbing the MP5 gun; Large/Small attachment collisions). If coverage looks low, add an
+  alias in `match_images.py` — never re-enable substring matching.
+- **Icons live at** `NMRiH2/Content/UI/Icons/{Guns,Melee,Throwables,Meds,Gear,Attachments,Skills,Ammo}/`
+  (`_Textured_Icn` preferred). Flavor = `NMRiH2/Content/Textures/UI/LoadingScreen/`.
+- **Serve locally:** `cd site && python -m http.server 8791` → http://localhost (file:// blocked;
+  data.js is inline so no fetch needed). The Chrome-extension screenshots can't reach localhost in
+  this env — verify on the deployed URL instead.
 
-### NEXT STEPS (revised)
-1. **Author `data/stats/stats.json` from `data/stats-raw/` curve tables** — parse each
-   `CT_ItemAttributes_*` (row name -> value) and `CT_ATT_Zomb_*` into the overlay keyed by from-files
-   ID, `source:"files"`. This replaces the wiki weapon/zombie numbers with REAL ones.
-2. **Skills stay wiki** (`source:"fandom"`) — BP-GAS magnitudes don't decode. Keep the wiki-raw
-   mapping tables for SD_ ids.
-3. Merge overlay in `build_site_data.py`, render stat rows + source badges in `site/app.js`.
-4. Rebuild + verify in browser, screenshot, tell user.
-Note: the two sources are complementary — files for weapons/zombies/items, wiki for skills.
+## .gitignore (what's NOT committed)
+`data/mappings/*.usmap` (foreign, not ours to redistribute), `data/stats-raw/`, `data/rawmip/`,
+`data/rawflavor/`, `data/images-png/`, extractor `bin/obj`, `tools/ue4ss/`, and the old
+`tools/generate_usmap.ps1` (the abandoned ToS-risky UE4SS route). `site/img/` (~7MB) IS committed.
 
-## What's DONE
-- `tools/extractor` — CUE4Parse app; mounts paks (76,637 files), can export JSON *with* a usmap.
-  - `dotnet run -- list GAME_UE5_6` -> `bin/Debug/net10.0/file_list.txt`
-  - `dotnet run -- export <out> <filter> GAME_UE5_6 <usmap>` (needs usmap; blocked)
-- `tools/build_catalog.ps1` -> `data/catalog/catalog.json` (names/paths of everything).
-- `tools/build_site_data.py` -> `site/data.js` (categorized, display-ready; `hasStats:false`).
-- `site/` — static site (index.html, style.css, app.js). Tabs: Skills, Firearms, Melee,
-  Throwables, Consumables, Gear, Attachments, Recipes, Zombies, Challenges. Search + filters.
-  Serve it: `cd site && python -m http.server 8791` then open localhost (file:// is blocked by the
-  Chrome ext, and fetch isn't used anyway — data.js is inline).
-- `tools/generate_usmap.ps1` + `tools/ue4ss/` — the (blocked) usmap route, kept for reference/if
-  a non-EAC path emerges. Do NOT run against the live EAC game.
+## Data sources & attribution
+- **From files** (decoded): weapon/melee/throwable/zombie/item stats + all icons + flavor images.
+- **Fandom wiki** (CC-BY-SA, credited in footer): skill effects/levels + firearm calibers. Raw
+  captures in `data/wiki-raw/` (`fandom-skills.md`, `fandom-weapons.md`, `fandom-enemies-equipment.md`).
+  WebFetch is blocked on the wikis (403/402) — read via Chrome tools (navigate + get_page_text).
 
-## Wiki data GATHERED so far (raw, in `data/wiki-raw/`)
-- `fandom-weapons.md` — melee tiers/damage-type/descriptions; firearms caliber+mag+headshot
-  breakpoints+attachment compat; attachment compatibility lists. (~13 guns detailed of 33 in files.)
-- `fandom-skills.md` — ~48 skills: base effect + Expert(=Ultimate) effect + Expert unlock account
-  level, PLUS a best-effort wiki-name -> from-files SD_ id mapping table.
-- `fandom-enemies-equipment.md` — 8 zombie types w/ behaviors; General Gear shop prices/levels;
-  supply-item XP values; progression milestones.
-
-Primary source = **Fandom wiki** (`no-more-room-in-hell-two.fandom.com`), CC-BY-SA (must attribute).
-Secondary = `nmrih2wiki.org` (guide prose, tier lists — good for weapon tier rankings, light on
-hard numbers). WebFetch is BLOCKED (403/402) on both — must use the **Chrome browser tools**
-(navigate + get_page_text) to read them.
-
-## NEXT STEPS (in order)
-1. **Finish gathering** the Equipment sub-tabs not yet captured: Passive Gear, Medical Gear,
-   Throwable Gear, Melee Gear, Firearms (prices + level reqs) from
-   `.../wiki/Equipment`. Also grab per-weapon pages if they have more numbers, and
-   `nmrih2wiki.org` Weapons Tier List for tier rankings.
-2. **Author `data/stats/stats.json`** — a hand-built overlay keyed by from-files ID, e.g.
-   `{ "skills": { "SD_Athlete": {"effect":"Increased stamina","ultimate":"Greatly increased
-   stamina","unlockLevel":72,"source":"fandom"} }, "firearms": { "M14": {"caliber":".308 Win",
-   "mag":"20+1", ...} } }`. Use the mapping tables in the wiki-raw files. Every entry carries a
-   `source` field for attribution.
-3. **Update `tools/build_site_data.py`** to merge `stats.json` onto the catalog by ID, set
-   `hasStats:true`, and attach a per-field `source`. Leave "stats pending" where no wiki data.
-4. **Update `site/app.js` + `style.css`** to render the stat rows and a small source badge/footer
-   ("Numbers: Fandom wiki, CC-BY-SA" + link). Add weapon compare view if time allows.
-5. **Rebuild + verify** in browser (screenshot), then tell the user.
-
-## Coverage reality (set expectations)
-Wikis cover the CORE game well (the ~13 released guns, ~48 skills, 8 enemy types) but NOT every
-from-files asset (paks have 33 gun AES sets, 66 skills — extras are likely unreleased/renamed
-internal content). So the hybrid site will show real numbers for released content and
-"stats pending" for the rest. That's honest and still the strongest available guide.
-
-## Task IDs (this session): #6 weapons, #7 skills, #8 items/zombies, #9 merge+site.
+## Possible future work (all optional; site is complete as-is)
+- Wire remaining wiki numbers: gear/consumable prices + level reqs, weapon tier lists
+  (nmrih2wiki.org), attachment compatibility per gun.
+- Calibers for the newer from-files guns not on the wiki (DT11, RX12, Gruber*, BauerPrecision).
+- Weapon compare view; zombie resistance breakdown; skill icons for the 13 unmatched skills.
+- If a NATIVE NMRiH2 usmap ever appears (non-EAC path), `GE_` skill magnitudes become decodable —
+  the extractor pipeline is already set up for it.
