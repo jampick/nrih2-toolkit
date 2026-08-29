@@ -10,12 +10,14 @@ Stats provenance:
   * Skills -> magnitudes live in Blueprint GameplayEffects that a foreign usmap
     cannot decode, so they remain name-only here (source = wiki, pending overlay).
 """
-import json, re, os
+import json, re, os, glob
 
 ROOT = r"C:\Users\OddJob\projects\NRIH2"
 CATALOG = os.path.join(ROOT, "data", "catalog", "catalog.json")
 STATS = os.path.join(ROOT, "data", "stats", "stats.json")
 SKILLS = os.path.join(ROOT, "data", "stats", "skills.json")
+AMMO = os.path.join(ROOT, "data", "stats", "ammo.json")
+IMAGES = os.path.join(ROOT, "data", "images", "images.json")
 OUT = os.path.join(ROOT, "site", "data.js")
 
 # ---------------------------------------------------------------- name helpers
@@ -147,6 +149,7 @@ def main():
             row["statSource"] = "files"
         return row
 
+    ammo = load(AMMO)["firearms"] if os.path.exists(AMMO) else {}
     firearms, melee_aes, throwables, other_sets = [], [], [], []
     for e in c["firearmsAndSets"]:
         key = e["name"][4:] if e["name"].startswith("AES_") else e["name"]
@@ -154,6 +157,9 @@ def main():
         if key.startswith("Zombie"):      # AES_Zombie* are enemy ability sets, not player weapons
             continue
         row = {"id": e["name"], "name": words(key), "raw": e["name"]}
+        if e["name"] in ammo:
+            row["caliber"] = ammo[e["name"]]["caliber"]
+            row["ammoIconKey"] = "AMMO_" + ammo[e["name"]]["icon"]
         if cat == "Firearm":
             firearms.append(attach(row, key, "Firearm"))
         elif cat == "Melee":
@@ -235,6 +241,25 @@ def main():
             "challenges": simple("challengeTasks"),
         }
     }
+    # Attach game-file icons (keyed by catalog id) to every section row.
+    imgmap = load(IMAGES) if os.path.exists(IMAGES) else {}
+    withimg = 0
+    for rows in out["sections"].values():
+        for r in rows:
+            img = imgmap.get(r.get("id"))
+            if img:
+                r["img"] = img
+                withimg += 1
+            if r.get("ammoIconKey"):
+                r["ammoIcon"] = imgmap.get(r.pop("ammoIconKey"))
+    out["statsInfo"]["withImages"] = withimg
+
+    # Atmospheric map loading-screens for the header hero (random per visit).
+    flavor_dir = os.path.join(ROOT, "site", "img", "flavor")
+    if os.path.isdir(flavor_dir):
+        out["flavor"] = sorted("img/flavor/" + os.path.basename(p)
+                                for p in glob.glob(os.path.join(flavor_dir, "*.jpg")))
+
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w", encoding="utf-8") as f:
         f.write("window.NMRIH2 = ")

@@ -8,7 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CUE4Parse" Version="1.2.2.202608" />
+    <PackageReference Include="CUE4Parse" Version="1.2.2.202607" />
+    <PackageReference Include="CUE4Parse-Conversion" Version="1.2.2.202607" />
+    <PackageReference Include="SkiaSharp" Version="2.88.9" />
+    <PackageReference Include="SkiaSharp.NativeAssets.Win32" Version="2.88.9" />
   </ItemGroup>
 
 </Project>

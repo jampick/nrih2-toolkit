@@ -8,6 +8,9 @@ using CUE4Parse.MappingsProvider;
 using CUE4Parse.MappingsProvider.Usmap;
 using CUE4Parse.UE4.Objects.Core.Misc;
 using CUE4Parse.UE4.Versions;
+using CUE4Parse.UE4.Assets.Exports.Texture;
+using CUE4Parse_Conversion.Textures;
+using SkiaSharp;
 using Newtonsoft.Json;
 
 // Usage:
@@ -80,6 +83,90 @@ switch (cmd)
             }
         }
         Console.WriteLine($"Done. ok={ok} fail={fail}");
+        break;
+    }
+    case "texture":
+    {
+        var outDir = args[1];
+        var pathFilter = args[2];
+        var game = ParseGame(args.Length > 3 ? args[3] : null);
+        var usmap = args.Length > 4 ? args[4] : null;
+        var provider = MakeProvider(game, usmap);
+        Directory.CreateDirectory(outDir);
+        var targets = provider.Files.Keys
+            .Where(k => k.Contains(pathFilter, StringComparison.OrdinalIgnoreCase))
+            .Where(k => k.EndsWith(".uasset"))
+            .ToList();
+        Console.WriteLine($"Scanning {targets.Count} assets matching '{pathFilter}' for textures...");
+        int ok = 0, fail = 0, skip = 0;
+        foreach (var path in targets)
+        {
+            try
+            {
+                var pkg = provider.LoadPackage(path);
+                UTexture2D? tex = null;
+                foreach (var exp in pkg.GetExports())
+                    if (exp is UTexture2D t) { tex = t; break; }
+                if (tex == null) { skip++; continue; }
+                var ctex = tex.Decode();
+                if (ctex == null) { fail++; continue; }
+                using var bitmap = ctex.ToSkBitmap();
+                using var img = SKImage.FromBitmap(bitmap);
+                using var data = img.Encode(SKEncodedImageFormat.Png, 100);
+                var name = Path.GetFileNameWithoutExtension(path);
+                var dest = Path.Combine(outDir, name + ".png");
+                File.WriteAllBytes(dest, data.ToArray());
+                ok++;
+            }
+            catch (Exception e)
+            {
+                fail++;
+                if (fail <= 15) Console.WriteLine($"FAIL {path}: {e.Message}");
+            }
+        }
+        Console.WriteLine($"Done. png={ok} notexture={skip} fail={fail}");
+        break;
+    }
+    case "texraw":
+    {
+        var outDir = args[1];
+        var pathFilter = args[2];
+        var game = ParseGame(args.Length > 3 ? args[3] : null);
+        var usmap = args.Length > 4 ? args[4] : null;
+        var provider = MakeProvider(game, usmap);
+        Directory.CreateDirectory(outDir);
+        var targets = provider.Files.Keys
+            .Where(k => k.Contains(pathFilter, StringComparison.OrdinalIgnoreCase))
+            .Where(k => k.EndsWith(".uasset"))
+            .ToList();
+        Console.WriteLine($"Dumping raw mips for {targets.Count} assets matching '{pathFilter}'...");
+        var manifest = new List<string>();
+        int ok = 0, skip = 0, fail = 0;
+        foreach (var path in targets)
+        {
+            try
+            {
+                var pkg = provider.LoadPackage(path);
+                UTexture2D? tex = null;
+                foreach (var exp in pkg.GetExports())
+                    if (exp is UTexture2D t) { tex = t; break; }
+                if (tex == null) { skip++; continue; }
+                var mip = tex.GetFirstMip();
+                var bytes = mip?.BulkData?.Data;
+                if (mip == null || bytes == null || bytes.Length == 0) { fail++; continue; }
+                var name = Path.GetFileNameWithoutExtension(path);
+                File.WriteAllBytes(Path.Combine(outDir, name + ".bin"), bytes);
+                manifest.Add($"{name}|{tex.Format}|{mip.SizeX}|{mip.SizeY}|{bytes.Length}");
+                ok++;
+            }
+            catch (Exception e)
+            {
+                fail++;
+                if (fail <= 15) Console.WriteLine($"FAIL {path}: {e.Message}");
+            }
+        }
+        File.AppendAllLines(Path.Combine(outDir, "manifest.txt"), manifest);
+        Console.WriteLine($"Done. raw={ok} notexture={skip} fail={fail}");
         break;
     }
     default:

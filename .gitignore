@@ -1,6 +1,11 @@
 # Extracted raw asset dumps (large; regenerated locally by the extractor)
 data/stats-raw/
 data/test/
+data/test-fmt/
+data/rawmip/
+data/rawflavor/
+data/images-png/
+data/images-raw/
 
 # Foreign mappings file — not ours to redistribute; download separately
 data/mappings/*.usmap

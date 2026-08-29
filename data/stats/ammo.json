@@ -1,0 +1,17 @@
+{
+ "source": "fandom",
+ "note": "Firearm calibers are community-sourced (Fandom wiki, CC-BY-SA); the game's data assets don't expose caliber in the decodable curve tables. `icon` is the ammo icon key under UI/Icons/Ammo.",
+ "firearms": {
+  "AES_M9A1":            {"caliber": "9mm",         "icon": "9mm"},
+  "AES_MP5":             {"caliber": "9mm",         "icon": "9mm"},
+  "AES_1911":            {"caliber": ".45 ACP",     "icon": "45ACP"},
+  "AES_Model13":         {"caliber": ".357 Magnum", "icon": "357Mag"},
+  "AES_Winchester_1873": {"caliber": ".357 Magnum", "icon": "357Mag"},
+  "AES_Hunter85":        {"caliber": ".308 Win",    "icon": "308Win"},
+  "AES_M14":             {"caliber": ".308 Win",    "icon": "308Win"},
+  "AES_M7":              {"caliber": "6.8x51mm",    "icon": "68x51mm"},
+  "AES_MC15":            {"caliber": "5.56mm",      "icon": "556NATO"},
+  "AES_CoachGun":        {"caliber": "12 Gauge",    "icon": "12gaShells"},
+  "AES_590A1":           {"caliber": "12 Gauge",    "icon": "12gaShells"}
+ }
+}

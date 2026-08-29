@@ -11,8 +11,11 @@ body{background:var(--bg);color:var(--ink);
 .wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
 a{color:var(--accent2)}
 
-header{background:linear-gradient(180deg,#12151a,#0d0f12);border-bottom:1px solid var(--line);padding:34px 0 22px}
-h1{margin:0;font-size:30px;letter-spacing:-.5px}
+header{background:linear-gradient(180deg,#12151a,#0d0f12);background-size:cover;background-position:center;
+  border-bottom:1px solid var(--line);padding:52px 0 26px;position:relative}
+header .wrap{position:relative;z-index:1}
+h1{margin:0;font-size:34px;letter-spacing:-.5px;text-shadow:0 2px 14px rgba(0,0,0,.8)}
+.tag{text-shadow:0 1px 8px rgba(0,0,0,.9)}
 h1 .tk{color:var(--accent)}
 .tag{color:var(--dim);margin:.4em 0 0}
 .banner{margin-top:16px;padding:10px 14px;border-radius:var(--radius);
@@ -40,7 +43,16 @@ nav{display:flex;flex-wrap:wrap;gap:6px;padding-top:16px;padding-bottom:2px}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
   padding:14px 15px;transition:border-color .15s,transform .15s}
 .card:hover{border-color:var(--accent2);transform:translateY(-2px)}
+.thumb{margin:-4px -5px 8px;height:104px;display:flex;align-items:center;justify-content:center;
+  background:radial-gradient(ellipse at center,#20262e 0%,#12151a 80%);border-radius:8px;overflow:hidden}
+.thumb img{max-width:96%;max-height:96px;object-fit:contain;
+  filter:drop-shadow(0 3px 6px rgba(0,0,0,.6))}
 .card h3{margin:0 0 8px;font-size:15.5px}
+.ammo{display:flex;align-items:center;gap:7px;margin:0 0 8px;padding:5px 8px;border-radius:7px;
+  background:#241a14;border:1px solid #47331f}
+.ammo .ammoicn{width:26px;height:18px;object-fit:contain}
+.ammo .ammolabel{color:#c99a6a;font-size:10.5px;text-transform:uppercase;letter-spacing:.06em}
+.ammo .ammoval{color:#f0c48a;font-weight:600;font-size:13px;margin-left:auto}
 .badges{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
 .badge{font-size:11px;padding:3px 8px;border-radius:6px;background:var(--tag);color:var(--dim);border:1px solid var(--line)}
 .badge.cat{background:#1d2733;color:#8fb7e0}

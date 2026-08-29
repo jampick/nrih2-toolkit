@@ -23,6 +23,14 @@
   const grid = $("grid"), tabsEl = $("tabs"), filtersEl = $("filters");
 
   // ---- stats banner --------------------------------------------------------
+  // Spooky header hero: a random in-game map loading-screen behind a dark wash.
+  if (D.flavor && D.flavor.length) {
+    const pick = D.flavor[Math.floor(Math.random() * D.flavor.length)];
+    const hdr = document.querySelector("header");
+    if (hdr) hdr.style.backgroundImage =
+      "linear-gradient(180deg, rgba(13,15,18,.74), rgba(13,15,18,.93)), url('" + pick + "')";
+  }
+
   const banner = $("statsBanner");
   const si = D.statsInfo || {};
   if (D.hasStats) {
@@ -121,7 +129,9 @@
   function card(x) {
     const el = document.createElement("article");
     el.className = "card";
-    let h = "<h3>" + esc(x.name) + "</h3>";
+    let h = "";
+    if (x.img) h += '<div class="thumb"><img loading="lazy" src="' + esc(x.img) + '" alt="' + esc(x.name) + '"></div>';
+    h += "<h3>" + esc(x.name) + "</h3>";
     const badges = [];
     if (x.category) badges.push('<span class="badge cat">' + esc(x.category) + "</span>");
     if (x.rarity) badges.push('<span class="badge rare">' + esc(x.rarity) + "</span>");
@@ -129,6 +139,12 @@
     if (x.statSource === "files") badges.push('<span class="badge stat" title="Decoded from the game\'s data-table assets">from files</span>');
     else if (x.statSource === "fandom") badges.push('<span class="badge wiki" title="Community-sourced from the Fandom wiki (CC-BY-SA)">from wiki</span>');
     if (badges.length) h += '<div class="badges">' + badges.join("") + "</div>";
+
+    if (x.caliber) {
+      h += '<div class="ammo">';
+      if (x.ammoIcon) h += '<img class="ammoicn" loading="lazy" src="' + esc(x.ammoIcon) + '" alt="">';
+      h += '<span class="ammolabel">Ammo</span><span class="ammoval">' + esc(x.caliber) + "</span></div>";
+    }
 
     const primary = x.stats || {};
     const all = x.allStats || {};

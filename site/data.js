@@ -28,7 +28,8 @@ window.NMRIH2 = {
   "skillsNote": "Skill effects and Expert unlock levels are community-sourced from the Fandom wiki (CC-BY-SA) — their magnitudes live in Blueprint effects a foreign usmap cannot decode.",
   "wikiAttribution": "No More Room in Hell 2 Wiki on Fandom (CC-BY-SA). https://no-more-room-in-hell-two.fandom.com/wiki/Skills",
   "withStats": 47,
-  "wikiSkills": 44
+  "wikiSkills": 44,
+  "withImages": 117
  },
  "sections": {
   "skills": [
@@ -42,7 +43,8 @@ window.NMRIH2 = {
      "Expert effect": "Greatly increased stamina",
      "Expert unlock": "Level 72"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_Athlete.png"
    },
    {
     "id": "SD_AdrenalineRush",
@@ -54,7 +56,8 @@ window.NMRIH2 = {
      "Expert effect": "...much less stamina",
      "Expert unlock": "Level 4"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_AdrenalineRush.png"
    },
    {
     "id": "SD_SpreadTheLove",
@@ -72,7 +75,8 @@ window.NMRIH2 = {
      "Expert effect": "carry much more",
      "Expert unlock": "Level 54"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_Caravan.png"
    },
    {
     "id": "SD_Sniper_IronChamber",
@@ -84,19 +88,22 @@ window.NMRIH2 = {
      "Expert effect": "vastly more",
      "Expert unlock": "Level 44"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_Sniper_IronChamber.png"
    },
    {
     "id": "SD_Hitman",
     "name": "Hitman",
     "category": "General",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "img": "img/skill_SD_Hitman.png"
    },
    {
     "id": "SD_Shotgun_LongRange",
     "name": "Shotgun Long Range",
     "category": "Shotgun",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "img": "img/skill_SD_Shotgun_LongRange.png"
    },
    {
     "id": "SD_Doorbreaker",
@@ -108,7 +115,8 @@ window.NMRIH2 = {
      "Expert effect": "much more",
      "Expert unlock": "Level 46"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_Doorbreaker.png"
    },
    {
     "id": "SD_Shotgun_Overkill",
@@ -120,7 +128,8 @@ window.NMRIH2 = {
      "Expert effect": "a lot more",
      "Expert unlock": "Level 96"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_Shotgun_Overkill.png"
    },
    {
     "id": "SD_Handgun_SteadyMovement",
@@ -138,13 +147,15 @@ window.NMRIH2 = {
      "Expert effect": "greatly increased",
      "Expert unlock": "Level 8"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_Scavenger.png"
    },
    {
     "id": "SD_QuickReload_RifleAndSMG",
     "name": "Quick Reload Rifle And SMG",
     "category": "Rifle",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "img": "img/skill_SD_QuickReload_RifleAndSMG.png"
    },
    {
     "id": "SD_MarathonRunner",
@@ -156,13 +167,15 @@ window.NMRIH2 = {
      "Expert effect": "consumes no stamina",
      "Expert unlock": "Level 18"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_MarathonRunner.png"
    },
    {
     "id": "SD_QuickReload_Shotgun",
     "name": "Quick Reload Shotgun",
     "category": "Shotgun",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "img": "img/skill_SD_QuickReload_Shotgun.png"
    },
    {
     "id": "SD_Mule",
@@ -174,7 +187,8 @@ window.NMRIH2 = {
      "Expert effect": "greatly increased",
      "Expert unlock": "Level 92"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_Mule.png"
    },
    {
     "id": "SD_QuietSteps",
@@ -186,7 +200,8 @@ window.NMRIH2 = {
      "Expert effect": "greatly reduced",
      "Expert unlock": "Level 36"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_QuietSteps.png"
    },
    {
     "id": "SD_LongerBattery",
@@ -198,7 +213,8 @@ window.NMRIH2 = {
      "Expert effect": "maximized",
      "Expert unlock": "Level 20"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_LongerBattery.png"
    },
    {
     "id": "SD_Foreman",
@@ -210,7 +226,8 @@ window.NMRIH2 = {
      "Expert effect": "significant damage",
      "Expert unlock": "Level 50"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_Foreman.png"
    },
    {
     "id": "SD_WildSlash",
@@ -228,7 +245,8 @@ window.NMRIH2 = {
      "Expert effect": "dismember with great ease",
      "Expert unlock": "Level 56"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_Butcher.png"
    },
    {
     "id": "SD_Juggler",
@@ -246,7 +264,8 @@ window.NMRIH2 = {
      "Expert effect": "much more",
      "Expert unlock": "Level 88"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_SkilledMedic.png"
    },
    {
     "id": "SD_FaterRevive",
@@ -258,7 +277,8 @@ window.NMRIH2 = {
      "Expert effect": "much faster",
      "Expert unlock": "Level 6"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_FaterRevive.png"
    },
    {
     "id": "SD_1hMelee_Hitman",
@@ -270,13 +290,15 @@ window.NMRIH2 = {
      "Expert effect": "greatly increased 1H dmg",
      "Expert unlock": "Level 24"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_1hMelee_Hitman.png"
    },
    {
     "id": "SD_OneForOne",
     "name": "One For One",
     "category": "General",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "img": "img/skill_SD_OneForOne.png"
    },
    {
     "id": "SD_Rifle_Hellfire",
@@ -288,7 +310,8 @@ window.NMRIH2 = {
      "Expert effect": "greatly increased",
      "Expert unlock": "Level 84"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_Rifle_Hellfire.png"
    },
    {
     "id": "SD_Grenadier",
@@ -300,7 +323,8 @@ window.NMRIH2 = {
      "Expert effect": "greatly reduced",
      "Expert unlock": "Level 10"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_Grenadier.png"
    },
    {
     "id": "SD_LuckyPathogen",
@@ -312,7 +336,8 @@ window.NMRIH2 = {
      "Expert effect": "much less",
      "Expert unlock": "Level 42"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_LuckyPathogen.png"
    },
    {
     "id": "SD_HeavyShoves",
@@ -324,7 +349,8 @@ window.NMRIH2 = {
      "Expert effect": "heavy damage",
      "Expert unlock": "Level 64"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_HeavyShoves.png"
    },
    {
     "id": "SD_Antibodies",
@@ -336,7 +362,8 @@ window.NMRIH2 = {
      "Expert effect": "Much less likely",
      "Expert unlock": "Level 74"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_Antibodies.png"
    },
    {
     "id": "SD_SMG_Winged",
@@ -348,7 +375,8 @@ window.NMRIH2 = {
      "Expert effect": "greatly increased",
      "Expert unlock": "Level 27"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_SMG_Winged.png"
    },
    {
     "id": "SD_DevilsPact",
@@ -360,7 +388,8 @@ window.NMRIH2 = {
     "id": "SD_QuickReload_Handgun",
     "name": "Quick Reload Handgun",
     "category": "Handgun",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "img": "img/skill_SD_QuickReload_Handgun.png"
    },
    {
     "id": "SD_CrowdControl",
@@ -378,13 +407,15 @@ window.NMRIH2 = {
      "Expert effect": "significant stagger",
      "Expert unlock": "Level 40"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_2hMelee_HardBlow.png"
    },
    {
     "id": "SD_Frontliner",
     "name": "Frontliner",
     "category": "General",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "img": "img/skill_SD_Frontliner.png"
    },
    {
     "id": "SD_TeddyBear",
@@ -396,7 +427,8 @@ window.NMRIH2 = {
      "Expert effect": "significantly more stability",
      "Expert unlock": "Level 66"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_TeddyBear.png"
    },
    {
     "id": "SD_Shotgun_Icarus",
@@ -408,7 +440,8 @@ window.NMRIH2 = {
      "Expert effect": "greatly increased",
      "Expert unlock": "Level 14"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_Shotgun_Icarus.png"
    },
    {
     "id": "SD_Grab_EfficientHoldout",
@@ -426,7 +459,8 @@ window.NMRIH2 = {
     "id": "SD_OutdoorChampion",
     "name": "Outdoor Champion",
     "category": "General",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "img": "img/skill_SD_OutdoorChampion.png"
    },
    {
     "id": "SD_Handgun_QuickAim",
@@ -444,13 +478,15 @@ window.NMRIH2 = {
      "Expert effect": "heal w/ pills AND gene therapy",
      "Expert unlock": "Level 38"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_ResidentGeneTherapy.png"
    },
    {
     "id": "SD_SupplyStack",
     "name": "Supply Stack",
     "category": "General",
-    "hasUltimate": true
+    "hasUltimate": true,
+    "img": "img/skill_SD_SupplyStack.png"
    },
    {
     "id": "SD_Handgun_Headblown",
@@ -462,7 +498,8 @@ window.NMRIH2 = {
      "Expert effect": "greatly increased",
      "Expert unlock": "Level 12"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_Handgun_Headblown.png"
    },
    {
     "id": "SD_ThickSkin",
@@ -474,7 +511,8 @@ window.NMRIH2 = {
      "Expert effect": "significantly increased",
      "Expert unlock": "Level 48"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_ThickSkin.png"
    },
    {
     "id": "SD_Averaging",
@@ -486,7 +524,8 @@ window.NMRIH2 = {
      "Expert effect": "body shots greatly more",
      "Expert unlock": "Level 62"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_Averaging.png"
    },
    {
     "id": "SD_Wicked",
@@ -498,7 +537,8 @@ window.NMRIH2 = {
      "Expert effect": "much more",
      "Expert unlock": "Level 49"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_Wicked.png"
    },
    {
     "id": "SD_MoreAmmo",
@@ -516,7 +556,8 @@ window.NMRIH2 = {
      "Expert effect": "greatly reduced",
      "Expert unlock": "Level 68"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_Shotgun_TightShot.png"
    },
    {
     "id": "SD_Sniper_PenetratingShot",
@@ -528,7 +569,8 @@ window.NMRIH2 = {
      "Expert effect": "many more",
      "Expert unlock": "Level 60"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_Sniper_PenetratingShot.png"
    },
    {
     "id": "SD_2hMelee_HeavyAttackRush",
@@ -540,7 +582,8 @@ window.NMRIH2 = {
      "Expert effect": "much less",
      "Expert unlock": "Level 2"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_2hMelee_HeavyAttackRush.png"
    },
    {
     "id": "SD_Headhunter",
@@ -552,7 +595,8 @@ window.NMRIH2 = {
      "Expert effect": "greatly increased",
      "Expert unlock": "Level 80"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_Headhunter.png"
    },
    {
     "id": "SD_ScalesofJustice",
@@ -570,7 +614,8 @@ window.NMRIH2 = {
      "Expert effect": "greatly reduced while crouching",
      "Expert unlock": "Level 76"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_Rifle_ReducedRecoil_Crouch.png"
    },
    {
     "id": "SD_Handgun_SteadyHand",
@@ -582,7 +627,8 @@ window.NMRIH2 = {
      "Expert effect": "greatly reduced",
      "Expert unlock": "Level 49"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_Handgun_SteadyHand.png"
    },
    {
     "id": "SD_Sniper_StableShot",
@@ -600,7 +646,8 @@ window.NMRIH2 = {
      "Expert effect": "greatly reduced",
      "Expert unlock": "Level 31"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_SMG_ReducedRecoil.png"
    },
    {
     "id": "SD_Rifle_Mohawk",
@@ -612,7 +659,8 @@ window.NMRIH2 = {
      "Expert effect": "many more",
      "Expert unlock": "Level 22"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_Rifle_Mohawk.png"
    },
    {
     "id": "SD_LuckyLooter",
@@ -630,7 +678,8 @@ window.NMRIH2 = {
      "Expert effect": "much faster",
      "Expert unlock": "Level 34"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_Guts.png"
    },
    {
     "id": "SD_LighterHealing",
@@ -642,7 +691,8 @@ window.NMRIH2 = {
      "Expert effect": "greatly reduced",
      "Expert unlock": "Level 52"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_LighterHealing.png"
    },
    {
     "id": "SD_Deprived",
@@ -654,7 +704,8 @@ window.NMRIH2 = {
      "Expert effect": "greatly reduced weight",
      "Expert unlock": "Level 58"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_Deprived.png"
    },
    {
     "id": "SD_Limbo",
@@ -666,7 +717,8 @@ window.NMRIH2 = {
      "Expert effect": "greater endurance when down",
      "Expert unlock": "Level 16"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_Limbo.png"
    },
    {
     "id": "SD_Builder",
@@ -678,7 +730,8 @@ window.NMRIH2 = {
      "Expert effect": "greatly reduced",
      "Expert unlock": "Level 71"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_Builder.png"
    },
    {
     "id": "SD_SturdyBody",
@@ -690,7 +743,8 @@ window.NMRIH2 = {
      "Expert effect": "greatly reduced",
      "Expert unlock": "Level 100"
     },
-    "statSource": "fandom"
+    "statSource": "fandom",
+    "img": "img/skill_SD_SturdyBody.png"
    }
   ],
   "firearms": [
@@ -698,6 +752,7 @@ window.NMRIH2 = {
     "id": "AES_Winchester_1873",
     "name": "Winchester 1873",
     "raw": "AES_Winchester_1873",
+    "caliber": ".357 Magnum",
     "statsExpected": true,
     "stats": {
      "Damage": "24",
@@ -752,12 +807,15 @@ window.NMRIH2 = {
      "Stability Falloff Per Penetration": "0",
      "Targeting Spread Multiplier": "0.1"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/AES_Winchester_1873.png",
+    "ammoIcon": "img/ammo_357Mag.png"
    },
    {
     "id": "AES_1911",
     "name": "1911",
     "raw": "AES_1911",
+    "caliber": ".45 ACP",
     "statsExpected": true,
     "stats": {
      "Damage": "20",
@@ -809,12 +867,15 @@ window.NMRIH2 = {
      "Stability Falloff Per Penetration": "0",
      "Targeting Spread Multiplier": "0.1"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/AES_1911.png",
+    "ammoIcon": "img/ammo_45ACP.png"
    },
    {
     "id": "AES_590A1",
     "name": "590A1",
     "raw": "AES_590A1",
+    "caliber": "12 Gauge",
     "statsExpected": true,
     "stats": {
      "Damage": "17",
@@ -862,7 +923,9 @@ window.NMRIH2 = {
      "Stability Falloff Per Penetration": "0.05",
      "Targeting Spread Multiplier": "0.3"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/AES_590A1.png",
+    "ammoIcon": "img/ammo_12gaShells.png"
    },
    {
     "id": "AES_870",
@@ -925,7 +988,9 @@ window.NMRIH2 = {
     "id": "AES_CoachGun",
     "name": "Coach Gun",
     "raw": "AES_CoachGun",
-    "statsExpected": true
+    "caliber": "12 Gauge",
+    "statsExpected": true,
+    "ammoIcon": "img/ammo_12gaShells.png"
    },
    {
     "id": "AES_CX8",
@@ -988,7 +1053,8 @@ window.NMRIH2 = {
      "Stability Falloff Per Penetration": "0.05",
      "Targeting Spread Multiplier": "0.4"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/AES_DT11.png"
    },
    {
     "id": "AES_Eder17",
@@ -1057,7 +1123,8 @@ window.NMRIH2 = {
      "Stability Damage": "10",
      "Targeting Spread Multiplier": "0.15"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/AES_Gruber922.png"
    },
    {
     "id": "AES_GruberMkVII",
@@ -1112,7 +1179,8 @@ window.NMRIH2 = {
      "Stability Falloff Per Penetration": "0",
      "Targeting Spread Multiplier": "0.15"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/AES_GruberMkVII.png"
    },
    {
     "id": "AES_GruberRanch",
@@ -1173,12 +1241,14 @@ window.NMRIH2 = {
      "Stability Falloff Per Penetration": "0.5",
      "Targeting Spread Multiplier": "0.15"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/AES_GruberRanch.png"
    },
    {
     "id": "AES_Hunter85",
     "name": "Hunter85",
     "raw": "AES_Hunter85",
+    "caliber": ".308 Win",
     "statsExpected": true,
     "stats": {
      "Damage": "35",
@@ -1229,7 +1299,9 @@ window.NMRIH2 = {
      "Stability Falloff Per Penetration": "0.3",
      "Targeting Spread Multiplier": "0.1"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/AES_Hunter85.png",
+    "ammoIcon": "img/ammo_308Win.png"
    },
    {
     "id": "AES_LeeEnfield",
@@ -1247,6 +1319,7 @@ window.NMRIH2 = {
     "id": "AES_M14",
     "name": "M14",
     "raw": "AES_M14",
+    "caliber": ".308 Win",
     "statsExpected": true,
     "stats": {
      "Damage": "35",
@@ -1298,24 +1371,29 @@ window.NMRIH2 = {
      "Stability Falloff Per Penetration": "0.3",
      "Targeting Spread Multiplier": "0.15"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/AES_M14.png",
+    "ammoIcon": "img/ammo_308Win.png"
    },
    {
     "id": "AES_M16A4",
     "name": "M16A4",
     "raw": "AES_M16A4",
-    "statsExpected": true
+    "statsExpected": true,
+    "img": "img/AES_M16A4.png"
    },
    {
     "id": "AES_M1Garand",
     "name": "M1Garand",
     "raw": "AES_M1Garand",
-    "statsExpected": true
+    "statsExpected": true,
+    "img": "img/AES_M1Garand.png"
    },
    {
     "id": "AES_M7",
     "name": "M7",
     "raw": "AES_M7",
+    "caliber": "6.8x51mm",
     "statsExpected": true,
     "stats": {
      "Damage": "40",
@@ -1369,12 +1447,15 @@ window.NMRIH2 = {
      "Stability Damage": "25",
      "Targeting Spread Multiplier": "0.2"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/AES_M7.png",
+    "ammoIcon": "img/ammo_68x51mm.png"
    },
    {
     "id": "AES_M9A1",
     "name": "M9A1",
     "raw": "AES_M9A1",
+    "caliber": "9mm",
     "statsExpected": true,
     "stats": {
      "Damage": "15",
@@ -1424,7 +1505,9 @@ window.NMRIH2 = {
      "Stability Falloff Per Penetration": "0",
      "Targeting Spread Multiplier": "0.15"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/AES_M9A1.png",
+    "ammoIcon": "img/ammo_9mm.png"
    },
    {
     "id": "AES_Martial",
@@ -1436,6 +1519,7 @@ window.NMRIH2 = {
     "id": "AES_MC15",
     "name": "MC15",
     "raw": "AES_MC15",
+    "caliber": "5.56mm",
     "statsExpected": true,
     "stats": {
      "Damage": "20",
@@ -1489,18 +1573,22 @@ window.NMRIH2 = {
      "Stability Falloff Per Penetration": "0.3",
      "Targeting Spread Multiplier": "0.1"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/AES_MC15.png",
+    "ammoIcon": "img/ammo_556NATO.png"
    },
    {
     "id": "AES_Mk18",
     "name": "Mk18",
     "raw": "AES_Mk18",
-    "statsExpected": true
+    "statsExpected": true,
+    "img": "img/AES_Mk18.png"
    },
    {
     "id": "AES_Model13",
     "name": "Model13",
     "raw": "AES_Model13",
+    "caliber": ".357 Magnum",
     "statsExpected": true,
     "stats": {
      "Damage": "24",
@@ -1553,12 +1641,15 @@ window.NMRIH2 = {
      "Stability Falloff Per Penetration": "0.5",
      "Targeting Spread Multiplier": "0.15"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/AES_Model13.png",
+    "ammoIcon": "img/ammo_357Mag.png"
    },
    {
     "id": "AES_MP5",
     "name": "MP5",
     "raw": "AES_MP5",
+    "caliber": "9mm",
     "statsExpected": true,
     "stats": {
      "Damage": "15",
@@ -1608,7 +1699,9 @@ window.NMRIH2 = {
      "Stability Damage": "20",
      "Stability Falloff Per Penetration": "10"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/AES_MP5.png",
+    "ammoIcon": "img/ammo_9mm.png"
    },
    {
     "id": "AES_MP5A4_Old",
@@ -1676,7 +1769,8 @@ window.NMRIH2 = {
      "Stability Falloff Per Penetration": "0.05",
      "Targeting Spread Multiplier": "0.5"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/AES_RX12.png"
    },
    {
     "id": "AES_686",
@@ -1747,7 +1841,8 @@ window.NMRIH2 = {
      "Throw Stability Damage": "100",
      "Throw Stamina Cost": "20"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/BP_HockeyStick.png"
    },
    {
     "id": "BP_KnifeSmall",
@@ -1804,7 +1899,8 @@ window.NMRIH2 = {
      "Throw Stability Damage": "20",
      "Throw Stamina Cost": "10"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/BP_KnifeSmall.png"
    },
    {
     "id": "BP_Mallet",
@@ -1861,7 +1957,8 @@ window.NMRIH2 = {
      "Throw Stability Damage": "60",
      "Throw Stamina Cost": "10"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/BP_Mallet.png"
    },
    {
     "id": "BP_Pipe",
@@ -1918,7 +2015,8 @@ window.NMRIH2 = {
      "Throw Stability Damage": "100",
      "Throw Stamina Cost": "20"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/BP_Pipe.png"
    },
    {
     "id": "BP_PipeSmall",
@@ -1975,7 +2073,8 @@ window.NMRIH2 = {
      "Throw Stability Damage": "60",
      "Throw Stamina Cost": "10"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/BP_PipeSmall.png"
    },
    {
     "id": "BP_Rebar",
@@ -2032,7 +2131,8 @@ window.NMRIH2 = {
      "Throw Stability Damage": "100",
      "Throw Stamina Cost": "20"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/BP_Rebar.png"
    },
    {
     "id": "BP_TireIron",
@@ -2089,7 +2189,8 @@ window.NMRIH2 = {
      "Throw Stability Damage": "60",
      "Throw Stamina Cost": "10"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/BP_TireIron.png"
    },
    {
     "id": "BP_WrenchLarge",
@@ -2146,7 +2247,8 @@ window.NMRIH2 = {
      "Throw Stability Damage": "100",
      "Throw Stamina Cost": "20"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/BP_WrenchLarge.png"
    },
    {
     "id": "BP_WrenchSmall",
@@ -2201,7 +2303,8 @@ window.NMRIH2 = {
      "Throw Stability Damage": "60",
      "Throw Stamina Cost": "10"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/BP_WrenchSmall.png"
    },
    {
     "id": "BP_BaseballBat",
@@ -2259,7 +2362,8 @@ window.NMRIH2 = {
      "Throw Stamina Cost": "20",
      "World Shove Damage": "30"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/BP_BaseballBat.png"
    },
    {
     "id": "BP_ClawHammer",
@@ -2316,7 +2420,8 @@ window.NMRIH2 = {
      "Throw Stability Damage": "50",
      "Throw Stamina Cost": "10"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/BP_ClawHammer.png"
    },
    {
     "id": "BP_Cleaver",
@@ -2373,7 +2478,8 @@ window.NMRIH2 = {
      "Throw Stability Damage": "20",
      "Throw Stamina Cost": "10"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/BP_Cleaver.png"
    },
    {
     "id": "BP_Crowbar",
@@ -2430,7 +2536,8 @@ window.NMRIH2 = {
      "Throw Stability Damage": "60",
      "Throw Stamina Cost": "10"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/BP_Crowbar.png"
    },
    {
     "id": "BP_FireAxe",
@@ -2487,7 +2594,8 @@ window.NMRIH2 = {
      "Throw Stability Damage": "100",
      "Throw Stamina Cost": "20"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/BP_FireAxe.png"
    },
    {
     "id": "BP_HatchetWoodsman",
@@ -2546,7 +2654,8 @@ window.NMRIH2 = {
      "Throw Stability Damage": "20",
      "Throw Stamina Cost": "10"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/BP_HatchetWoodsman.png"
    },
    {
     "id": "BP_Machete",
@@ -2603,7 +2712,8 @@ window.NMRIH2 = {
      "Throw Stability Damage": "20",
      "Throw Stamina Cost": "10"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/BP_Machete.png"
    },
    {
     "id": "BP_Sledge",
@@ -2660,7 +2770,8 @@ window.NMRIH2 = {
      "Throw Stability Damage": "100",
      "Throw Stamina Cost": "20"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/BP_Sledge.png"
    },
    {
     "id": "BP_TreeTrimmer",
@@ -2717,7 +2828,8 @@ window.NMRIH2 = {
      "Throw Stability Damage": "100",
      "Throw Stamina Cost": "20"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/BP_TreeTrimmer.png"
    }
   ],
   "throwables": [
@@ -2731,13 +2843,15 @@ window.NMRIH2 = {
     "id": "AES_IED",
     "name": "IED",
     "raw": "AES_IED",
-    "statsExpected": true
+    "statsExpected": true,
+    "img": "img/AES_IED.png"
    },
    {
     "id": "AES_ProximityExplosive",
     "name": "Proximity Explosive",
     "raw": "AES_ProximityExplosive",
-    "statsExpected": true
+    "statsExpected": true,
+    "img": "img/AES_ProximityExplosive.png"
    },
    {
     "id": "AES_Dynamite",
@@ -2763,7 +2877,8 @@ window.NMRIH2 = {
      "Throw Stability Damage": "20",
      "Throw Stamina Cost": "5"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/AES_Grenade_M67.png"
    },
    {
     "id": "AES_Molotov",
@@ -2794,7 +2909,8 @@ window.NMRIH2 = {
      "Throw Stability Damage": "20",
      "Throw Stamina Cost": "5"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/AES_Molotov.png"
    },
    {
     "id": "AES_Pipebomb",
@@ -2814,7 +2930,8 @@ window.NMRIH2 = {
      "Throw Stability Damage": "20",
      "Throw Stamina Cost": "5"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/AES_Pipebomb.png"
    }
   ],
   "consumables": [
@@ -2826,7 +2943,8 @@ window.NMRIH2 = {
    {
     "id": "ID_Consumable_Bandage",
     "name": "Bandage",
-    "raw": "ID_Consumable_Bandage"
+    "raw": "ID_Consumable_Bandage",
+    "img": "img/ID_Consumable_Bandage.png"
    },
    {
     "id": "ID_Consumable_C4Explosive",
@@ -2856,7 +2974,8 @@ window.NMRIH2 = {
    {
     "id": "ID_Consumable_GeneTherapy",
     "name": "Gene Therapy",
-    "raw": "ID_Consumable_GeneTherapy"
+    "raw": "ID_Consumable_GeneTherapy",
+    "img": "img/ID_Consumable_GeneTherapy.png"
    },
    {
     "id": "ID_Consumable_Glowstick",
@@ -2881,7 +3000,8 @@ window.NMRIH2 = {
    {
     "id": "ID_Consumable_Grenade_M67",
     "name": "Grenade M67",
-    "raw": "ID_Consumable_Grenade_M67"
+    "raw": "ID_Consumable_Grenade_M67",
+    "img": "img/ID_Consumable_Grenade_M67.png"
    },
    {
     "id": "ID_Consumable_LockpickingKit",
@@ -2896,12 +3016,14 @@ window.NMRIH2 = {
    {
     "id": "ID_Consumable_Medkit",
     "name": "Medkit",
-    "raw": "ID_Consumable_Medkit"
+    "raw": "ID_Consumable_Medkit",
+    "img": "img/ID_Consumable_Medkit.png"
    },
    {
     "id": "ID_Consumable_PhalanxPills",
     "name": "Phalanx Pills",
-    "raw": "ID_Consumable_PhalanxPills"
+    "raw": "ID_Consumable_PhalanxPills",
+    "img": "img/ID_Consumable_PhalanxPills.png"
    },
    {
     "id": "ID_Consumable_ScentMaskingSpray",
@@ -2973,7 +3095,8 @@ window.NMRIH2 = {
    {
     "id": "ID_Permanent_MagLite",
     "name": "Mag Lite",
-    "raw": "ID_Permanent_MagLite"
+    "raw": "ID_Permanent_MagLite",
+    "img": "img/ID_Permanent_MagLite.png"
    },
    {
     "id": "ID_Permanent_MedicalSmartwatch",
@@ -3015,47 +3138,56 @@ window.NMRIH2 = {
    {
     "id": "IA_MZL_L_Brake_01A",
     "name": "MZL L Brake 01A",
-    "raw": "IA_MZL_L_Brake_01A"
+    "raw": "IA_MZL_L_Brake_01A",
+    "img": "img/IA_MZL_L_Brake_01A.png"
    },
    {
     "id": "IA_MZL_L_Compensator",
     "name": "MZL L Compensator",
-    "raw": "IA_MZL_L_Compensator"
+    "raw": "IA_MZL_L_Compensator",
+    "img": "img/IA_MZL_L_Compensator.png"
    },
    {
     "id": "IA_MZL_L_ShotgunChoke_01A",
     "name": "MZL L Shotgun Choke 01A",
-    "raw": "IA_MZL_L_ShotgunChoke_01A"
+    "raw": "IA_MZL_L_ShotgunChoke_01A",
+    "img": "img/IA_MZL_L_ShotgunChoke_01A.png"
    },
    {
     "id": "IA_MZL_L_Suppressor",
     "name": "MZL L Suppressor",
-    "raw": "IA_MZL_L_Suppressor"
+    "raw": "IA_MZL_L_Suppressor",
+    "img": "img/IA_MZL_L_Suppressor.png"
    },
    {
     "id": "IA_MZL_S_Brake_01A",
     "name": "MZL S Brake 01A",
-    "raw": "IA_MZL_S_Brake_01A"
+    "raw": "IA_MZL_S_Brake_01A",
+    "img": "img/IA_MZL_S_Brake_01A.png"
    },
    {
     "id": "IA_MZL_S_Compensator",
     "name": "MZL S Compensator",
-    "raw": "IA_MZL_S_Compensator"
+    "raw": "IA_MZL_S_Compensator",
+    "img": "img/IA_MZL_S_Compensator.png"
    },
    {
     "id": "IA_MZL_S_Suppressor",
     "name": "MZL S Suppressor",
-    "raw": "IA_MZL_S_Suppressor"
+    "raw": "IA_MZL_S_Suppressor",
+    "img": "img/IA_MZL_S_Suppressor.png"
    },
    {
     "id": "IA_RAIL_L_Laser",
     "name": "RAIL L Laser",
-    "raw": "IA_RAIL_L_Laser"
+    "raw": "IA_RAIL_L_Laser",
+    "img": "img/IA_RAIL_L_Laser.png"
    },
    {
     "id": "IA_RAIL_L_Light",
     "name": "RAIL L Light",
-    "raw": "IA_RAIL_L_Light"
+    "raw": "IA_RAIL_L_Light",
+    "img": "img/IA_RAIL_L_Light.png"
    },
    {
     "id": "IA_RAIL_MP5_Light",
@@ -3065,22 +3197,26 @@ window.NMRIH2 = {
    {
     "id": "IA_RAIL_S_Laser",
     "name": "RAIL S Laser",
-    "raw": "IA_RAIL_S_Laser"
+    "raw": "IA_RAIL_S_Laser",
+    "img": "img/IA_RAIL_S_Laser.png"
    },
    {
     "id": "IA_RAIL_S_Light",
     "name": "RAIL S Light",
-    "raw": "IA_RAIL_S_Light"
+    "raw": "IA_RAIL_S_Light",
+    "img": "img/IA_RAIL_S_Light.png"
    },
    {
     "id": "IA_SIGHT_ACOG",
     "name": "SIGHT ACOG",
-    "raw": "IA_SIGHT_ACOG"
+    "raw": "IA_SIGHT_ACOG",
+    "img": "img/IA_SIGHT_ACOG.png"
    },
    {
     "id": "IA_SIGHT_BUIS",
     "name": "SIGHT BUIS",
-    "raw": "IA_SIGHT_BUIS"
+    "raw": "IA_SIGHT_BUIS",
+    "img": "img/IA_SIGHT_BUIS.png"
    },
    {
     "id": "IA_SIGHT_CarryHandle",
@@ -3090,22 +3226,26 @@ window.NMRIH2 = {
    {
     "id": "IA_SIGHT_GhostRing",
     "name": "SIGHT Ghost Ring",
-    "raw": "IA_SIGHT_GhostRing"
+    "raw": "IA_SIGHT_GhostRing",
+    "img": "img/IA_SIGHT_GhostRing.png"
    },
    {
     "id": "IA_SIGHT_Holo",
     "name": "SIGHT Holo",
-    "raw": "IA_SIGHT_Holo"
+    "raw": "IA_SIGHT_Holo",
+    "img": "img/IA_SIGHT_Holo.png"
    },
    {
     "id": "IA_SIGHT_HoloSmall",
     "name": "SIGHT Holo Small",
-    "raw": "IA_SIGHT_HoloSmall"
+    "raw": "IA_SIGHT_HoloSmall",
+    "img": "img/IA_SIGHT_HoloSmall.png"
    },
    {
     "id": "IA_SIGHT_Scope",
     "name": "SIGHT Scope",
-    "raw": "IA_SIGHT_Scope"
+    "raw": "IA_SIGHT_Scope",
+    "img": "img/IA_SIGHT_Scope.png"
    }
   ],
   "recipes": [
@@ -4030,5 +4170,16 @@ window.NMRIH2 = {
     "raw": "ChallengeTask_Shoves"
    }
   ]
- }
+ },
+ "flavor": [
+  "img/flavor/Broadway.jpg",
+  "img/flavor/Bunker.jpg",
+  "img/flavor/Flooded.jpg",
+  "img/flavor/Hospital.jpg",
+  "img/flavor/Lighthouse.jpg",
+  "img/flavor/NOTLD.jpg",
+  "img/flavor/Pottsville.jpg",
+  "img/flavor/PowerPlant.jpg",
+  "img/flavor/Waldo.jpg"
+ ]
 };
