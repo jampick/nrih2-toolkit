@@ -25,7 +25,13 @@ own files, enriched with community-wiki numbers.
 - **Zombies** (10 profiles incl. **Prime** elites) — real stats from `CT_ATT_Zomb_*`, Adult/Child/Prime filters.
 - **Skills** (66) — wiki-sourced Effect / Expert effect / Expert unlock level for 44; icons for 53.
   22 unreleased skills are name-only.
-- **Consumables / Gear / Attachments / Recipes / Challenges** — names + icons where available.
+- **Consumables / Gear / Attachments** — names + icons, plus a **wiki shop overlay**
+  (`data/stats/equipment.json`, raw capture `data/wiki-raw/fandom-equipment-shop.md`): effect
+  text, Loadout-Shop price + unlock reqs (blue **Shop** strip), attachment friendly names +
+  "Fits" gun lists. Shop prices also on mapped melee/firearms/throwables; ammo-box price+level
+  shown in the AMMO row. Coverage: 7/19 consumables, 4/19 gear, 8/19 attachments (the rest
+  aren't in the wiki's shop tables — field-found items).
+- **Recipes / Challenges** — names + icons where available.
 - Source tags everywhere: green **from files** (decoded) vs blue **from wiki** (Fandom, CC-BY-SA).
 - **Spooky header hero** = a random in-game map loading-screen behind a dark wash (per visit).
 - **Favicon/app icon** = fire-axe game icon, diagonal on dark w/ red ring (`site/icons/`,

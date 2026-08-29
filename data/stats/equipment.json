@@ -1,0 +1,52 @@
+{
+ "source": "fandom",
+ "attribution": "Equipment/shop data: No More Room in Hell 2 Wiki on Fandom (CC-BY-SA). https://no-more-room-in-hell-two.fandom.com/wiki/Equipment",
+ "note": "Loadout Shop prices/unlocks + effect text, keyed by catalog id. Attachment compatibility from the Weapons page. Raw capture: data/wiki-raw/fandom-equipment-shop.md",
+ "items": {
+  "ID_Consumable_Bandage":        {"effect": "Moderately restores health", "unlock": "Account Lv 8", "price": "1,500 cr"},
+  "ID_Consumable_Medkit":         {"effect": "Greatly restores health", "unlock": "Account Lv 22 + Char Lv 20", "price": "3,000 cr"},
+  "ID_Consumable_PhalanxPills":   {"effect": "Temporarily staves off infection; only usable when infected", "unlock": "Account Lv 42 + Char Lv 20 + Nightmare 15", "price": "5,000 cr"},
+  "ID_Consumable_MassCasualtyKit":{"effect": "HERA field kit: 2 Pills, 4 Bandages + medical supplies for many casualties", "unlock": "Account Lv 76 + Char Lv 20", "price": "10,000 cr"},
+  "ID_Consumable_StimPack":       {"effect": "Revive syringe — when consumed, revives you at full health", "unlock": "Account Lv 95 + Char Lv 40 + Nightmare 20", "price": "15,000 cr"},
+  "ID_Consumable_GeneTherapy":    {"effect": "One-time experimental cure synthesized for your DNA; may have side effects", "unlock": "Account Lv 100 + Char Lv 40 + Nightmare 50", "price": "20,000 cr"},
+  "ID_Consumable_Adrenaline":     {"effect": "Epinephrine injector — greatly increases maximum stamina", "unlock": "Account Lv 78 + Char Lv 40", "price": "10,000 cr"},
+
+  "AES_ProximityExplosive": {"effect": "Improvised proximity bomb — plant on the ground, detonates on the first thing that moves", "unlock": "Account Lv 11", "price": "1,500 cr"},
+  "AES_Pipebomb":           {"effect": "Shrapnel + concussive force; throwing it draws the horde's attention", "unlock": "Account Lv 33 + Char Lv 20", "price": "2,000 cr"},
+  "AES_Grenade_M67":        {"effect": "Frag grenade — 3.6 s fuse, lethal within 5 m", "unlock": "Account Lv 47 + Char Lv 40 + Nightmare 1", "price": "3,000 cr"},
+
+  "BP_PipeSmall":   {"unlock": "Default weapon", "price": "0 cr"},
+  "BP_Pipe":        {"unlock": "Account Lv 2", "price": "2,000 cr"},
+  "BP_KnifeSmall":  {"unlock": "Account Lv 3", "price": "2,000 cr"},
+  "BP_Rebar":       {"unlock": "Account Lv 4", "price": "2,000 cr"},
+  "BP_TireIron":    {"unlock": "Account Lv 5", "price": "2,000 cr"},
+  "BP_WrenchLarge": {"unlock": "Account Lv 6", "price": "2,000 cr"},
+  "BP_WrenchSmall": {"unlock": "Account Lv 15", "price": "2,000 cr"},
+
+  "AES_Model13":  {"unlock": "Default weapon", "price": "0 cr"},
+  "AES_CoachGun": {"unlock": "Account Lv 10", "price": "5,000 cr"},
+
+  "IA_MZL_S_Suppressor": {"effect": "Pistol suppressor — quieter shots, not silent", "fits": "M9A3, M1911"},
+  "IA_MZL_L_Suppressor": {"effect": "Rifle suppressor — quieter shots, not silent", "fits": "MP5, Rochester 1873, Hunter 85, M14, M7A1, MC-15, Gruber Ranch"},
+  "IA_SIGHT_HoloSmall":  {"effect": "Micro red dot (pistol optic)", "fits": "M9A3, M1911"},
+  "IA_SIGHT_Holo":       {"effect": "Holographic sight (rifle optic)", "fits": "MP5, Rochester 1873, M7A1, MC-15, 590A1"},
+  "IA_SIGHT_ACOG":       {"effect": "ACOG magnified optic (rifle)", "fits": "MP5, Rochester 1873, M7A1, MC-15, 590A1"},
+  "IA_SIGHT_Scope":      {"effect": "Long gun scope (rifle optic)", "fits": "MP5, Rochester 1873, M7A1, MC-15, 590A1"},
+  "IA_RAIL_L_Light":     {"effect": "Long gun flashlight", "fits": "M7A1, MC-15, Gruber Ranch"},
+  "IA_RAIL_MP5_Light":   {"effect": "Integrated weapon light", "fits": "MP5 (built-in)"},
+
+  "ID_Permanent_Suppressor_Small": {"effect": "Pistol suppressor — quieter shots, not silent", "fits": "M9A3, M1911"},
+  "ID_Permanent_Suppressor_Large": {"effect": "Rifle suppressor — quieter shots, not silent", "fits": "MP5, Rochester 1873, Hunter 85, M14, M7A1, MC-15, Gruber Ranch"},
+  "ID_Permanent_GunLight_Large":   {"effect": "Long gun flashlight", "fits": "M7A1, MC-15, Gruber Ranch"},
+  "ID_Permanent_GunLight_Small":   {"effect": "Pistol gun light"}
+ },
+ "ammo": {
+  ".308 Win":    {"price": "3,000 cr / box of 10", "unlock": "Account Lv 43"},
+  ".357 Magnum": {"price": "3,000 cr / box of 10", "unlock": "Account Lv 18"},
+  ".45 ACP":     {"price": "3,000 cr / box of 10", "unlock": "Account Lv 26"},
+  "5.56mm":      {"price": "3,000 cr / box of 10", "unlock": "Account Lv 61"},
+  "6.8x51mm":    {"price": "3,000 cr / box of 10", "unlock": "Account Lv 68"},
+  "9mm":         {"price": "3,000 cr / box of 10", "unlock": "Account Lv 53"},
+  "12 Gauge":    {"price": "3,000 cr / box of 10 (00 buckshot)", "unlock": "Account Lv 38"}
+ }
+}

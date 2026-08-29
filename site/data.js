@@ -26,7 +26,7 @@ window.NMRIH2 = {
   "filesDecoder": "CUE4Parse 1.2.2 + foreign UE5.6.1 usmap (NewMoon/Mixtape)",
   "filesNote": "Weapon, melee, throwable, item and zombie numbers are read directly from the game's UCurveTable data assets.",
   "skillsNote": "Skill effects and Expert unlock levels are community-sourced from the Fandom wiki (CC-BY-SA) — their magnitudes live in Blueprint effects a foreign usmap cannot decode.",
-  "wikiAttribution": "No More Room in Hell 2 Wiki on Fandom (CC-BY-SA). https://no-more-room-in-hell-two.fandom.com/wiki/Skills",
+  "wikiAttribution": "No More Room in Hell 2 Wiki on Fandom (CC-BY-SA). https://no-more-room-in-hell-two.fandom.com/wiki/Skills &middot; Equipment/shop data: No More Room in Hell 2 Wiki on Fandom (CC-BY-SA). https://no-more-room-in-hell-two.fandom.com/wiki/Equipment",
   "withStats": 47,
   "wikiSkills": 44,
   "withImages": 117
@@ -857,6 +857,7 @@ window.NMRIH2 = {
      ],
      "onetap": "One shot to the head drops anything up to a Runner"
     },
+    "ammoShop": "3,000 cr / box of 10 @ Account Lv 18",
     "img": "img/AES_Winchester_1873.png",
     "ammoIcon": "img/ammo_357Mag.png"
    },
@@ -966,6 +967,7 @@ window.NMRIH2 = {
      ],
      "onetap": "One shot to the head drops anything up to a Runner"
     },
+    "ammoShop": "3,000 cr / box of 10 @ Account Lv 26",
     "img": "img/AES_1911.png",
     "ammoIcon": "img/ammo_45ACP.png"
    },
@@ -1049,6 +1051,7 @@ window.NMRIH2 = {
      "note": "Full blast: 10 pellets × 17 = 170 dmg (200 head), all pellets on target",
      "onetap": "One shot to the head drops anything up to a Walker Prime"
     },
+    "ammoShop": "3,000 cr / box of 10 (00 buckshot) @ Account Lv 38",
     "img": "img/AES_590A1.png",
     "ammoIcon": "img/ammo_12gaShells.png"
    },
@@ -1156,6 +1159,12 @@ window.NMRIH2 = {
     "category": "Shotgun",
     "caliber": "12 Gauge",
     "statsExpected": true,
+    "shop": {
+     "price": "5,000 cr",
+     "unlock": "Account Lv 10"
+    },
+    "statSource": "fandom",
+    "ammoShop": "3,000 cr / box of 10 (00 buckshot) @ Account Lv 38",
     "ammoIcon": "img/ammo_12gaShells.png"
    },
    {
@@ -1686,6 +1695,7 @@ window.NMRIH2 = {
      ],
      "onetap": "One shot to the head drops anything up to a Walker Prime"
     },
+    "ammoShop": "3,000 cr / box of 10 @ Account Lv 43",
     "img": "img/AES_Hunter85.png",
     "ammoIcon": "img/ammo_308Win.png"
    },
@@ -1803,6 +1813,7 @@ window.NMRIH2 = {
      ],
      "onetap": "One shot to the head drops anything up to a Walker Prime"
     },
+    "ammoShop": "3,000 cr / box of 10 @ Account Lv 43",
     "img": "img/AES_M14.png",
     "ammoIcon": "img/ammo_308Win.png"
    },
@@ -1924,6 +1935,7 @@ window.NMRIH2 = {
      ],
      "onetap": "One shot to the head drops anything up to a Walker Prime"
     },
+    "ammoShop": "3,000 cr / box of 10 @ Account Lv 68",
     "img": "img/AES_M7.png",
     "ammoIcon": "img/ammo_68x51mm.png"
    },
@@ -2031,6 +2043,7 @@ window.NMRIH2 = {
      ],
      "onetap": "One shot to the head drops anything up to a Child"
     },
+    "ammoShop": "3,000 cr / box of 10 @ Account Lv 53",
     "img": "img/AES_M9A1.png",
     "ammoIcon": "img/ammo_9mm.png"
    },
@@ -2149,6 +2162,7 @@ window.NMRIH2 = {
      ],
      "onetap": "One shot to the head drops anything up to a Walker Prime"
     },
+    "ammoShop": "3,000 cr / box of 10 @ Account Lv 61",
     "img": "img/AES_MC15.png",
     "ammoIcon": "img/ammo_556NATO.png"
    },
@@ -2267,6 +2281,11 @@ window.NMRIH2 = {
      ],
      "onetap": "One shot to the head drops anything up to a Runner"
     },
+    "shop": {
+     "price": "0 cr",
+     "unlock": "Default weapon"
+    },
+    "ammoShop": "3,000 cr / box of 10 @ Account Lv 18",
     "img": "img/AES_Model13.png",
     "ammoIcon": "img/ammo_357Mag.png"
    },
@@ -2374,6 +2393,7 @@ window.NMRIH2 = {
      ],
      "onetap": "One shot to the head drops anything up to a Shambler"
     },
+    "ammoShop": "3,000 cr / box of 10 @ Account Lv 53",
     "img": "img/AES_MP5.png",
     "ammoIcon": "img/ammo_9mm.png"
    },
@@ -2701,6 +2721,10 @@ window.NMRIH2 = {
      ],
      "onetap": "One swing to the head drops anything up to a Child"
     },
+    "shop": {
+     "price": "2,000 cr",
+     "unlock": "Account Lv 3"
+    },
     "img": "img/BP_KnifeSmall.png"
    },
    {
@@ -2907,6 +2931,10 @@ window.NMRIH2 = {
      ],
      "onetap": "One swing to the head drops anything up to a Child"
     },
+    "shop": {
+     "price": "2,000 cr",
+     "unlock": "Account Lv 2"
+    },
     "img": "img/BP_Pipe.png"
    },
    {
@@ -3013,6 +3041,10 @@ window.NMRIH2 = {
      ],
      "onetap": "One swing to the head drops anything up to a Child"
     },
+    "shop": {
+     "price": "0 cr",
+     "unlock": "Default weapon"
+    },
     "img": "img/BP_PipeSmall.png"
    },
    {
@@ -3112,6 +3144,10 @@ window.NMRIH2 = {
       }
      ],
      "onetap": "One swing to the head drops anything up to a Child"
+    },
+    "shop": {
+     "price": "2,000 cr",
+     "unlock": "Account Lv 4"
     },
     "img": "img/BP_Rebar.png"
    },
@@ -3219,6 +3255,10 @@ window.NMRIH2 = {
      ],
      "onetap": "One swing to the head drops anything up to a Child"
     },
+    "shop": {
+     "price": "2,000 cr",
+     "unlock": "Account Lv 5"
+    },
     "img": "img/BP_TireIron.png"
    },
    {
@@ -3318,6 +3358,10 @@ window.NMRIH2 = {
       }
      ],
      "onetap": "One swing to the head drops anything up to a Child"
+    },
+    "shop": {
+     "price": "2,000 cr",
+     "unlock": "Account Lv 6"
     },
     "img": "img/BP_WrenchLarge.png"
    },
@@ -3422,6 +3466,10 @@ window.NMRIH2 = {
       }
      ],
      "onetap": "One swing to the head drops anything up to a Child"
+    },
+    "shop": {
+     "price": "2,000 cr",
+     "unlock": "Account Lv 15"
     },
     "img": "img/BP_WrenchSmall.png"
    },
@@ -4342,6 +4390,14 @@ window.NMRIH2 = {
     "name": "Proximity Explosive",
     "raw": "AES_ProximityExplosive",
     "statsExpected": true,
+    "stats": {
+     "Effect": "Improvised proximity bomb — plant on the ground, detonates on the first thing that moves"
+    },
+    "shop": {
+     "price": "1,500 cr",
+     "unlock": "Account Lv 11"
+    },
+    "statSource": "fandom",
     "img": "img/AES_ProximityExplosive.png"
    },
    {
@@ -4356,6 +4412,7 @@ window.NMRIH2 = {
     "raw": "AES_Grenade_M67",
     "statsExpected": true,
     "stats": {
+     "Effect": "Frag grenade — 3.6 s fuse, lethal within 5 m",
      "Throw Damage": "10",
      "Ammo Capacity": "1",
      "Cooldown": "0.5"
@@ -4369,6 +4426,10 @@ window.NMRIH2 = {
      "Throw Stamina Cost": "5"
     },
     "statSource": "files",
+    "shop": {
+     "price": "3,000 cr",
+     "unlock": "Account Lv 47 + Char Lv 40 + Nightmare 1"
+    },
     "img": "img/AES_Grenade_M67.png"
    },
    {
@@ -4409,6 +4470,7 @@ window.NMRIH2 = {
     "raw": "AES_Pipebomb",
     "statsExpected": true,
     "stats": {
+     "Effect": "Shrapnel + concussive force; throwing it draws the horde's attention",
      "Throw Damage": "10",
      "Ammo Capacity": "1",
      "Cooldown": "0.5"
@@ -4422,6 +4484,10 @@ window.NMRIH2 = {
      "Throw Stamina Cost": "5"
     },
     "statSource": "files",
+    "shop": {
+     "price": "2,000 cr",
+     "unlock": "Account Lv 33 + Char Lv 20"
+    },
     "img": "img/AES_Pipebomb.png"
    }
   ],
@@ -4429,12 +4495,28 @@ window.NMRIH2 = {
    {
     "id": "ID_Consumable_Adrenaline",
     "name": "Adrenaline",
-    "raw": "ID_Consumable_Adrenaline"
+    "raw": "ID_Consumable_Adrenaline",
+    "stats": {
+     "Effect": "Epinephrine injector — greatly increases maximum stamina"
+    },
+    "shop": {
+     "price": "10,000 cr",
+     "unlock": "Account Lv 78 + Char Lv 40"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "ID_Consumable_Bandage",
     "name": "Bandage",
     "raw": "ID_Consumable_Bandage",
+    "stats": {
+     "Effect": "Moderately restores health"
+    },
+    "shop": {
+     "price": "1,500 cr",
+     "unlock": "Account Lv 8"
+    },
+    "statSource": "fandom",
     "img": "img/ID_Consumable_Bandage.png"
    },
    {
@@ -4466,6 +4548,14 @@ window.NMRIH2 = {
     "id": "ID_Consumable_GeneTherapy",
     "name": "Gene Therapy",
     "raw": "ID_Consumable_GeneTherapy",
+    "stats": {
+     "Effect": "One-time experimental cure synthesized for your DNA; may have side effects"
+    },
+    "shop": {
+     "price": "20,000 cr",
+     "unlock": "Account Lv 100 + Char Lv 40 + Nightmare 50"
+    },
+    "statSource": "fandom",
     "img": "img/ID_Consumable_GeneTherapy.png"
    },
    {
@@ -4502,18 +4592,42 @@ window.NMRIH2 = {
    {
     "id": "ID_Consumable_MassCasualtyKit",
     "name": "Mass Casualty Kit",
-    "raw": "ID_Consumable_MassCasualtyKit"
+    "raw": "ID_Consumable_MassCasualtyKit",
+    "stats": {
+     "Effect": "HERA field kit: 2 Pills, 4 Bandages + medical supplies for many casualties"
+    },
+    "shop": {
+     "price": "10,000 cr",
+     "unlock": "Account Lv 76 + Char Lv 20"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "ID_Consumable_Medkit",
     "name": "Medkit",
     "raw": "ID_Consumable_Medkit",
+    "stats": {
+     "Effect": "Greatly restores health"
+    },
+    "shop": {
+     "price": "3,000 cr",
+     "unlock": "Account Lv 22 + Char Lv 20"
+    },
+    "statSource": "fandom",
     "img": "img/ID_Consumable_Medkit.png"
    },
    {
     "id": "ID_Consumable_PhalanxPills",
     "name": "Phalanx Pills",
     "raw": "ID_Consumable_PhalanxPills",
+    "stats": {
+     "Effect": "Temporarily staves off infection; only usable when infected"
+    },
+    "shop": {
+     "price": "5,000 cr",
+     "unlock": "Account Lv 42 + Char Lv 20 + Nightmare 15"
+    },
+    "statSource": "fandom",
     "img": "img/ID_Consumable_PhalanxPills.png"
    },
    {
@@ -4524,7 +4638,15 @@ window.NMRIH2 = {
    {
     "id": "ID_Consumable_StimPack",
     "name": "Stim Pack",
-    "raw": "ID_Consumable_StimPack"
+    "raw": "ID_Consumable_StimPack",
+    "stats": {
+     "Effect": "Revive syringe — when consumed, revives you at full health"
+    },
+    "shop": {
+     "price": "15,000 cr",
+     "unlock": "Account Lv 95 + Char Lv 40 + Nightmare 20"
+    },
+    "statSource": "fandom"
    }
   ],
   "gear": [
@@ -4556,12 +4678,21 @@ window.NMRIH2 = {
    {
     "id": "ID_Permanent_GunLight_Large",
     "name": "Gun Light Large",
-    "raw": "ID_Permanent_GunLight_Large"
+    "raw": "ID_Permanent_GunLight_Large",
+    "stats": {
+     "Effect": "Long gun flashlight",
+     "Fits": "M7A1, MC-15, Gruber Ranch"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "ID_Permanent_GunLight_Small",
     "name": "Gun Light Small",
-    "raw": "ID_Permanent_GunLight_Small"
+    "raw": "ID_Permanent_GunLight_Small",
+    "stats": {
+     "Effect": "Pistol gun light"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "ID_Permanent_HTGPS",
@@ -4607,12 +4738,22 @@ window.NMRIH2 = {
    {
     "id": "ID_Permanent_Suppressor_Large",
     "name": "Suppressor Large",
-    "raw": "ID_Permanent_Suppressor_Large"
+    "raw": "ID_Permanent_Suppressor_Large",
+    "stats": {
+     "Effect": "Rifle suppressor — quieter shots, not silent",
+     "Fits": "MP5, Rochester 1873, Hunter 85, M14, M7A1, MC-15, Gruber Ranch"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "ID_Permanent_Suppressor_Small",
     "name": "Suppressor Small",
-    "raw": "ID_Permanent_Suppressor_Small"
+    "raw": "ID_Permanent_Suppressor_Small",
+    "stats": {
+     "Effect": "Pistol suppressor — quieter shots, not silent",
+     "Fits": "M9A3, M1911"
+    },
+    "statSource": "fandom"
    },
    {
     "id": "ID_Permanent_ThermalGoggles",
@@ -4627,116 +4768,156 @@ window.NMRIH2 = {
   ],
   "attachments": [
    {
-    "id": "IA_MZL_L_Brake_01A",
-    "name": "MZL L Brake 01A",
-    "raw": "IA_MZL_L_Brake_01A",
-    "img": "img/IA_MZL_L_Brake_01A.png"
-   },
-   {
-    "id": "IA_MZL_L_Compensator",
-    "name": "MZL L Compensator",
-    "raw": "IA_MZL_L_Compensator",
-    "img": "img/IA_MZL_L_Compensator.png"
-   },
-   {
-    "id": "IA_MZL_L_ShotgunChoke_01A",
-    "name": "MZL L Shotgun Choke 01A",
-    "raw": "IA_MZL_L_ShotgunChoke_01A",
-    "img": "img/IA_MZL_L_ShotgunChoke_01A.png"
-   },
-   {
-    "id": "IA_MZL_L_Suppressor",
-    "name": "MZL L Suppressor",
-    "raw": "IA_MZL_L_Suppressor",
-    "img": "img/IA_MZL_L_Suppressor.png"
-   },
-   {
-    "id": "IA_MZL_S_Brake_01A",
-    "name": "MZL S Brake 01A",
-    "raw": "IA_MZL_S_Brake_01A",
-    "img": "img/IA_MZL_S_Brake_01A.png"
-   },
-   {
-    "id": "IA_MZL_S_Compensator",
-    "name": "MZL S Compensator",
-    "raw": "IA_MZL_S_Compensator",
-    "img": "img/IA_MZL_S_Compensator.png"
-   },
-   {
-    "id": "IA_MZL_S_Suppressor",
-    "name": "MZL S Suppressor",
-    "raw": "IA_MZL_S_Suppressor",
-    "img": "img/IA_MZL_S_Suppressor.png"
-   },
-   {
-    "id": "IA_RAIL_L_Laser",
-    "name": "RAIL L Laser",
-    "raw": "IA_RAIL_L_Laser",
-    "img": "img/IA_RAIL_L_Laser.png"
-   },
-   {
-    "id": "IA_RAIL_L_Light",
-    "name": "RAIL L Light",
-    "raw": "IA_RAIL_L_Light",
-    "img": "img/IA_RAIL_L_Light.png"
-   },
-   {
-    "id": "IA_RAIL_MP5_Light",
-    "name": "RAIL MP5 Light",
-    "raw": "IA_RAIL_MP5_Light"
-   },
-   {
-    "id": "IA_RAIL_S_Laser",
-    "name": "RAIL S Laser",
-    "raw": "IA_RAIL_S_Laser",
-    "img": "img/IA_RAIL_S_Laser.png"
-   },
-   {
-    "id": "IA_RAIL_S_Light",
-    "name": "RAIL S Light",
-    "raw": "IA_RAIL_S_Light",
-    "img": "img/IA_RAIL_S_Light.png"
-   },
-   {
     "id": "IA_SIGHT_ACOG",
-    "name": "SIGHT ACOG",
+    "name": "ACOG Sight",
     "raw": "IA_SIGHT_ACOG",
+    "stats": {
+     "Effect": "ACOG magnified optic (rifle)",
+     "Fits": "MP5, Rochester 1873, M7A1, MC-15, 590A1"
+    },
+    "statSource": "fandom",
     "img": "img/IA_SIGHT_ACOG.png"
    },
    {
     "id": "IA_SIGHT_BUIS",
-    "name": "SIGHT BUIS",
+    "name": "Back-Up Iron Sights",
     "raw": "IA_SIGHT_BUIS",
     "img": "img/IA_SIGHT_BUIS.png"
    },
    {
     "id": "IA_SIGHT_CarryHandle",
-    "name": "SIGHT Carry Handle",
+    "name": "Carry Handle Sight",
     "raw": "IA_SIGHT_CarryHandle"
    },
    {
     "id": "IA_SIGHT_GhostRing",
-    "name": "SIGHT Ghost Ring",
+    "name": "Ghost Ring Sight",
     "raw": "IA_SIGHT_GhostRing",
     "img": "img/IA_SIGHT_GhostRing.png"
    },
    {
     "id": "IA_SIGHT_Holo",
-    "name": "SIGHT Holo",
+    "name": "Holographic Sight",
     "raw": "IA_SIGHT_Holo",
+    "stats": {
+     "Effect": "Holographic sight (rifle optic)",
+     "Fits": "MP5, Rochester 1873, M7A1, MC-15, 590A1"
+    },
+    "statSource": "fandom",
     "img": "img/IA_SIGHT_Holo.png"
    },
    {
-    "id": "IA_SIGHT_HoloSmall",
-    "name": "SIGHT Holo Small",
-    "raw": "IA_SIGHT_HoloSmall",
-    "img": "img/IA_SIGHT_HoloSmall.png"
+    "id": "IA_RAIL_L_Light",
+    "name": "Long Gun Flashlight",
+    "raw": "IA_RAIL_L_Light",
+    "stats": {
+     "Effect": "Long gun flashlight",
+     "Fits": "M7A1, MC-15, Gruber Ranch"
+    },
+    "statSource": "fandom",
+    "img": "img/IA_RAIL_L_Light.png"
+   },
+   {
+    "id": "IA_RAIL_L_Laser",
+    "name": "Long Gun Laser",
+    "raw": "IA_RAIL_L_Laser",
+    "img": "img/IA_RAIL_L_Laser.png"
    },
    {
     "id": "IA_SIGHT_Scope",
-    "name": "SIGHT Scope",
+    "name": "Long Gun Scope",
     "raw": "IA_SIGHT_Scope",
+    "stats": {
+     "Effect": "Long gun scope (rifle optic)",
+     "Fits": "MP5, Rochester 1873, M7A1, MC-15, 590A1"
+    },
+    "statSource": "fandom",
     "img": "img/IA_SIGHT_Scope.png"
+   },
+   {
+    "id": "IA_RAIL_MP5_Light",
+    "name": "MP5 Gun-Light",
+    "raw": "IA_RAIL_MP5_Light",
+    "stats": {
+     "Effect": "Integrated weapon light",
+     "Fits": "MP5 (built-in)"
+    },
+    "statSource": "fandom"
+   },
+   {
+    "id": "IA_SIGHT_HoloSmall",
+    "name": "Micro Red Dot",
+    "raw": "IA_SIGHT_HoloSmall",
+    "stats": {
+     "Effect": "Micro red dot (pistol optic)",
+     "Fits": "M9A3, M1911"
+    },
+    "statSource": "fandom",
+    "img": "img/IA_SIGHT_HoloSmall.png"
+   },
+   {
+    "id": "IA_MZL_S_Compensator",
+    "name": "Pistol Compensator",
+    "raw": "IA_MZL_S_Compensator",
+    "img": "img/IA_MZL_S_Compensator.png"
+   },
+   {
+    "id": "IA_RAIL_S_Light",
+    "name": "Pistol Gun-Light",
+    "raw": "IA_RAIL_S_Light",
+    "img": "img/IA_RAIL_S_Light.png"
+   },
+   {
+    "id": "IA_RAIL_S_Laser",
+    "name": "Pistol Laser",
+    "raw": "IA_RAIL_S_Laser",
+    "img": "img/IA_RAIL_S_Laser.png"
+   },
+   {
+    "id": "IA_MZL_S_Brake_01A",
+    "name": "Pistol Muzzle Brake",
+    "raw": "IA_MZL_S_Brake_01A",
+    "img": "img/IA_MZL_S_Brake_01A.png"
+   },
+   {
+    "id": "IA_MZL_S_Suppressor",
+    "name": "Pistol Suppressor",
+    "raw": "IA_MZL_S_Suppressor",
+    "stats": {
+     "Effect": "Pistol suppressor — quieter shots, not silent",
+     "Fits": "M9A3, M1911"
+    },
+    "statSource": "fandom",
+    "img": "img/IA_MZL_S_Suppressor.png"
+   },
+   {
+    "id": "IA_MZL_L_Compensator",
+    "name": "Rifle Compensator",
+    "raw": "IA_MZL_L_Compensator",
+    "img": "img/IA_MZL_L_Compensator.png"
+   },
+   {
+    "id": "IA_MZL_L_Brake_01A",
+    "name": "Rifle Muzzle Brake",
+    "raw": "IA_MZL_L_Brake_01A",
+    "img": "img/IA_MZL_L_Brake_01A.png"
+   },
+   {
+    "id": "IA_MZL_L_Suppressor",
+    "name": "Rifle Suppressor",
+    "raw": "IA_MZL_L_Suppressor",
+    "stats": {
+     "Effect": "Rifle suppressor — quieter shots, not silent",
+     "Fits": "MP5, Rochester 1873, Hunter 85, M14, M7A1, MC-15, Gruber Ranch"
+    },
+    "statSource": "fandom",
+    "img": "img/IA_MZL_L_Suppressor.png"
+   },
+   {
+    "id": "IA_MZL_L_ShotgunChoke_01A",
+    "name": "Shotgun Choke",
+    "raw": "IA_MZL_L_ShotgunChoke_01A",
+    "img": "img/IA_MZL_L_ShotgunChoke_01A.png"
    }
   ],
   "recipes": [

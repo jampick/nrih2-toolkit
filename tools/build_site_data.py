@@ -17,6 +17,7 @@ CATALOG = os.path.join(ROOT, "data", "catalog", "catalog.json")
 STATS = os.path.join(ROOT, "data", "stats", "stats.json")
 SKILLS = os.path.join(ROOT, "data", "stats", "skills.json")
 AMMO = os.path.join(ROOT, "data", "stats", "ammo.json")
+EQUIP = os.path.join(ROOT, "data", "stats", "equipment.json")
 IMAGES = os.path.join(ROOT, "data", "images", "images.json")
 OUT = os.path.join(ROOT, "site", "data.js")
 
@@ -242,6 +243,28 @@ def main():
         return row
 
     ammo = load(AMMO)["firearms"] if os.path.exists(AMMO) else {}
+    equip = load(EQUIP) if os.path.exists(EQUIP) else {"items": {}, "ammo": {}}
+
+    def apply_equip(row):
+        """Wiki Loadout-Shop overlay: price/unlock as a shop strip; effect and
+        attachment compatibility as stat rows. Marks name-only rows as wiki-sourced."""
+        e = equip["items"].get(row["id"])
+        if e:
+            st = row.get("stats") or {}
+            if e.get("effect"):
+                st = {"Effect": e["effect"], **st}
+            if e.get("fits"):
+                st["Fits"] = e["fits"]
+            if st:
+                row["stats"] = st
+            if e.get("price") is not None:
+                row["shop"] = {"price": e["price"], "unlock": e.get("unlock", "")}
+            row.setdefault("statSource", "fandom")
+        cal = row.get("caliber")
+        if cal and cal in equip["ammo"]:
+            a = equip["ammo"][cal]
+            row["ammoShop"] = a["price"] + " @ " + a["unlock"]
+        return row
     firearms, melee_aes, throwables, other_sets = [], [], [], []
     for e in c["firearmsAndSets"]:
         key = e["name"][4:] if e["name"].startswith("AES_") else e["name"]
@@ -255,11 +278,11 @@ def main():
             row["caliber"] = ammo[e["name"]]["caliber"]
             row["ammoIconKey"] = "AMMO_" + ammo[e["name"]]["icon"]
         if cat == "Firearm":
-            firearms.append(attach(row, key, "Firearm"))
+            firearms.append(apply_equip(attach(row, key, "Firearm")))
         elif cat == "Melee":
-            melee_aes.append(attach(row, key, "Melee"))
+            melee_aes.append(apply_equip(attach(row, key, "Melee")))
         elif cat == "Throwable":
-            throwables.append(attach(row, key, "Throwable"))
+            throwables.append(apply_equip(attach(row, key, "Throwable")))
         else:
             other_sets.append(row)
 
@@ -271,7 +294,7 @@ def main():
             continue
         key = e["name"][3:] if e["name"].startswith("BP_") else e["name"]
         row = {"id": e["name"], "name": words(e["name"]), "rarity": e.get("rarity", "")}
-        melee_tiers.append(attach(row, key, "Melee"))
+        melee_tiers.append(apply_equip(attach(row, key, "Melee")))
 
     skill_overlay = (load(SKILLS)["skills"] if os.path.exists(SKILLS) else {})
     skills = []
@@ -289,6 +312,25 @@ def main():
 
     def simple(key):
         return [{"id": e["name"], "name": words(e["name"]), "raw": e["name"]} for e in c[key]]
+
+    # Friendly names for the cryptic IA_ attachment ids (MZL=muzzle, L=long gun, S=pistol).
+    ATTACH_NAMES = {
+        "IA_MZL_L_Brake_01A": "Rifle Muzzle Brake", "IA_MZL_L_Compensator": "Rifle Compensator",
+        "IA_MZL_L_ShotgunChoke_01A": "Shotgun Choke", "IA_MZL_L_Suppressor": "Rifle Suppressor",
+        "IA_MZL_S_Brake_01A": "Pistol Muzzle Brake", "IA_MZL_S_Compensator": "Pistol Compensator",
+        "IA_MZL_S_Suppressor": "Pistol Suppressor", "IA_RAIL_L_Laser": "Long Gun Laser",
+        "IA_RAIL_L_Light": "Long Gun Flashlight", "IA_RAIL_MP5_Light": "MP5 Gun-Light",
+        "IA_RAIL_S_Laser": "Pistol Laser", "IA_RAIL_S_Light": "Pistol Gun-Light",
+        "IA_SIGHT_ACOG": "ACOG Sight", "IA_SIGHT_BUIS": "Back-Up Iron Sights",
+        "IA_SIGHT_CarryHandle": "Carry Handle Sight", "IA_SIGHT_GhostRing": "Ghost Ring Sight",
+        "IA_SIGHT_Holo": "Holographic Sight", "IA_SIGHT_HoloSmall": "Micro Red Dot",
+        "IA_SIGHT_Scope": "Long Gun Scope",
+    }
+    def attachment_rows():
+        rows = [apply_equip(r) for r in simple("attachments")]
+        for r in rows:
+            r["name"] = ATTACH_NAMES.get(r["id"], r["name"])
+        return sorted(rows, key=lambda r: r["name"])
 
     def recipe_cat(path):
         m = re.search(r'/Recipes/([^/]+)/', path)
@@ -318,7 +360,9 @@ def main():
             "skillsNote": "Skill effects and Expert unlock levels are community-sourced from the "
                           "Fandom wiki (CC-BY-SA) — their magnitudes live in Blueprint effects a "
                           "foreign usmap cannot decode.",
-            "wikiAttribution": skill_overlay and (load(SKILLS).get("attribution")) or "",
+            "wikiAttribution": " &middot; ".join(a for a in [
+                skill_overlay and load(SKILLS).get("attribution") or "",
+                equip.get("attribution", "")] if a),
             "withStats": files_stats,
             "wikiSkills": wiki_skills,
         },
@@ -327,9 +371,9 @@ def main():
             "firearms": firearms,
             "melee": melee_tiers,
             "throwables": throwables,
-            "consumables": simple("consumables"),
-            "gear": simple("permanents"),
-            "attachments": simple("attachments"),
+            "consumables": [apply_equip(r) for r in simple("consumables")],
+            "gear": [apply_equip(r) for r in simple("permanents")],
+            "attachments": attachment_rows(),
             "recipes": recipes,
             "zombies": zombies,
             "challenges": simple("challengeTasks"),

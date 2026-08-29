@@ -32,8 +32,8 @@ General Gear captured (name inferred from desc | account level | price):
 - Work Light (deployable halogen) — illuminate spaces | Lv28 | 1,000cr
 - Radio (portable AM/FM, deployable) — loud noise distraction | Lv58 | 1,500cr
 - Ammo Crate (assorted firearm ammo, shareable) | Lv73 + Char Lv20 | 10,000cr
-NOTE: Passive/Medical/Throwable/Melee/Firearms tabs on Equipment page NOT yet captured — they
-likely hold per-item prices + level reqs for consumables, gear (Permanents), throwables. RE-VISIT.
+NOTE: ALL Equipment tabs now captured in `fandom-equipment-shop.md` (2026-08-29) and wired into
+the site via `data/stats/equipment.json`.
 
 ## Progression / Supplies (XP pickups; do not take inventory slots except Critical)
 - Small Computing/Camp Supplies — 25 pts

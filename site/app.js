@@ -183,7 +183,15 @@
     if (x.caliber) {
       h += '<div class="ammo">';
       if (x.ammoIcon) h += '<img class="ammoicn" loading="lazy" src="' + esc(x.ammoIcon) + '" alt="">';
-      h += '<span class="ammolabel">Ammo</span><span class="ammoval">' + esc(x.caliber) + "</span></div>";
+      h += '<span class="ammolabel">Ammo</span><span class="ammoval">' + esc(x.caliber) + "</span>";
+      if (x.ammoShop) h += '<span class="ammosub">Shop: ' + esc(x.ammoShop) + "</span>";
+      h += "</div>";
+    }
+    if (x.shop) {
+      h += '<div class="shop"><span class="shoplabel">Shop</span>' +
+           '<span class="shopval">' + esc(x.shop.price) + "</span>" +
+           (x.shop.unlock ? '<span class="shopunlock">' + esc(x.shop.unlock) + "</span>" : "") +
+           "</div>";
     }
 
     const primary = x.stats || {};
