@@ -432,6 +432,7 @@ window.NMRIH2 = {
     "id": "AES_Winchester_1873",
     "name": "Winchester 1873",
     "raw": "AES_Winchester_1873",
+    "statsExpected": true,
     "stats": {
      "Damage": "24",
      "Headshot Damage": "100",
@@ -491,6 +492,7 @@ window.NMRIH2 = {
     "id": "AES_1911",
     "name": "1911",
     "raw": "AES_1911",
+    "statsExpected": true,
     "stats": {
      "Damage": "20",
      "Headshot Damage": "100",
@@ -547,6 +549,7 @@ window.NMRIH2 = {
     "id": "AES_590A1",
     "name": "590A1",
     "raw": "AES_590A1",
+    "statsExpected": true,
     "stats": {
      "Damage": "17",
      "Headshot Damage": "20",
@@ -598,17 +601,20 @@ window.NMRIH2 = {
    {
     "id": "AES_870",
     "name": "870",
-    "raw": "AES_870"
+    "raw": "AES_870",
+    "statsExpected": true
    },
    {
     "id": "AES_AP85",
     "name": "AP85",
-    "raw": "AES_AP85"
+    "raw": "AES_AP85",
+    "statsExpected": true
    },
    {
     "id": "AES_BauerPrecision",
     "name": "Bauer Precision",
     "raw": "AES_BauerPrecision",
+    "statsExpected": true,
     "stats": {
      "Damage": "50",
      "Headshot Damage": "100",
@@ -646,22 +652,26 @@ window.NMRIH2 = {
    {
     "id": "AES_Bull",
     "name": "Bull",
-    "raw": "AES_Bull"
+    "raw": "AES_Bull",
+    "statsExpected": true
    },
    {
     "id": "AES_CoachGun",
     "name": "Coach Gun",
-    "raw": "AES_CoachGun"
+    "raw": "AES_CoachGun",
+    "statsExpected": true
    },
    {
     "id": "AES_CX8",
     "name": "CX8",
-    "raw": "AES_CX8"
+    "raw": "AES_CX8",
+    "statsExpected": true
    },
    {
     "id": "AES_DT11",
     "name": "DT11",
     "raw": "AES_DT11",
+    "statsExpected": true,
     "stats": {
      "Damage": "17",
      "Headshot Damage": "20",
@@ -717,17 +727,20 @@ window.NMRIH2 = {
    {
     "id": "AES_Eder17",
     "name": "Eder17",
-    "raw": "AES_Eder17"
+    "raw": "AES_Eder17",
+    "statsExpected": true
    },
    {
     "id": "AES_FAL",
     "name": "FAL",
-    "raw": "AES_FAL"
+    "raw": "AES_FAL",
+    "statsExpected": true
    },
    {
     "id": "AES_Gruber922",
     "name": "Gruber922",
     "raw": "AES_Gruber922",
+    "statsExpected": true,
     "stats": {
      "Damage": "12",
      "Headshot Damage": "35",
@@ -784,6 +797,7 @@ window.NMRIH2 = {
     "id": "AES_GruberMkVII",
     "name": "Gruber Mk VII",
     "raw": "AES_GruberMkVII",
+    "statsExpected": true,
     "stats": {
      "Damage": "12",
      "Headshot Damage": "35",
@@ -838,6 +852,7 @@ window.NMRIH2 = {
     "id": "AES_GruberRanch",
     "name": "Gruber Ranch",
     "raw": "AES_GruberRanch",
+    "statsExpected": true,
     "stats": {
      "Damage": "20",
      "Headshot Damage": "130",
@@ -898,6 +913,7 @@ window.NMRIH2 = {
     "id": "AES_Hunter85",
     "name": "Hunter85",
     "raw": "AES_Hunter85",
+    "statsExpected": true,
     "stats": {
      "Damage": "35",
      "Headshot Damage": "150",
@@ -952,17 +968,20 @@ window.NMRIH2 = {
    {
     "id": "AES_LeeEnfield",
     "name": "Lee Enfield",
-    "raw": "AES_LeeEnfield"
+    "raw": "AES_LeeEnfield",
+    "statsExpected": true
    },
    {
     "id": "AES_M1014",
     "name": "M1014",
-    "raw": "AES_M1014"
+    "raw": "AES_M1014",
+    "statsExpected": true
    },
    {
     "id": "AES_M14",
     "name": "M14",
     "raw": "AES_M14",
+    "statsExpected": true,
     "stats": {
      "Damage": "35",
      "Headshot Damage": "150",
@@ -1018,17 +1037,20 @@ window.NMRIH2 = {
    {
     "id": "AES_M16A4",
     "name": "M16A4",
-    "raw": "AES_M16A4"
+    "raw": "AES_M16A4",
+    "statsExpected": true
    },
    {
     "id": "AES_M1Garand",
     "name": "M1Garand",
-    "raw": "AES_M1Garand"
+    "raw": "AES_M1Garand",
+    "statsExpected": true
    },
    {
     "id": "AES_M7",
     "name": "M7",
     "raw": "AES_M7",
+    "statsExpected": true,
     "stats": {
      "Damage": "40",
      "Headshot Damage": "150",
@@ -1087,6 +1109,7 @@ window.NMRIH2 = {
     "id": "AES_M9A1",
     "name": "M9A1",
     "raw": "AES_M9A1",
+    "statsExpected": true,
     "stats": {
      "Damage": "15",
      "Headshot Damage": "50",
@@ -1140,12 +1163,14 @@ window.NMRIH2 = {
    {
     "id": "AES_Martial",
     "name": "Martial",
-    "raw": "AES_Martial"
+    "raw": "AES_Martial",
+    "statsExpected": true
    },
    {
     "id": "AES_MC15",
     "name": "MC15",
     "raw": "AES_MC15",
+    "statsExpected": true,
     "stats": {
      "Damage": "20",
      "Headshot Damage": "130",
@@ -1203,12 +1228,14 @@ window.NMRIH2 = {
    {
     "id": "AES_Mk18",
     "name": "Mk18",
-    "raw": "AES_Mk18"
+    "raw": "AES_Mk18",
+    "statsExpected": true
    },
    {
     "id": "AES_Model13",
     "name": "Model13",
     "raw": "AES_Model13",
+    "statsExpected": true,
     "stats": {
      "Damage": "24",
      "Headshot Damage": "100",
@@ -1266,6 +1293,7 @@ window.NMRIH2 = {
     "id": "AES_MP5",
     "name": "MP5",
     "raw": "AES_MP5",
+    "statsExpected": true,
     "stats": {
      "Damage": "15",
      "Headshot Damage": "70",
@@ -1319,17 +1347,20 @@ window.NMRIH2 = {
    {
     "id": "AES_MP5A4_Old",
     "name": "MP5A4 Old",
-    "raw": "AES_MP5A4_Old"
+    "raw": "AES_MP5A4_Old",
+    "statsExpected": true
    },
    {
     "id": "AES_P350",
     "name": "P350",
-    "raw": "AES_P350"
+    "raw": "AES_P350",
+    "statsExpected": true
    },
    {
     "id": "AES_RX12",
     "name": "RX12",
     "raw": "AES_RX12",
+    "statsExpected": true,
     "stats": {
      "Damage": "17",
      "Headshot Damage": "20",
@@ -1384,12 +1415,14 @@ window.NMRIH2 = {
    {
     "id": "AES_686",
     "name": "686",
-    "raw": "AES_686"
+    "raw": "AES_686",
+    "statsExpected": true
    },
    {
     "id": "AES_SKS",
     "name": "SKS",
-    "raw": "AES_SKS"
+    "raw": "AES_SKS",
+    "statsExpected": true
    }
   ],
   "melee": [
@@ -1397,6 +1430,7 @@ window.NMRIH2 = {
     "id": "BP_HockeyStick",
     "name": "Hockey Stick",
     "rarity": "Common",
+    "statsExpected": true,
     "stats": {
      "Damage": "15",
      "Headshot Damage": "25",
@@ -1453,6 +1487,7 @@ window.NMRIH2 = {
     "id": "BP_KnifeSmall",
     "name": "Knife Small",
     "rarity": "Common",
+    "statsExpected": true,
     "stats": {
      "Damage": "15",
      "Headshot Damage": "25",
@@ -1509,6 +1544,7 @@ window.NMRIH2 = {
     "id": "BP_Mallet",
     "name": "Mallet",
     "rarity": "Common",
+    "statsExpected": true,
     "stats": {
      "Damage": "10",
      "Headshot Damage": "20",
@@ -1565,6 +1601,7 @@ window.NMRIH2 = {
     "id": "BP_Pipe",
     "name": "Pipe",
     "rarity": "Common",
+    "statsExpected": true,
     "stats": {
      "Damage": "20",
      "Headshot Damage": "30",
@@ -1621,6 +1658,7 @@ window.NMRIH2 = {
     "id": "BP_PipeSmall",
     "name": "Pipe Small",
     "rarity": "Common",
+    "statsExpected": true,
     "stats": {
      "Damage": "13",
      "Headshot Damage": "20",
@@ -1677,6 +1715,7 @@ window.NMRIH2 = {
     "id": "BP_Rebar",
     "name": "Rebar",
     "rarity": "Common",
+    "statsExpected": true,
     "stats": {
      "Damage": "15",
      "Headshot Damage": "30",
@@ -1733,6 +1772,7 @@ window.NMRIH2 = {
     "id": "BP_TireIron",
     "name": "Tire Iron",
     "rarity": "Common",
+    "statsExpected": true,
     "stats": {
      "Damage": "13",
      "Headshot Damage": "25",
@@ -1789,6 +1829,7 @@ window.NMRIH2 = {
     "id": "BP_WrenchLarge",
     "name": "Wrench Large",
     "rarity": "Common",
+    "statsExpected": true,
     "stats": {
      "Damage": "25",
      "Headshot Damage": "35",
@@ -1845,6 +1886,7 @@ window.NMRIH2 = {
     "id": "BP_WrenchSmall",
     "name": "Wrench Small",
     "rarity": "Common",
+    "statsExpected": true,
     "stats": {
      "Damage": "10",
      "Headshot Damage": "20",
@@ -1899,6 +1941,7 @@ window.NMRIH2 = {
     "id": "BP_BaseballBat",
     "name": "Baseball Bat",
     "rarity": "Uncommon",
+    "statsExpected": true,
     "stats": {
      "Damage": "20",
      "Headshot Damage": "25",
@@ -1956,6 +1999,7 @@ window.NMRIH2 = {
     "id": "BP_ClawHammer",
     "name": "Claw Hammer",
     "rarity": "Uncommon",
+    "statsExpected": true,
     "stats": {
      "Damage": "15",
      "Headshot Damage": "30",
@@ -2012,6 +2056,7 @@ window.NMRIH2 = {
     "id": "BP_Cleaver",
     "name": "Cleaver",
     "rarity": "Uncommon",
+    "statsExpected": true,
     "stats": {
      "Damage": "15",
      "Headshot Damage": "28",
@@ -2068,6 +2113,7 @@ window.NMRIH2 = {
     "id": "BP_Crowbar",
     "name": "Crowbar",
     "rarity": "Uncommon",
+    "statsExpected": true,
     "stats": {
      "Damage": "15",
      "Headshot Damage": "30",
@@ -2124,6 +2170,7 @@ window.NMRIH2 = {
     "id": "BP_FireAxe",
     "name": "Fire Axe",
     "rarity": "Uncommon",
+    "statsExpected": true,
     "stats": {
      "Damage": "35",
      "Headshot Damage": "60",
@@ -2180,6 +2227,7 @@ window.NMRIH2 = {
     "id": "BP_HatchetWoodsman",
     "name": "Hatchet Woodsman",
     "rarity": "Uncommon",
+    "statsExpected": true,
     "stats": {
      "Damage": "20",
      "Headshot Damage": "35",
@@ -2238,6 +2286,7 @@ window.NMRIH2 = {
     "id": "BP_Machete",
     "name": "Machete",
     "rarity": "Uncommon",
+    "statsExpected": true,
     "stats": {
      "Damage": "20",
      "Headshot Damage": "35",
@@ -2294,6 +2343,7 @@ window.NMRIH2 = {
     "id": "BP_Sledge",
     "name": "Sledge",
     "rarity": "Uncommon",
+    "statsExpected": true,
     "stats": {
      "Damage": "30",
      "Headshot Damage": "50",
@@ -2350,6 +2400,7 @@ window.NMRIH2 = {
     "id": "BP_TreeTrimmer",
     "name": "Tree Trimmer",
     "rarity": "Uncommon",
+    "statsExpected": true,
     "stats": {
      "Damage": "20",
      "Headshot Damage": "35",
@@ -2407,27 +2458,32 @@ window.NMRIH2 = {
    {
     "id": "AES_DirectionalMine",
     "name": "Directional Mine",
-    "raw": "AES_DirectionalMine"
+    "raw": "AES_DirectionalMine",
+    "statsExpected": true
    },
    {
     "id": "AES_IED",
     "name": "IED",
-    "raw": "AES_IED"
+    "raw": "AES_IED",
+    "statsExpected": true
    },
    {
     "id": "AES_ProximityExplosive",
     "name": "Proximity Explosive",
-    "raw": "AES_ProximityExplosive"
+    "raw": "AES_ProximityExplosive",
+    "statsExpected": true
    },
    {
     "id": "AES_Dynamite",
     "name": "Dynamite",
-    "raw": "AES_Dynamite"
+    "raw": "AES_Dynamite",
+    "statsExpected": true
    },
    {
     "id": "AES_Grenade_M67",
     "name": "Grenade M67",
     "raw": "AES_Grenade_M67",
+    "statsExpected": true,
     "stats": {
      "Throw Damage": "10",
      "Ammo Capacity": "1",
@@ -2447,6 +2503,7 @@ window.NMRIH2 = {
     "id": "AES_Molotov",
     "name": "Molotov",
     "raw": "AES_Molotov",
+    "statsExpected": true,
     "stats": {
      "Damage": "5",
      "Throw Damage": "10",
@@ -2477,6 +2534,7 @@ window.NMRIH2 = {
     "id": "AES_Pipebomb",
     "name": "Pipebomb",
     "raw": "AES_Pipebomb",
+    "statsExpected": true,
     "stats": {
      "Throw Damage": "10",
      "Ammo Capacity": "1",
