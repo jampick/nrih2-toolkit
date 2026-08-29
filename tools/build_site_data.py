@@ -10,7 +10,7 @@ Stats provenance:
   * Skills -> magnitudes live in Blueprint GameplayEffects that a foreign usmap
     cannot decode, so they remain name-only here (source = wiki, pending overlay).
 """
-import json, re, os, glob, math
+import json, re, os, glob, math, hashlib
 
 ROOT = r"C:\Users\OddJob\projects\NRIH2"
 CATALOG = os.path.join(ROOT, "data", "catalog", "catalog.json")
@@ -359,6 +359,20 @@ def main():
         f.write("window.NMRIH2 = ")
         json.dump(out, f, ensure_ascii=False, indent=1)
         f.write(";\n")
+    # Cache-bust asset URLs in index.html. GitHub Pages serves with max-age=600,
+    # so without this, returning visitors mix an old data.js with a new app.js
+    # (symptom: features missing until a hard refresh).
+    idx_path = os.path.join(ROOT, "site", "index.html")
+    with open(idx_path, encoding="utf-8") as f:
+        html = f.read()
+    for asset in ("data.js", "app.js", "style.css"):
+        with open(os.path.join(ROOT, "site", asset), "rb") as f:
+            h = hashlib.md5(f.read()).hexdigest()[:8]
+        html = re.sub(re.escape(asset) + r'(\?v=[0-9a-f]+)?', asset + "?v=" + h, html)
+    with open(idx_path, "w", encoding="utf-8") as f:
+        f.write(html)
+    print("Cache-busted asset URLs in index.html")
+
     counts = {k: len(v) for k, v in out["sections"].items()}
     print("Wrote", OUT)
     print(json.dumps(counts, indent=2))
