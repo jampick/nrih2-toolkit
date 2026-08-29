@@ -28,6 +28,9 @@ own files, enriched with community-wiki numbers.
 - **Consumables / Gear / Attachments / Recipes / Challenges** — names + icons where available.
 - Source tags everywhere: green **from files** (decoded) vs blue **from wiki** (Fandom, CC-BY-SA).
 - **Spooky header hero** = a random in-game map loading-screen behind a dark wash (per visit).
+- **Favicon/app icon** = fire-axe game icon, diagonal on dark w/ red ring (`site/icons/`,
+  `site/favicon.ico`, `site.webmanifest` for add-to-home-screen). Generator inline in git
+  history (Pillow one-off, commit "Site icon").
 
 ## How the numbers were unlocked (the key insight)
 Paks are unencrypted but use UE5 **unversioned properties**, so decoding needs a `.usmap`.
