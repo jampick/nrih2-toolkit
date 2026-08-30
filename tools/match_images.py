@@ -170,6 +170,18 @@ def main():
         if fn:
             assign(sd, fn, prefix="skill_")
 
+    # Zombies: the game ships no per-type portraits, so these are Fandom wiki
+    # screenshots (CC-BY-SA) committed directly in site/img as zomb_<type>.jpg.
+    # Prime variants share one image; Adult/Child share the base type image.
+    ZOMB_TYPE_IMG = {"WLK": "zomb_walker.jpg", "RNR": "zomb_runner.jpg", "SHA": "zomb_shambler.jpg"}
+    zstats = os.path.join(ROOT, "data", "stats", "stats.json")
+    if os.path.exists(zstats):
+        for inst in json.load(open(zstats, encoding="utf-8")).get("zombies", {}):
+            code = inst.split("_")[2] if len(inst.split("_")) > 2 else ""
+            fn = "zomb_prime.jpg" if "Prime" in inst else ZOMB_TYPE_IMG.get(code)
+            if fn and os.path.exists(os.path.join(SITE_IMG, fn)):
+                mapping[inst] = "img/" + fn
+
     # Ammo caliber icons (referenced by data/stats/ammo.json) -> site/img/ammo_<key>.png
     ammo_path = os.path.join(ROOT, "data", "stats", "ammo.json")
     if os.path.exists(ammo_path):

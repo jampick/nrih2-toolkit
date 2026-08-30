@@ -249,7 +249,7 @@
       " (the game's own values).";
   const wa = $("wikiAttribution");
   if (wa && si.wikiAttribution)
-    wa.innerHTML = "Skill effects: " + esc(si.wikiAttribution);
+    wa.innerHTML = "Skill effects and zombie images: " + esc(si.wikiAttribution);
 
   render();
 })();

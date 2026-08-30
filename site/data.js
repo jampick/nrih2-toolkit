@@ -29,7 +29,7 @@ window.NMRIH2 = {
   "wikiAttribution": "No More Room in Hell 2 Wiki on Fandom (CC-BY-SA). https://no-more-room-in-hell-two.fandom.com/wiki/Skills &middot; Equipment/shop data: No More Room in Hell 2 Wiki on Fandom (CC-BY-SA). https://no-more-room-in-hell-two.fandom.com/wiki/Equipment",
   "withStats": 47,
   "wikiSkills": 44,
-  "withImages": 117
+  "withImages": 126
  },
  "sections": {
   "skills": [
@@ -5416,7 +5416,8 @@ window.NMRIH2 = {
      "Melee Stability Damage Heavy": "60",
      "Melee Stability Damage Lunge": "100"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/zomb_runner.jpg"
    },
    {
     "id": "Zomb_Adult_RNR_Prime",
@@ -5437,7 +5438,8 @@ window.NMRIH2 = {
      "Melee Stability Damage Heavy": "72",
      "Melee Stability Damage Lunge": "120"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/zomb_prime.jpg"
    },
    {
     "id": "Zomb_Adult_SHA",
@@ -5520,7 +5522,8 @@ window.NMRIH2 = {
      "Melee Stability Damage Heavy": "60",
      "Melee Stability Damage Lunge": "100"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/zomb_shambler.jpg"
    },
    {
     "id": "Zomb_Adult_SHA_Prime",
@@ -5537,7 +5540,8 @@ window.NMRIH2 = {
      "Melee Damage Basic": "40",
      "Melee Damage Heavy": "70"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/zomb_prime.jpg"
    },
    {
     "id": "Zomb_Adult_WLK",
@@ -5624,7 +5628,8 @@ window.NMRIH2 = {
      "Melee Stability Damage Heavy": "60",
      "Melee Stability Damage Lunge": "100"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/zomb_walker.jpg"
    },
    {
     "id": "Zomb_Adult_WLK_Prime",
@@ -5645,7 +5650,8 @@ window.NMRIH2 = {
      "Melee Stability Damage Heavy": "80",
      "Melee Stability Damage Lunge": "100"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/zomb_prime.jpg"
    },
    {
     "id": "Zomb_Child_RNR",
@@ -5725,7 +5731,8 @@ window.NMRIH2 = {
      "Melee Stability Damage Heavy": "10",
      "Melee Stability Damage Lunge": "15"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/zomb_runner.jpg"
    },
    {
     "id": "Zomb_Child_SHA",
@@ -5805,7 +5812,8 @@ window.NMRIH2 = {
      "Melee Stability Damage Heavy": "10",
      "Melee Stability Damage Lunge": "15"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/zomb_shambler.jpg"
    },
    {
     "id": "Zomb_Child_WLK",
@@ -5885,7 +5893,8 @@ window.NMRIH2 = {
      "Melee Stability Damage Heavy": "10",
      "Melee Stability Damage Lunge": "15"
     },
-    "statSource": "files"
+    "statSource": "files",
+    "img": "img/zomb_walker.jpg"
    }
   ],
   "challenges": [
