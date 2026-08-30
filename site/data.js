@@ -32,6 +32,593 @@ window.NMRIH2 = {
   "withImages": 126
  },
  "sections": {
+  "responders": [
+   {
+    "id": "BG_AirForceVet",
+    "name": "Air Force Veteran",
+    "raw": "AirForceVet",
+    "category": "Military",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_ArmyReservist",
+    "name": "Army Reservist",
+    "raw": "ArmyReservist",
+    "category": "Military",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_ArmyVeteran",
+    "name": "Army Veteran",
+    "raw": "ArmyVeteran",
+    "category": "Military",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_CoastGuard",
+    "name": "Coast Guard",
+    "raw": "CoastGuard",
+    "category": "Military",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_DesignatedMarksman",
+    "name": "Designated Marksman",
+    "raw": "DesignatedMarksman",
+    "category": "Military",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_MarineVeteran",
+    "name": "Marine Veteran",
+    "raw": "MarineVeteran",
+    "category": "Military",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_NavyVet",
+    "name": "Navy Veteran",
+    "raw": "NavyVet",
+    "category": "Military",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_Quartermaster",
+    "name": "Quartermaster",
+    "raw": "Quartermaster",
+    "category": "Military",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_Deputy",
+    "name": "Deputy",
+    "raw": "Deputy",
+    "category": "Law & Rescue",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_Detective",
+    "name": "Detective",
+    "raw": "Detective",
+    "category": "Law & Rescue",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_Firefighter",
+    "name": "Firefighter",
+    "raw": "Firefighter",
+    "category": "Law & Rescue",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_PoliceOfficer",
+    "name": "Police Officer",
+    "raw": "PoliceOfficer",
+    "category": "Law & Rescue",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_PoliceSniper",
+    "name": "Police Sniper",
+    "raw": "PoliceSniper",
+    "category": "Law & Rescue",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_RescueSpecialist",
+    "name": "Rescue Specialist",
+    "raw": "RescueSpecialist",
+    "category": "Law & Rescue",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_SecurityGuard",
+    "name": "Security Guard",
+    "raw": "SecurityGuard",
+    "category": "Law & Rescue",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_Sheriff",
+    "name": "Sheriff",
+    "raw": "Sheriff",
+    "category": "Law & Rescue",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_Anesthesiologist",
+    "name": "Anesthesiologist",
+    "raw": "Anesthesiologist",
+    "category": "Medical",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_DentalAssistant",
+    "name": "Dental Assistant",
+    "raw": "DentalAssistant",
+    "category": "Medical",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_Nurse",
+    "name": "Nurse",
+    "raw": "Nurse",
+    "category": "Medical",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_Paramedic",
+    "name": "Paramedic",
+    "raw": "Paramedic",
+    "category": "Medical",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_Pharmacologist",
+    "name": "Pharmacologist",
+    "raw": "Pharmacologist",
+    "category": "Medical",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_PSW",
+    "name": "Personal Support Worker",
+    "raw": "PSW",
+    "category": "Medical",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_SpinalSurgeon",
+    "name": "Spinal Surgeon",
+    "raw": "SpinalSurgeon",
+    "category": "Medical",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_VetTech",
+    "name": "Vet Tech",
+    "raw": "VetTech",
+    "category": "Medical",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_BearHunter",
+    "name": "Bear Hunter",
+    "raw": "BearHunter",
+    "category": "Outdoors & Hunting",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_BirdHunter",
+    "name": "Bird Hunter",
+    "raw": "BirdHunter",
+    "category": "Outdoors & Hunting",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_DeerHunter",
+    "name": "Deer Hunter",
+    "raw": "DeerHunter",
+    "category": "Outdoors & Hunting",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_FirearmsInstructor",
+    "name": "Firearms Instructor",
+    "raw": "FirearmsInstructor",
+    "category": "Outdoors & Hunting",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_Lumberjack",
+    "name": "Lumberjack",
+    "raw": "Lumberjack",
+    "category": "Outdoors & Hunting",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_Prepper",
+    "name": "Prepper",
+    "raw": "Prepper",
+    "category": "Outdoors & Hunting",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_Carpenter",
+    "name": "Carpenter",
+    "raw": "Carpenter",
+    "category": "Trades",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_ConstructionWorker",
+    "name": "Construction Worker",
+    "raw": "ConstructionWorker",
+    "category": "Trades",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_DIYEnthusiast",
+    "name": "DIY Enthusiast",
+    "raw": "DIYEnthusiast",
+    "category": "Trades",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_Electrician",
+    "name": "Electrician",
+    "raw": "Electrician",
+    "category": "Trades",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_Foreman",
+    "name": "Foreman",
+    "raw": "Foreman",
+    "category": "Trades",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_GeneralContractor",
+    "name": "General Contractor",
+    "raw": "GeneralContractor",
+    "category": "Trades",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_Handyman",
+    "name": "Handyman",
+    "raw": "Handyman",
+    "category": "Trades",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_HVACTech",
+    "name": "HVAC Technician",
+    "raw": "HVACTech",
+    "category": "Trades",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_MachineryOperator",
+    "name": "Machinery Operator",
+    "raw": "MachineryOperator",
+    "category": "Trades",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_Mason",
+    "name": "Mason",
+    "raw": "Mason",
+    "category": "Trades",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_OSHAInspector",
+    "name": "OSHA Inspector",
+    "raw": "OSHAInspector",
+    "category": "Trades",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_Painter",
+    "name": "Painter",
+    "raw": "Painter",
+    "category": "Trades",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_Pipefitter",
+    "name": "Pipefitter",
+    "raw": "Pipefitter",
+    "category": "Trades",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_Plumber",
+    "name": "Plumber",
+    "raw": "Plumber",
+    "category": "Trades",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_Roofer",
+    "name": "Roofer",
+    "raw": "Roofer",
+    "category": "Trades",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_Welder",
+    "name": "Welder",
+    "raw": "Welder",
+    "category": "Trades",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_Architect",
+    "name": "Architect",
+    "raw": "Architect",
+    "category": "Engineering & Tech",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_CivilEng",
+    "name": "Civil Engineer",
+    "raw": "CivilEng",
+    "category": "Engineering & Tech",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_ComputerTech",
+    "name": "Computer Technician",
+    "raw": "ComputerTech",
+    "category": "Engineering & Tech",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_Engineer",
+    "name": "Engineer",
+    "raw": "Engineer",
+    "category": "Engineering & Tech",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_GameDev",
+    "name": "Game Developer",
+    "raw": "GameDev",
+    "category": "Engineering & Tech",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_Geologist",
+    "name": "Geologist",
+    "raw": "Geologist",
+    "category": "Engineering & Tech",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_BaseballRookie",
+    "name": "Baseball Rookie",
+    "raw": "BaseballRookie",
+    "category": "Sports & Fitness",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_FootballMVP",
+    "name": "Football MVP",
+    "raw": "FootballMVP",
+    "category": "Sports & Fitness",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_HockeyPlayer",
+    "name": "Hockey Player",
+    "raw": "HockeyPlayer",
+    "category": "Sports & Fitness",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_MartialArtsMaster",
+    "name": "Martial Arts Master",
+    "raw": "MartialArtsMaster",
+    "category": "Sports & Fitness",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_MMAFighter",
+    "name": "MMA Fighter",
+    "raw": "MMAFighter",
+    "category": "Sports & Fitness",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_RugbyMVP",
+    "name": "Rugby MVP",
+    "raw": "RugbyMVP",
+    "category": "Sports & Fitness",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_SwimCaptain",
+    "name": "Swim Captain",
+    "raw": "SwimCaptain",
+    "category": "Sports & Fitness",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_TrackStar",
+    "name": "Track Star",
+    "raw": "TrackStar",
+    "category": "Sports & Fitness",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_WrestlingChamp",
+    "name": "Wrestling Champ",
+    "raw": "WrestlingChamp",
+    "category": "Sports & Fitness",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_YogaInstructor",
+    "name": "Yoga Instructor",
+    "raw": "YogaInstructor",
+    "category": "Sports & Fitness",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_AspiringStreamer",
+    "name": "Aspiring Streamer",
+    "raw": "AspiringStreamer",
+    "category": "Service & Creative",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_AsstRegManager",
+    "name": "Assistant Regional Manager",
+    "raw": "AsstRegManager",
+    "category": "Service & Creative",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_CommunityOrg",
+    "name": "Community Organizer",
+    "raw": "CommunityOrg",
+    "category": "Service & Creative",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_Courier",
+    "name": "Courier",
+    "raw": "Courier",
+    "category": "Service & Creative",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_Dishwasher",
+    "name": "Dishwasher",
+    "raw": "Dishwasher",
+    "category": "Service & Creative",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_GrillCook",
+    "name": "Grill Cook",
+    "raw": "GrillCook",
+    "category": "Service & Creative",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_LineCook",
+    "name": "Line Cook",
+    "raw": "LineCook",
+    "category": "Service & Creative",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_PropMaster",
+    "name": "Prop Master",
+    "raw": "PropMaster",
+    "category": "Service & Creative",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_SalesAssociate",
+    "name": "Sales Associate",
+    "raw": "SalesAssociate",
+    "category": "Service & Creative",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_Sculptor",
+    "name": "Sculptor",
+    "raw": "Sculptor",
+    "category": "Service & Creative",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_Server",
+    "name": "Server",
+    "raw": "Server",
+    "category": "Service & Creative",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_SocialWorker",
+    "name": "Social Worker",
+    "raw": "SocialWorker",
+    "category": "Service & Creative",
+    "statSource": "files"
+   },
+   {
+    "id": "BG_SousChef",
+    "name": "Sous Chef",
+    "raw": "SousChef",
+    "category": "Service & Creative",
+    "statSource": "files"
+   },
+   {
+    "id": "VS_Hooper",
+    "name": "Hooper",
+    "raw": "VS_Hooper",
+    "category": "Voice Set",
+    "statSource": "files",
+    "stats": {
+     "Variants": "Male / Female"
+    }
+   },
+   {
+    "id": "VS_King",
+    "name": "King",
+    "raw": "VS_King",
+    "category": "Voice Set",
+    "statSource": "files",
+    "stats": {
+     "Variants": "Male / Female"
+    }
+   },
+   {
+    "id": "VS_Lynch",
+    "name": "Lynch",
+    "raw": "VS_Lynch",
+    "category": "Voice Set",
+    "statSource": "files",
+    "stats": {
+     "Variants": "Male / Female"
+    }
+   },
+   {
+    "id": "VS_Roje",
+    "name": "Roje",
+    "raw": "VS_Roje",
+    "category": "Voice Set",
+    "statSource": "files",
+    "stats": {
+     "Variants": "Male / Female"
+    }
+   },
+   {
+    "id": "VS_Romero",
+    "name": "Romero",
+    "raw": "VS_Romero",
+    "category": "Voice Set",
+    "statSource": "files",
+    "stats": {
+     "Variants": "Male / Female"
+    }
+   },
+   {
+    "id": "VS_Wright",
+    "name": "Wright",
+    "raw": "VS_Wright",
+    "category": "Voice Set",
+    "statSource": "files",
+    "stats": {
+     "Variants": "Male / Female"
+    }
+   }
+  ],
   "skills": [
    {
     "id": "SD_Athlete",

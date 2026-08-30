@@ -76,6 +76,7 @@ cd site && python -m http.server 8791    # then open http://localhost:8791
 | Melee | 18 | all 18 | `CT_ItemAttributes_*` (+ rarity from BP tiers) |
 | Throwables | 7 | 3 | `CT_ItemAttributes_*` |
 | Zombies | 10 profiles | all 10 | `CT_ATT_Zomb_*` (base + **Prime** elite variants) |
+| Responders | 75 backgrounds + 6 voices | roster only | `DT_CharacterBackgrounds` name map + `VS_*` voice sets (row props are game-native, undecodable) |
 | Items | — | Battery, Medical | `CT_ItemAttributes_*` |
 | Skills | 66 | name only | Blueprint GameplayEffects — need a native usmap |
 | Consumables / Gear / Attachments / Recipes / Challenges | 19 / 19 / 19 / 39 / 17 | name only | catalog |

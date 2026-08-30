@@ -4,6 +4,7 @@
 
   const TABS = [
     ["skills", "Skills"],
+    ["responders", "Responders"],
     ["firearms", "Firearms"],
     ["melee", "Melee"],
     ["throwables", "Throwables"],
@@ -87,6 +88,7 @@
   // Facets per tab: each is a [field, label] pair; a chip group renders for any
   // facet with 2+ distinct values in the current tab's rows.
   const FACETS = {
+    responders: [["category", "Type"]],
     firearms: [["category", "Type"], ["caliber", "Ammo"]],
     melee: [["rarity", "Rarity"]],
     attachments: [["fitsTypes", "Fits"], ["category", "Slot"]],

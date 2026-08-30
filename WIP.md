@@ -32,6 +32,16 @@ own files, enriched with community-wiki numbers.
   shown in the AMMO row. Coverage: 7/19 consumables, 4/19 gear, 8/19 attachments (the rest
   aren't in the wiki's shop tables — field-found items).
 - **Recipes / Challenges** — names + icons where available.
+- **Responders** (75 background types + 6 voice sets) — the pre-outbreak jobs a generated
+  Responder can roll, read from `DT_CharacterBackgrounds` (row names / loc keys only; the
+  `KCharacterBackground` row struct is game-native so props don't decode, and display text
+  lives in a runtime string table `UI_Progression` not shipped in the paks). Voice sets =
+  `Data/VoiceSets/VS_{Hooper,King,Lynch,Roje,Romero,Wright}` (NMRiH1 cast homage), each with
+  Male/Female variants (per the customization VO events). Overlay: `data/stats/responders.json`
+  (the "type" buckets there are OUR editorial grouping, like GUNTYPE). Neither wiki documents
+  responders (checked 2026-08-29: Fandom Responders page is empty; nmrih2wiki.org has none).
+  Starter-skill-per-background mapping is NOT in the files (skills don't reference backgrounds
+  either; likely Blueprint logic) - name-only until a native usmap or wiki coverage appears.
 - Source tags everywhere: green **from files** (decoded) vs blue **from wiki** (Fandom, CC-BY-SA).
 - **Spooky header hero** = a random in-game map loading-screen behind a dark wash (per visit).
 - **Favicon/app icon** = fire-axe game icon, diagonal on dark w/ red ring (`site/icons/`,

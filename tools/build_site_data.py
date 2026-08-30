@@ -18,6 +18,7 @@ STATS = os.path.join(ROOT, "data", "stats", "stats.json")
 SKILLS = os.path.join(ROOT, "data", "stats", "skills.json")
 AMMO = os.path.join(ROOT, "data", "stats", "ammo.json")
 EQUIP = os.path.join(ROOT, "data", "stats", "equipment.json")
+RESP = os.path.join(ROOT, "data", "stats", "responders.json")
 IMAGES = os.path.join(ROOT, "data", "images", "images.json")
 OUT = os.path.join(ROOT, "site", "data.js")
 
@@ -411,6 +412,20 @@ def main():
         zombies.append({"id": inst, "name": zombie_name(inst), "raw": inst, "category": cat,
                         "stats": primary, "allStats": alld, "statSource": "files"})
 
+    # Responders: character backgrounds (pre-outbreak jobs) + voice sets, read from
+    # DT_CharacterBackgrounds / VS_ assets (see data/stats/responders.json for how;
+    # the "type" grouping there is our own bucketing, not a game field).
+    responders = []
+    if os.path.exists(RESP):
+        rd = load(RESP)
+        for b in rd["backgrounds"]:
+            responders.append({"id": "BG_" + b["id"], "name": b["name"], "raw": b["id"],
+                               "category": b["type"], "statSource": "files"})
+        for v in rd["voices"]:
+            responders.append({"id": v["id"], "name": v["name"], "raw": v["id"],
+                               "category": "Voice Set", "statSource": "files",
+                               "stats": {"Variants": "Male / Female"}})
+
     files_stats = sum(1 for grp in (firearms, melee_tiers, throwables, zombies)
                       for r in grp if r.get("statSource") == "files")
     wiki_skills = sum(1 for r in skills if r.get("statSource") == "fandom")
@@ -432,6 +447,7 @@ def main():
             "wikiSkills": wiki_skills,
         },
         "sections": {
+            "responders": responders,
             "skills": skills,
             "firearms": firearms,
             "melee": melee_tiers,
