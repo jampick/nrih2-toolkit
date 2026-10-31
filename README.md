@@ -49,3 +49,7 @@ The older tools (`tools/extractor`, `build_stats.py`, `decode_images.py` and fri
 ## Known limits
 
 Hit counts assume every pellet lands, with no range or penetration falloff. Armored zombies show Walker base stats because the sheet lists only their armor rules. Helmet stripping is an estimate. The full list is on the page.
+
+## License
+
+The code I wrote is under the [MIT license](LICENSE). That doesn't extend to things that aren't mine to license: the data in `site/intel.js` comes from the Info Compendium, which states no license, so ask its author before reusing it. The game icons and map art belong to the game's developers, the zombie art and attachment fit lists stay CC-BY-SA under the Fandom wiki, and the fonts stay under the OFL.
