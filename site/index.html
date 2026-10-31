@@ -2,49 +2,59 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>NMRIH2 Toolkit</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kill Chain | NMRiH2 field terminal</title>
+<meta name="description" content="Pick a zombie, see what kills it, what it does to you, and who hears the shot. An unofficial No More Room in Hell 2 tool built on the NMRiH2 Info Compendium by @SchwarzFenrir.">
+<meta property="og:title" content="Kill Chain: NMRiH2 field terminal">
+<meta property="og:description" content="Pick a zombie, see what kills it, what it does to you, and who hears the shot. Built on the NMRiH2 Info Compendium by @SchwarzFenrir.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jampick.github.io/nrih2-toolkit/">
+<meta property="og:image" content="https://jampick.github.io/nrih2-toolkit/og.png">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.ico" sizes="48x48">
 <link rel="icon" href="icons/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="icon" href="icons/favicon-16.png" type="image/png" sizes="16x16">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
-<meta name="theme-color" content="#0d0f12">
-<link rel="stylesheet" href="style.css?v=1bef3623">
+<meta name="theme-color" content="#080404">
+<link rel="preload" href="fonts/SairaExtraCondensed-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/ShareTechMono-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css?v=kc1">
 </head>
 <body>
-<header>
-  <div class="wrap">
-    <h1>No More Room in Hell 2 <span class="tk">Toolkit</span></h1>
-    <p class="tag">A player reference built straight from the game files - skills, weapons, gear, recipes and the undead.</p>
-    <div id="statsBanner" class="banner hidden"></div>
-  </div>
-</header>
+<a class="skip" href="#contact">Skip to the data</a>
+<div id="boot" class="boot" aria-hidden="true"></div>
+<div class="crt" aria-hidden="true"></div>
 
-<nav id="tabs" class="wrap"></nav>
+<header id="hero" class="hero"></header>
 
-<main class="wrap">
-  <div class="toolbar">
-    <input id="search" type="search" placeholder="Search everything&hellip;" autocomplete="off">
-    <div id="filters" class="filters"></div>
-    <button id="hideMissing" class="chip toggle" type="button"
-      title="Hide entries that have no stats or shop info yet">Hide missing info</button>
-    <span id="count" class="count"></span>
-  </div>
-  <div id="grid" class="grid"></div>
-  <p id="empty" class="empty hidden">Nothing matches that search.</p>
+<div id="sitrep" class="sitrep"></div>
+
+<nav id="chain" class="chain" aria-label="Kill chain"></nav>
+
+<main id="main">
+  <section id="contact" class="stage"></section>
+  <section id="lock" class="stage"></section>
+  <section id="kill" class="stage"></section>
+  <section id="noise" class="stage"></section>
+  <section id="survive" class="stage"></section>
+  <section id="build" class="stage"></section>
+  <section id="extract" class="stage"></section>
+  <section id="intel" class="stage"></section>
+  <section id="source" class="stage"></section>
 </main>
 
-<footer>
-  <div class="wrap">
-    <p>Data extracted from the local game install (Steam appid 292000, UE5.6). Fan-made; not affiliated with Torn Banner Studios.</p>
-    <p id="statsSource" class="dim"></p>
-    <p id="wikiAttribution" class="dim"></p>
-    <p id="metaline" class="dim"></p>
-  </div>
-</footer>
+<footer id="foot" class="foot"></footer>
 
-<script src="data.js?v=2ee28c2e"></script>
-<script src="app.js?v=8a1ce9c1"></script>
+<div id="dock" class="dock"></div>
+<div id="scrim" class="scrim" hidden></div>
+<aside id="dossier" class="dossier" role="dialog" aria-modal="true" aria-labelledby="dossierTitle" hidden></aside>
+<div id="query" class="query" role="dialog" aria-modal="true" aria-label="Search everything" hidden></div>
+
+<noscript><p class="noscript">Kill Chain needs JavaScript. All of its data lives in the <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRYRiLDS0qkszc2GgVRzTiNy46i-JaatWB2qbgsufwzwpCbyZCBqcaQ3avoYnLEAiif-ZYJLD-OD5rW/pubhtml">NMRiH2 Info Compendium</a> by @SchwarzFenrir.</p></noscript>
+
+<script src="intel.js?v=kc1"></script>
+<script src="engine.js?v=kc1"></script>
+<script src="app.js?v=kc1"></script>
 </body>
 </html>

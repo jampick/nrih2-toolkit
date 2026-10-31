@@ -1,13 +1,21 @@
 {
-  "name": "NMRIH2 Toolkit",
-  "short_name": "NMRIH2",
-  "description": "No More Room in Hell 2 player reference — real stats from the game files.",
+  "name": "Kill Chain: NMRiH2 field terminal",
+  "short_name": "Kill Chain",
+  "description": "Unofficial NMRiH2 tool built on the NMRiH2 Info Compendium by @SchwarzFenrir.",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#0d0f12",
-  "theme_color": "#0d0f12",
+  "background_color": "#080404",
+  "theme_color": "#080404",
   "icons": [
-    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
   ]
 }

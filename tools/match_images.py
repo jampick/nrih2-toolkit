@@ -3,7 +3,7 @@
 
 Copies the matched icons into site/img/ and writes data/images/images.json:
     { "AES_M14": "img/M14.png", "SD_Athlete": "img/skill_Athlete.png", ... }
-build_site_data.py reads that and attaches row["img"].
+tools/build_intel.py names these icons directly.
 """
 import os, re, json, glob, shutil
 

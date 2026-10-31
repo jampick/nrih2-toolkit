@@ -1,52 +1,18 @@
-# WIP — NMRIH2 Toolkit (resume here)
+# WIP: NMRIH2 toolkit (resume here)
 
-**Last worked:** 2026-08-29. **Status: LIVE and feature-complete for current game content.**
-**Goal:** an Icarus-Toolkit-style player guide for No More Room in Hell 2, built from the game's
-own files, enriched with community-wiki numbers.
+**Last worked:** 2026-10-31. **Status: rebooted as Kill Chain, live.**
 
-- **Live site:** https://jampick.github.io/nrih2-toolkit/
-- **Repo:** github.com/jampick/nrih2-toolkit (gh auth = `jampick`). GitHub Pages via
-  `.github/workflows/deploy.yml` — **push to `main` auto-deploys** the `site/` folder (~20s).
-- **Game install:** `E:\SteamLibrary\steamapps\common\nmrih2` (Steam appid 292000, UE5.6).
+The site is now one page built on the NMRiH2 Info Compendium by @SchwarzFenrir. See README.md for layout and refresh steps.
 
-## What the live site shows
-- **Firearms** — real from-files stats (16 with full sheets; unreleased guns show "no stat table"),
-  game-file icon, and a clear **AMMO row** (caliber + ammo icon) for the 11 released guns.
-  **Bullets Per Shot** is promoted next to damage so shotguns read correctly (17 dmg × 10 pellets).
-- **Zombie Math panel** (firearms + melee) — "Shots to drop" / "Heavy swings to drop" per zombie
-  type, computed in `build_site_data.py::kill_math` from real zombie `Health.MaxHealth` vs weapon
-  damage (× pellets for shotguns; melee uses best of quick/strong/heavy). Rows with equal counts
-  merge into HP ranges ("Child → Walker Prime"); green highlight + "one-tap" line for head-kills.
-  Deliberately NOT DPS: files' RateOfFire is junk-authored (0 for Winchester, 0.02 for a pistol).
-- **Firearm filters** — chip groups for **Type** (Handgun/SMG/Shotgun/Rifle/Sniper; hand-assigned
-  `GUNTYPE` map in `build_site_data.py`, mirrors the skill trees) and **Ammo** (caliber, 11 guns).
-  Search also matches caliber/category. Filter UI is multi-facet (`FACETS` in app.js).
-- **Melee** (18/18) / **Throwables** — real stats + icons + rarity.
-- **Zombies** (10 profiles incl. **Prime** elites) — real stats from `CT_ATT_Zomb_*`, Adult/Child/Prime filters.
-- **Skills** (66) — wiki-sourced Effect / Expert effect / Expert unlock level for 44; icons for 53.
-  22 unreleased skills are name-only.
-- **Consumables / Gear / Attachments** — names + icons, plus a **wiki shop overlay**
-  (`data/stats/equipment.json`, raw capture `data/wiki-raw/fandom-equipment-shop.md`): effect
-  text, Loadout-Shop price + unlock reqs (blue **Shop** strip), attachment friendly names +
-  "Fits" gun lists. Shop prices also on mapped melee/firearms/throwables; ammo-box price+level
-  shown in the AMMO row. Coverage: 7/19 consumables, 4/19 gear, 8/19 attachments (the rest
-  aren't in the wiki's shop tables — field-found items).
-- **Recipes / Challenges** — names + icons where available.
-- **Responders** (75 background types + 6 voice sets) — the pre-outbreak jobs a generated
-  Responder can roll, read from `DT_CharacterBackgrounds` (row names / loc keys only; the
-  `KCharacterBackground` row struct is game-native so props don't decode, and display text
-  lives in a runtime string table `UI_Progression` not shipped in the paks). Voice sets =
-  `Data/VoiceSets/VS_{Hooper,King,Lynch,Roje,Romero,Wright}` (NMRiH1 cast homage), each with
-  Male/Female variants (per the customization VO events). Overlay: `data/stats/responders.json`
-  (the "type" buckets there are OUR editorial grouping, like GUNTYPE). Neither wiki documents
-  responders (checked 2026-08-29: Fandom Responders page is empty; nmrih2wiki.org has none).
-  Starter-skill-per-background mapping is NOT in the files (skills don't reference backgrounds
-  either; likely Blueprint logic) - name-only until a native usmap or wiki coverage appears.
-- Source tags everywhere: green **from files** (decoded) vs blue **from wiki** (Fandom, CC-BY-SA).
-- **Spooky header hero** = a random in-game map loading-screen behind a dark wash (per visit).
-- **Favicon/app icon** = fire-axe game icon, diagonal on dark w/ red ring (`site/icons/`,
-  `site/favicon.ico`, `site.webmanifest` for add-to-home-screen). Generator inline in git
-  history (Pillow one-off, commit "Site icon").
+- Everything hangs off one state object in `site/app.js`, mirrored in the URL hash so setups can be shared.
+- Math lives in `site/engine.js`. Add a perk effect to `FX` and it flows to the kill board, weapon panel and perk details.
+- `tools/build_intel.py` regenerates `site/intel.js` from the live sheet. It stops if the sheet's layout or the curated rules' source text changes.
+- Decisions: the Infection tab's 60% table beats the older "below 50%" player tip. The 1.2 patch note that Stamina Starved no longer hits firearms beats the older Mechanics note, so guns ignore it. The old catalog-only sections (recipes, challenges, responder backgrounds) were dropped and remain in git history.
+- Open courtesy: the sheet has no stated license. Let @SchwarzFenrir know about the site on the NMRiH Discord and follow their wishes.
+
+Everything below documents the game-file pipeline, which still supplies icons, map art and the Mutated stats. Its references to the old site's tabs and `build_site_data.py`/`data.js` are history.
+
+---
 
 ## How the numbers were unlocked (the key insight)
 Paks are unencrypted but use UE5 **unversioned properties**, so decoding needs a `.usmap`.

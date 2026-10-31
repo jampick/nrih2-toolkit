@@ -22,8 +22,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - name: Sanity-check site data
-        run: node -e "global.window={};require('./site/data.js');if(!window.NMRIH2.sections)process.exit(1);console.log('data.js OK')"
+      - name: Check the kill math against the sheet's worked examples
+        run: node tools/test_engine.js
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
